@@ -1,0 +1,28 @@
+{
+  "id": "T-004-q1-tests",
+  "title": "问题1用户口径与A1/A5数值测试",
+  "status": "in_progress",
+  "owner": "yuchi423 / current Agent",
+  "branch": "codex/T-004-q1-tests",
+  "updated_at": "2026-09-11T01:07:47.289601+08:00",
+  "depends_on": [],
+  "goal": "按用户确认的效率、固定库存、光伏优先规则，执行问题1最小优化与独立核算，分别比较时间解释和模板映射。",
+  "acceptance": [
+    "3种A1解释分别求解并通过物理/费用核算",
+    "A5标签覆盖和Excel往返验证",
+    "手算与短期枚举验证",
+    "保存数值产物、真实运行记录和可接续交接"
+  ],
+  "artifacts": [
+    "scripts/run_q1_tests.py",
+    "final_run/q1-contract-tests/main.py",
+    "memory/decisions/D-005-q1-user-contract-tests.md"
+  ],
+  "checks": [],
+  "decisions": [
+    "memory/decisions/D-005-q1-user-contract-tests.md"
+  ],
+  "latest_handoff": null,
+  "next_action": "提交可复现代码后执行新运行目录；核验严格光伏顺序、固定库存与A1/A5差异。",
+  "blockers": []
+}
