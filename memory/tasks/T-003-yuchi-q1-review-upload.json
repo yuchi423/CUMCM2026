@@ -4,7 +4,7 @@
   "status": "review",
   "owner": "current user / Codex",
   "branch": "codex/T-003-yuchi-q1-review-upload",
-  "updated_at": "2026-09-11T00:20:04+08:00",
+  "updated_at": "2026-09-11T00:33:38+08:00",
   "depends_on": [
     "T-002-codex-q1"
   ],
@@ -24,7 +24,8 @@
     "Content audit: 172 lines; lines 2-172 byte-equivalent after UTF-8 line parsing; only line 1 changed",
     "python scripts/check_state.py: PASS",
     "git diff --check: PASS",
-    "Local absolute path scan: PASS, none found"
+    "Local absolute path scan: PASS, none found",
+    "First remote checkpoint verified: local and remote SHA bdf4b3e8a82df2e215bf4c9399af147f91dbb880 matched"
   ],
   "decisions": [],
   "latest_handoff": "memory/handoffs/2026-09-11-T-003-yuchi-q1-review-upload.md",
@@ -33,6 +34,6 @@
   "phase_status": {
     "source_identified": "completed",
     "portable_path": "completed",
-    "repository_upload": "pending_remote_verification"
+    "repository_upload": "completed"
   }
 }

@@ -11,6 +11,7 @@
 - 源文件为工作区 `planning/modle_selection2.md`，SHA256 为 `06AB084FAAA1B45433F26D16E8091562F11DBB5004648D0AC2F3F370C4E67A5F`。
 - 仓库成果路径规范为 `planning/model_selection2.md`；正文仅将首行不存在的本地绝对链接改为已有文件 `model_selection.md` 的相对链接。
 - 同步更新 `planning/README.md` 的文档入口。
+- 首个远程检查点已推送，并核验本地与远程 SHA 同为 `bdf4b3e8a82df2e215bf4c9399af147f91dbb880`；最终交接提交的 SHA 以会话报告为准。
 - 本任务只完成文件上传，没有执行模型、PoC 或数值验收；不改变 T-002 的 Human Gate 状态。
 - 失败尝试：初次将临时 worktree 跨盘移动时 Git 返回 `Improper link`；已删除空白临时 worktree，改在仓库已忽略的 `tmp/` 下重建，未影响主工作区。
 
