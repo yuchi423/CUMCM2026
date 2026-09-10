@@ -6,6 +6,7 @@ import importlib.metadata
 import json
 import math
 import platform
+import re
 import subprocess
 from datetime import datetime, time, timezone
 from pathlib import Path
@@ -26,6 +27,12 @@ def minute_of_day(value):
         return 60 * value.hour + value.minute
     if str(value).strip() in {"0:00+1", "00:00+1", "24:00"}:
         return 1440
+    if isinstance(value, str):
+        match = re.fullmatch(r"(\d{1,2}):(\d{2})(?::00)?", value.strip())
+        if match:
+            hour, minute = map(int, match.groups())
+            if 0 <= hour < 24 and 0 <= minute < 60:
+                return 60 * hour + minute
     raise ValueError(f"Unsupported time label: {value!r}")
 
 
