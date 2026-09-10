@@ -1,0 +1,21 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.DS_Store
+Thumbs.db
+tmp/
+scratch/
+*.aux
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+
+# Do not blanket-ignore data, logs, figures or metrics needed for handoff.

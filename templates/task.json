@@ -1,0 +1,17 @@
+{
+  "id": "T-yourname-002",
+  "title": "替换为任务标题",
+  "status": "todo",
+  "owner": null,
+  "branch": null,
+  "updated_at": "2026-09-10T00:00:00+08:00",
+  "depends_on": [],
+  "goal": "替换为明确目标",
+  "acceptance": ["替换为可验证的完成条件"],
+  "artifacts": [],
+  "checks": [],
+  "decisions": [],
+  "latest_handoff": null,
+  "next_action": "替换为具体的下一步",
+  "blockers": []
+}
