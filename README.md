@@ -1,5 +1,7 @@
 # CUMCM2026
 
+> 输入同步范围：本检查点包含原始题面、4份数据、5份空白模板及结构报告。拉取当前任务分支后，按 `data/AVAILABILITY.md` 校验输入；数值模型尚未运行。
+
 数模队伍的代码、实验、论文与 Agent 共享记忆仓库。所有正式成果归档于本仓库；不依赖某位队员的聊天历史或个人 Agent 记忆。
 
 ## 开始协作
@@ -29,6 +31,7 @@ Codex 支持通过 `AGENTS.md` 加载项目指令；其他工具是否自动加�
 | `memory/decisions/` | 关键决策、证据、放弃路线与重启条件 |
 | `memory/handoffs/` | 每次交接的可执行检查点 |
 | `problem/` | 原始题目、要求和问题拆解 |
+| `planning/` | 候选模型、Plan A/B、比较指标与流程图 |
 | `data/` | 数据清单、原始数据与处理后数据 |
 | `src/`、`configs/` | 可复用代码与实验参数 |
 | `experiments/` | 按运行 ID 保存配置、日志、指标和验证 |
@@ -37,7 +40,7 @@ Codex 支持通过 `AGENTS.md` 加载项目指令；其他工具是否自动加�
 | `scripts/`、`tests/` | 运行入口、共享状态检查和有效性测试 |
 | `templates/` | 任务、交接、决策和实验记录模板 |
 
-初始未指定题目、成员分工和建模语言，不预置模型或虚构实验结果。项目检查仅需 Python 3.10+，建模运行环境确定后写入 `environment/README.md`。
+本任务分支已录入C题与原始附件。请先看 [任务地图](problem/task-map.md) 和 [模型路线比较](planning/model-selection.md)，当前状态见 [T-001](memory/tasks/T-001.json)。成员分工和建模语言尚未确定，未运行模型或生成正式数值结果。项目状态检查仅需 Python 3.10+，输入结构脚本环境见 `environment/README.md`。
 
 ## 换账号 / 换电脑接着做
 

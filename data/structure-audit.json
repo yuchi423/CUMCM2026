@@ -1,0 +1,591 @@
+{
+  "scope": "Workbook structure and boundary labels only; not a data-quality or model validation.",
+  "openpyxl_version": "3.1.5",
+  "sheets": [
+    {
+      "file": "data/raw/附件1.xlsx",
+      "sheet": "Sheet1",
+      "rows_including_header": 145,
+      "columns": 4,
+      "header_first_5": [
+        "时间",
+        "电价",
+        "小区负载",
+        "光伏发电预测功率"
+      ],
+      "header_last_4": [
+        "时间",
+        "电价",
+        "小区负载",
+        "光伏发电预测功率"
+      ],
+      "first_data_row_first_4": [
+        "00:10:00",
+        0.4248,
+        3439.8466,
+        0
+      ],
+      "last_data_row_first_2": [
+        "0:00+1",
+        0.4276
+      ]
+    },
+    {
+      "file": "data/raw/附件2.xlsx",
+      "sheet": "小区负载",
+      "rows_including_header": 366,
+      "columns": 145,
+      "header_first_5": [
+        "日期\\时间",
+        "00:10:00",
+        "00:20:00",
+        "00:30:00",
+        "00:40:00"
+      ],
+      "header_last_4": [
+        "23:30:00",
+        "23:40:00",
+        "23:50:00",
+        "0:00+1"
+      ],
+      "first_data_row_first_4": [
+        "2025-01-01 00:00:00",
+        3529.7296,
+        3609.5287,
+        3726.56
+      ],
+      "last_data_row_first_2": [
+        "2025-12-31 00:00:00",
+        3657.9857
+      ]
+    },
+    {
+      "file": "data/raw/附件2.xlsx",
+      "sheet": "光伏发电实际功率",
+      "rows_including_header": 366,
+      "columns": 145,
+      "header_first_5": [
+        "日期\\时间",
+        "00:10:00",
+        "00:20:00",
+        "00:30:00",
+        "00:40:00"
+      ],
+      "header_last_4": [
+        "23:30:00",
+        "23:40:00",
+        "23:50:00",
+        "0:00+1"
+      ],
+      "first_data_row_first_4": [
+        "2025-01-01 00:00:00",
+        0,
+        0,
+        0
+      ],
+      "last_data_row_first_2": [
+        "2025-12-31 00:00:00",
+        0
+      ]
+    },
+    {
+      "file": "data/raw/附件3.xlsx",
+      "sheet": "Sheet1",
+      "rows_including_header": 1461,
+      "columns": 26,
+      "header_first_5": [
+        "日期",
+        "预报时刻",
+        "预报1小时",
+        "预报2小时",
+        "预报3小时"
+      ],
+      "header_last_4": [
+        "预报21小时",
+        "预报22小时",
+        "预报23小时",
+        "预报24小时"
+      ],
+      "first_data_row_first_4": [
+        "2025-1-1",
+        "0:00",
+        0,
+        0
+      ],
+      "last_data_row_first_2": [
+        "",
+        "18:00"
+      ]
+    },
+    {
+      "file": "data/raw/附件4.xlsx",
+      "sheet": "Sheet1",
+      "rows_including_header": 366,
+      "columns": 145,
+      "header_first_5": [
+        "日期\\时间",
+        "00:10:00",
+        "00:20:00",
+        "00:30:00",
+        "00:40:00"
+      ],
+      "header_last_4": [
+        "23:30:00",
+        "23:40:00",
+        "23:50:00",
+        "0:00+1"
+      ],
+      "first_data_row_first_4": [
+        "2025-01-01 00:00:00",
+        0.4527,
+        0.4733,
+        0.4843
+      ],
+      "last_data_row_first_2": [
+        "2025-12-31 00:00:00",
+        0.4993
+      ]
+    },
+    {
+      "file": "data/templates/result1.xlsx",
+      "sheet": "计划购电量",
+      "rows_including_header": 145,
+      "columns": 2,
+      "header_first_5": [
+        "时间段",
+        "购电量"
+      ],
+      "header_last_4": [
+        "时间段",
+        "购电量"
+      ],
+      "first_data_row_first_4": [
+        "0:10-0:20",
+        null
+      ],
+      "last_data_row_first_2": [
+        "0:00+1-0:10+1",
+        null
+      ]
+    },
+    {
+      "file": "data/templates/result1.xlsx",
+      "sheet": "充放电量",
+      "rows_including_header": 7,
+      "columns": 5,
+      "header_first_5": [
+        "时间段",
+        "充电量",
+        "放电量",
+        "时刻",
+        "储电量"
+      ],
+      "header_last_4": [
+        "充电量",
+        "放电量",
+        "时刻",
+        "储电量"
+      ],
+      "first_data_row_first_4": [
+        "0:00-4:00",
+        null,
+        null,
+        "0:00"
+      ],
+      "last_data_row_first_2": [
+        "20:00-24:00",
+        null
+      ]
+    },
+    {
+      "file": "data/templates/result2.xlsx",
+      "sheet": "计划购电量",
+      "rows_including_header": 335,
+      "columns": 147,
+      "header_first_5": [
+        "日期\\时间",
+        "0:10-0:20",
+        "0:20-0:30",
+        "0:30-0:40",
+        "0:40-0:50"
+      ],
+      "header_last_4": [
+        "23:50-0:00+1",
+        "0:00-0:10+1",
+        "全天购电量",
+        "全天购电费"
+      ],
+      "first_data_row_first_4": [
+        "2025-02-01 00:00:00",
+        null,
+        null,
+        null
+      ],
+      "last_data_row_first_2": [
+        "2025-12-31 00:00:00",
+        null
+      ]
+    },
+    {
+      "file": "data/templates/result2.xlsx",
+      "sheet": "充放电量",
+      "rows_including_header": 20,
+      "columns": 6,
+      "header_first_5": [
+        "日期",
+        "时间段",
+        "充电量",
+        "放电量",
+        "时刻"
+      ],
+      "header_last_4": [
+        "充电量",
+        "放电量",
+        "时刻",
+        "储电量"
+      ],
+      "first_data_row_first_4": [
+        "2025-02-01 00:00:00",
+        "0:00-4:00",
+        null,
+        null
+      ],
+      "last_data_row_first_2": [
+        null,
+        "20:00-24:00"
+      ]
+    },
+    {
+      "file": "data/templates/result2.xlsx",
+      "sheet": "紧急购电量",
+      "rows_including_header": 11,
+      "columns": 3,
+      "header_first_5": [
+        "日期",
+        "购电时间段",
+        "购电量"
+      ],
+      "header_last_4": [
+        "日期",
+        "购电时间段",
+        "购电量"
+      ],
+      "first_data_row_first_4": [
+        "2025-02-01 00:00:00",
+        null,
+        null
+      ],
+      "last_data_row_first_2": [
+        null,
+        null
+      ]
+    },
+    {
+      "file": "data/templates/result3.xlsx",
+      "sheet": "计划购电量",
+      "rows_including_header": 335,
+      "columns": 147,
+      "header_first_5": [
+        "日期\\时间",
+        "0:10-0:20",
+        "0:20-0:30",
+        "0:30-0:40",
+        "0:40-0:50"
+      ],
+      "header_last_4": [
+        "23:50-0:00+1",
+        "0:00-0:10+1",
+        "全天购电量",
+        "全天购电费"
+      ],
+      "first_data_row_first_4": [
+        "2025-02-01 00:00:00",
+        null,
+        null,
+        null
+      ],
+      "last_data_row_first_2": [
+        "2025-12-31 00:00:00",
+        null
+      ]
+    },
+    {
+      "file": "data/templates/result3.xlsx",
+      "sheet": "调整购电量",
+      "rows_including_header": 335,
+      "columns": 147,
+      "header_first_5": [
+        "日期\\时间",
+        "0:10-0:20",
+        "0:20-0:30",
+        "0:30-0:40",
+        "0:40-0:50"
+      ],
+      "header_last_4": [
+        "23:50-0:00+1",
+        "0:00-0:10+1",
+        "全天购电量",
+        "全天购电费"
+      ],
+      "first_data_row_first_4": [
+        "2025-02-01 00:00:00",
+        null,
+        null,
+        null
+      ],
+      "last_data_row_first_2": [
+        "2025-12-31 00:00:00",
+        null
+      ]
+    },
+    {
+      "file": "data/templates/result3.xlsx",
+      "sheet": "充放电量",
+      "rows_including_header": 26,
+      "columns": 6,
+      "header_first_5": [
+        "日期",
+        "时间段",
+        "充电量",
+        "放电量",
+        "时刻"
+      ],
+      "header_last_4": [
+        "充电量",
+        "放电量",
+        "时刻",
+        "储电量"
+      ],
+      "first_data_row_first_4": [
+        "2025-02-01 00:00:00",
+        "0:00-4:00",
+        null,
+        null
+      ],
+      "last_data_row_first_2": [
+        null,
+        "20:00-24:00"
+      ]
+    },
+    {
+      "file": "data/templates/result3.xlsx",
+      "sheet": "紧急购电量",
+      "rows_including_header": 11,
+      "columns": 3,
+      "header_first_5": [
+        "日期",
+        "购电时间段",
+        "购电量"
+      ],
+      "header_last_4": [
+        "日期",
+        "购电时间段",
+        "购电量"
+      ],
+      "first_data_row_first_4": [
+        "2025-02-01 00:00:00",
+        null,
+        null
+      ],
+      "last_data_row_first_2": [
+        null,
+        null
+      ]
+    },
+    {
+      "file": "data/templates/result4-2.xlsx",
+      "sheet": "计划购电量",
+      "rows_including_header": 335,
+      "columns": 147,
+      "header_first_5": [
+        "日期\\时间",
+        "0:10-0:20",
+        "0:20-0:30",
+        "0:30-0:40",
+        "0:40-0:50"
+      ],
+      "header_last_4": [
+        "23:50-0:00+1",
+        "0:00-0:10+1",
+        "全天购电量",
+        "全天购电费"
+      ],
+      "first_data_row_first_4": [
+        "2025-02-01 00:00:00",
+        null,
+        null,
+        null
+      ],
+      "last_data_row_first_2": [
+        "2025-12-31 00:00:00",
+        null
+      ]
+    },
+    {
+      "file": "data/templates/result4-2.xlsx",
+      "sheet": "充放电量",
+      "rows_including_header": 20,
+      "columns": 6,
+      "header_first_5": [
+        "日期",
+        "时间段",
+        "充电量",
+        "放电量",
+        "时刻"
+      ],
+      "header_last_4": [
+        "充电量",
+        "放电量",
+        "时刻",
+        "储电量"
+      ],
+      "first_data_row_first_4": [
+        "2025-02-01 00:00:00",
+        "0:00-4:00",
+        null,
+        null
+      ],
+      "last_data_row_first_2": [
+        null,
+        "20:00-24:00"
+      ]
+    },
+    {
+      "file": "data/templates/result4-2.xlsx",
+      "sheet": "紧急购电量",
+      "rows_including_header": 11,
+      "columns": 3,
+      "header_first_5": [
+        "日期",
+        "购电时间段",
+        "购电量"
+      ],
+      "header_last_4": [
+        "日期",
+        "购电时间段",
+        "购电量"
+      ],
+      "first_data_row_first_4": [
+        "2025-02-01 00:00:00",
+        null,
+        null
+      ],
+      "last_data_row_first_2": [
+        null,
+        null
+      ]
+    },
+    {
+      "file": "data/templates/result4-3.xlsx",
+      "sheet": "计划购电量",
+      "rows_including_header": 335,
+      "columns": 147,
+      "header_first_5": [
+        "日期\\时间",
+        "0:10-0:20",
+        "0:20-0:30",
+        "0:30-0:40",
+        "0:40-0:50"
+      ],
+      "header_last_4": [
+        "23:50-0:00+1",
+        "0:00-0:10+1",
+        "全天购电量",
+        "全天购电费"
+      ],
+      "first_data_row_first_4": [
+        "2025-02-01 00:00:00",
+        null,
+        null,
+        null
+      ],
+      "last_data_row_first_2": [
+        "2025-12-31 00:00:00",
+        null
+      ]
+    },
+    {
+      "file": "data/templates/result4-3.xlsx",
+      "sheet": "调整购电量",
+      "rows_including_header": 335,
+      "columns": 147,
+      "header_first_5": [
+        "日期\\时间",
+        "0:10-0:20",
+        "0:20-0:30",
+        "0:30-0:40",
+        "0:40-0:50"
+      ],
+      "header_last_4": [
+        "23:50-0:00+1",
+        "0:00-0:10+1",
+        "全天购电量",
+        "全天购电费"
+      ],
+      "first_data_row_first_4": [
+        "2025-02-01 00:00:00",
+        null,
+        null,
+        null
+      ],
+      "last_data_row_first_2": [
+        "2025-12-31 00:00:00",
+        null
+      ]
+    },
+    {
+      "file": "data/templates/result4-3.xlsx",
+      "sheet": "充放电量",
+      "rows_including_header": 26,
+      "columns": 6,
+      "header_first_5": [
+        "日期",
+        "时间段",
+        "充电量",
+        "放电量",
+        "时刻"
+      ],
+      "header_last_4": [
+        "充电量",
+        "放电量",
+        "时刻",
+        "储电量"
+      ],
+      "first_data_row_first_4": [
+        "2025-02-01 00:00:00",
+        "0:00-4:00",
+        null,
+        null
+      ],
+      "last_data_row_first_2": [
+        null,
+        "20:00-24:00"
+      ]
+    },
+    {
+      "file": "data/templates/result4-3.xlsx",
+      "sheet": "紧急购电量",
+      "rows_including_header": 11,
+      "columns": 3,
+      "header_first_5": [
+        "日期",
+        "购电时间段",
+        "购电量"
+      ],
+      "header_last_4": [
+        "日期",
+        "购电时间段",
+        "购电量"
+      ],
+      "first_data_row_first_4": [
+        "2025-02-01 00:00:00",
+        null,
+        null
+      ],
+      "last_data_row_first_2": [
+        null,
+        null
+      ]
+    }
+  ]
+}

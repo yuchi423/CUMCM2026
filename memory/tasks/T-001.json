@@ -1,17 +1,51 @@
 {
   "id": "T-001",
   "title": "录入题目、数据清单和团队分工",
-  "status": "todo",
-  "owner": null,
-  "branch": null,
-  "updated_at": "2026-09-10T00:00:00+08:00",
+  "status": "handoff",
+  "owner": "yuchi423 / current Agent",
+  "branch": "codex/T-001-yuchi-model-planning",
+  "updated_at": "2026-09-10T21:03:30+08:00",
   "depends_on": [],
   "goal": "形成题目要求、数据来源和可分配的建模任务",
-  "acceptance": ["problem/ 中存在真实赛题与问题拆解", "data/MANIFEST.csv 登记真实输入与哈希", "PROJECT 记录成员分工，后续任务具备验收条件"],
-  "artifacts": [],
-  "checks": [],
-  "decisions": ["memory/decisions/D-001-git-memory.md"],
-  "latest_handoff": null,
-  "next_action": "先确认实际题目和成员分工；收到附件后原样保存并登记 SHA256，再拆解任务。",
-  "blockers": ["尚未提供正式题目、附件和成员分工"]
+  "acceptance": [
+    "problem/ 中存在真实赛题与问题拆解",
+    "data/MANIFEST.csv 登记真实输入与哈希",
+    "PROJECT 记录成员分工，后续任务具备验收条件"
+  ],
+  "artifacts": [
+    "problem/task-map.md",
+    "data/MANIFEST.csv",
+    "planning/model-selection.md",
+    "memory/handoffs/2026-09-10-T-001-model-planning.md",
+    "data/AVAILABILITY.md",
+    "problem/C题.pdf",
+    "data/structure-audit.json",
+    "memory/handoffs/2026-09-10-T-001-input-sync.md"
+  ],
+  "checks": [
+    "python scripts/check_inputs.py: PASS, 10 original files",
+    "python scripts/inspect_inputs.py: completed, 9 workbooks / 21 sheets; structure only",
+    "python scripts/check_state.py: PASS after final handoff update",
+    "Planning document structure: PASS, 5 tasks / 15 routes / required fields / Plan A/B / Mermaid",
+    "Input scripts syntax: PASS; no models executed"
+  ],
+  "decisions": [
+    "memory/decisions/D-001-git-memory.md",
+    "memory/decisions/D-002-c-model-planning.md",
+    "memory/decisions/D-003-original-input-upload.md"
+  ],
+  "latest_handoff": "memory/handoffs/2026-09-10-T-001-input-sync.md",
+  "next_action": "按最新交接拉取任务分支并检查10份输入哈希；补充团队分工、确定D-002口径，再开展数据审计和Task 1最小求解。",
+  "blockers": [
+    "真实成员与分工未提供，T-001原验收条件尚未全部满足；候选路线阶段不受影响。",
+    "D-002中的时间轴、效率、跨日与结算口径待明确，尚未进行模型求解。"
+  ],
+  "phase_status": {
+    "problem_intake": "completed",
+    "candidate_model_menu": "completed",
+    "team_assignments": "pending",
+    "final_model_selection": "not_started",
+    "model_execution": "not_started",
+    "original_input_sync": "included_in_checkpoint"
+  }
 }
