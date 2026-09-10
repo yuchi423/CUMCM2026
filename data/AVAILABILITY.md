@@ -1,7 +1,8 @@
 # 输入可用性
 
-截至本检查点，10份原始文件和结构审计报告均已在交出方本机校验保存，但未纳入Git提交。
-自动审批要求用户另行确认原题面、数据附件和空白模板的上传范围；确认前仅同步分析文档、哈希清单、检查脚本和协作状态。
-因此，仅拉取本分支可恢复规划上下文，暂时不能完成数值复现。队友需要取得与 data/MANIFEST.csv 中哈希一致的原始文件，放到清单对应的仓库相对路径，或等待用户确认后的后续提交。
-`python scripts/check_inputs.py` 在没有原始文件的克隆中应报告缺失，不能绕过此检查后声称模型可复现。
-确认上传并核验远端后，更新本文件和任务交接记录；不要把当前本机文件存在等同于已上传。
+本检查点包含10份原始输入：problem/C题.pdf、data/raw/下4份数据、data/templates/下5份空白模板；并包含data/structure-audit.json（9个工作簿、21个工作表的结构记录）。模板不是求解结果。
+所有输入随任务分支 `codex/T-001-yuchi-model-planning` 提交。队友须fetch并切到该分支、pull --ff-only，再在仓库根执行 `python scripts/check_inputs.py`，预期PASS（10份），以及 `python scripts/check_state.py`。
+文件来源、相对路径和SHA256见data/MANIFEST.csv；不依赖交出方桌面。原件只读，清洗或填表另存。尚未完成数据质量审计、模型求解与正式数值结果。
+
+2026-09-10用户明确说明仓库为private并授权上传。GitHub仓库API同时核实private=true，原始输入上传授权阻塞已解除，记录见memory/decisions/D-003-original-input-upload.md。
+上一检查点204f7de仅同步文档；本检查点补入原始输入。最终远端同步以推送成功和本地/远端SHA一致为准。

@@ -4,7 +4,7 @@
   "status": "handoff",
   "owner": "yuchi423 / current Agent",
   "branch": "codex/T-001-yuchi-model-planning",
-  "updated_at": "2026-09-10T20:58:03+08:00",
+  "updated_at": "2026-09-10T21:03:30+08:00",
   "depends_on": [],
   "goal": "形成题目要求、数据来源和可分配的建模任务",
   "acceptance": [
@@ -17,10 +17,13 @@
     "data/MANIFEST.csv",
     "planning/model-selection.md",
     "memory/handoffs/2026-09-10-T-001-model-planning.md",
-    "data/AVAILABILITY.md"
+    "data/AVAILABILITY.md",
+    "problem/C题.pdf",
+    "data/structure-audit.json",
+    "memory/handoffs/2026-09-10-T-001-input-sync.md"
   ],
   "checks": [
-    "python scripts/check_inputs.py: PASS locally, 10 files; originals not committed",
+    "python scripts/check_inputs.py: PASS, 10 original files",
     "python scripts/inspect_inputs.py: completed, 9 workbooks / 21 sheets; structure only",
     "python scripts/check_state.py: PASS after final handoff update",
     "Planning document structure: PASS, 5 tasks / 15 routes / required fields / Plan A/B / Mermaid",
@@ -28,14 +31,14 @@
   ],
   "decisions": [
     "memory/decisions/D-001-git-memory.md",
-    "memory/decisions/D-002-c-model-planning.md"
+    "memory/decisions/D-002-c-model-planning.md",
+    "memory/decisions/D-003-original-input-upload.md"
   ],
-  "latest_handoff": "memory/handoffs/2026-09-10-T-001-model-planning.md",
-  "next_action": "先阅读data/AVAILABILITY.md确认输入可得性；用户确认原始文件上传后再同步。补充分工及D-002口径，随后开展输入审计与Task 1最小求解。",
+  "latest_handoff": "memory/handoffs/2026-09-10-T-001-input-sync.md",
+  "next_action": "按最新交接拉取任务分支并检查10份输入哈希；补充团队分工、确定D-002口径，再开展数据审计和Task 1最小求解。",
   "blockers": [
     "真实成员与分工未提供，T-001原验收条件尚未全部满足；候选路线阶段不受影响。",
-    "D-002中的时间轴、效率、跨日与结算口径待明确，尚未进行模型求解。",
-    "原题面、附件、模板与结构报告尚未提交Git；自动审批要求用户确认原始文件上传范围。"
+    "D-002中的时间轴、效率、跨日与结算口径待明确，尚未进行模型求解。"
   ],
   "phase_status": {
     "problem_intake": "completed",
@@ -43,6 +46,6 @@
     "team_assignments": "pending",
     "final_model_selection": "not_started",
     "model_execution": "not_started",
-    "original_input_sync": "awaiting_user_approval"
+    "original_input_sync": "included_in_checkpoint"
   }
 }
