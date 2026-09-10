@@ -1,0 +1,369 @@
+\documentclass[UTF8,a4paper,12pt]{ctexart}
+
+\usepackage{amsmath,amssymb,bm}
+\usepackage{booktabs}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{listings}
+
+\geometry{left=2.5cm,right=2.5cm,top=2.6cm,bottom=2.6cm}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{0.25em}
+\linespread{1.25}
+
+
+\setCJKfamilyfont{modelboldhei}[AutoFakeBold=3]{SimHei}
+\newcommand{\ModelBoldFont}{\CJKfamily{modelboldhei}\bfseries}
+
+
+\ctexset{
+  section={
+    format=\centering\Large\ModelBoldFont,
+    beforeskip=1.6ex plus 0.3ex,
+    afterskip=1.0ex
+  },
+  subsection={
+    format=\large\ModelBoldFont,
+    beforeskip=1.2ex plus 0.2ex,
+    afterskip=0.7ex
+  },
+  subsubsection={
+    format=\normalsize\ModelBoldFont,
+    beforeskip=1.0ex,
+    afterskip=0.5ex
+  }
+}
+
+\AddEnumerateCounter{\chinese}{\chinese}{十}
+
+
+\lstset{
+  language=Python,
+  basicstyle=\ttfamily\scriptsize,
+  numbers=left,
+  numberstyle=\tiny,
+  numbersep=6pt,
+  breaklines=true,
+  breakatwhitespace=false,
+  showstringspaces=false,
+  frame=single,
+  columns=fullflexible,
+  keepspaces=true
+}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\fancypagestyle{plain}{
+  \fancyhf{}
+  \fancyfoot[C]{\thepage}
+  \renewcommand{\headrulewidth}{0pt}
+}
+
+\newif\ifshowguide
+\showguidetrue
+
+\newcommand{\WriteGuide}[3]{%
+  \ifshowguide
+  \begin{quote}
+    \small
+    \textbf{写什么：}#1\par
+    \textbf{怎么写：}#2\par
+    \textbf{避免：}#3
+  \end{quote}
+  \fi
+}
+
+\begin{document}
+
+
+\begin{center}
+  {\ModelBoldFont\fontsize{22pt}{28pt}\selectfont 题目\par}
+\end{center}
+
+\vspace{1em}
+
+% ==================================================
+\section*{摘要}
+\addcontentsline{toc}{section}{摘要}
+
+\WriteGuide
+  {说明小组的选题倾向，并概括C题在不同任务类型下可能采用的建模流程。}
+  {流程应随题目数据、目标和小问依赖关系调整，不要求每个问题固定使用某一种模型。正式成文时，再将流程替换为本题实际采用的方法和所得结论。}
+  {提前写死算法；只罗列模型名称；不说明前后小问的输入输出关系；把流程直接当成最终答案。}
+
+本小组在选题上倾向于选择C题。此类题目通常以现实数据为基础，问题可能涉及规律识别、关系分析、预测、分类、评价或优化。具体顺序应由题目目标、数据条件和小问之间的依赖关系决定，不宜预先固定模型。
+
+\noindent\textbf{数据整理与规律识别：}
+明确研究对象与数据粒度 $\rightarrow$ 检查缺失、异常、重复和量纲 $\rightarrow$
+完成编码、变换与必要的特征构造 $\rightarrow$ 分析分布、时序、相关性或群体差异 $\rightarrow$
+提炼后续建模所需的规律与变量。
+
+\noindent\textbf{关联、分类与鉴别：}
+确定类别或关联目标 $\rightarrow$ 选择候选特征与关系指标 $\rightarrow$
+比较统计检验、判别或分类路线 $\rightarrow$ 训练并验证模型 $\rightarrow$
+识别未知对象或解释类别差异 $\rightarrow$ 检查结论稳定性。
+
+\noindent\textbf{预测类问题：}
+确定预测对象、时间尺度和评价指标 $\rightarrow$ 划分训练与验证区间 $\rightarrow$
+分析趋势、周期和外部影响 $\rightarrow$ 比较候选预测方法 $\rightarrow$
+获得预测结果及不确定性范围 $\rightarrow$ 将预测量传递给后续决策问题。
+
+\noindent\textbf{优化与评价类问题：}
+承接前序统计量或预测结果 $\rightarrow$ 明确评价对象或决策变量 $\rightarrow$
+建立指标、目标函数与约束 $\rightarrow$ 比较赋权、排序、单目标或多目标求解路线 $\rightarrow$
+获得候选方案 $\rightarrow$ 复核可行性、收益、代价与敏感性 $\rightarrow$ 给出可执行建议。
+
+\noindent\textbf{关键词：}\qquad\qquad；\qquad\qquad；\qquad\qquad；\qquad\qquad
+
+% ==================================================
+\section{问题重述}
+
+\WriteGuide
+  {概括现实背景、已知信息、数据类型和各小问任务。}
+  {先用自己的语言概括背景，再按小问说明输入、任务和输出，最后交代问题之间的递进关系。}
+  {整段复制原题；提前写入模型和答案；遗漏题目给出的限制条件。}
+
+\subsection{问题背景}
+用简洁语言说明研究对象、现实场景、主要矛盾和建模意义。
+
+\subsection{问题重述}
+根据题目给出的事实、数据和附件，需要完成以下任务：
+\begin{enumerate}[label=\textbf{问题\chinese*：},leftmargin=5.5em]
+  \item 写清问题一的输入、目标和输出。
+  \item 写清问题二与问题一的依赖关系及新增任务。
+  \item 写清问题三的预测、评价、分类或优化目标。
+  \item 写清问题四的改进、推广、决策或检验任务；无此问时删除。
+\end{enumerate}
+
+% ==================================================
+\section{问题分析}
+
+\WriteGuide
+  {总述数据特征、处理需求和总体技术路线，并逐问说明方法选择理由。}
+  {按照“研究目标—可用信息—主要难点—候选方法—选择依据—前后依赖”展开。}
+  {只写使用某模型；忽略小问依赖；在问题分析中提前堆入全部推导。}
+
+\subsection{整体思路}
+本文首先处理原始数据或附件，随后根据各小问目标构建相互衔接的模型，并使用误差分析、对照实验、交叉验证或敏感性分析检验结果。
+
+\subsection{问题一分析}
+说明研究目标、输入信息、主要难点、候选方法和最终选择理由。
+
+\subsection{问题二分析}
+说明该问依赖问题一的哪些输出，以及新增变量、约束或评价指标。
+
+\subsection{问题三分析}
+说明该问属于预测、评价、优化、分类、机理或其他任务，并给出方法适配理由。
+
+\subsection{问题四分析}
+说明该问如何在前述模型上改进、推广或进行进一步决策；无此问时删除。
+
+% ==================================================
+\section{模型假设}
+
+\WriteGuide
+  {只保留会影响模型边界、方程形式、数据处理或求解结果的假设。}
+  {每条假设说明依据，并在模型评价中讨论假设不成立时可能产生的影响。}
+  {使用与后文无关的套话；为了方便求解而忽略关键机制却不说明影响。}
+
+\begin{enumerate}[label=\arabic*、,leftmargin=3em]
+  \item 假设研究对象在所讨论范围内满足相应基本条件，并说明依据；
+  \item 忽略影响较小的次要因素，并解释忽略理由；
+  \item 假设关键参数或规律在规定范围内保持稳定；
+  \item 根据实际模型补充、修改或删除假设。
+\end{enumerate}
+
+% ==================================================
+% 第四部分。全文仅保留此处一张表格。
+\section{符号说明}
+
+\WriteGuide
+  {列出全文高频、核心且容易混淆的符号。}
+  {同一符号只表示一个含义；量纲写在第三列；局部只使用一次的符号可直接在公式后说明。}
+  {符号表与正文不一致；遗漏量纲；同一字母重复表示多个概念。}
+
+\begin{table}[htbp]
+  \centering
+  \begin{tabular}{ccc}
+    \toprule
+    符号 & 含义 & 量纲 \\
+    -&-&- \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+% ==================================================
+\section{数据预处理}
+
+\WriteGuide
+  {说明缺失、异常、重复、量纲、分布、编码和样本筛选问题。}
+  {按照“发现问题—判断规则—处理操作—处理依据—结果影响”书写，并说明每一步如何服务后续模型。}
+  {先看到模型结果再删数据；处理规则没有依据；标准化后仍误用原量纲阈值。}
+
+\subsection{数据质量检查}
+说明数据中存在的问题、判断标准、处理操作及其对后续模型的影响。
+
+\subsection{探索性分析与特征构造}
+说明数据的分布、相关性、趋势、周期性或空间结构，并解释据此构造或筛选哪些特征。
+
+% ==================================================
+\section{问题一模型建立与求解}
+
+\WriteGuide
+  {按照“目标—输入—方法—模型—求解—结果—结论”完成问题一。}
+  {给出必要公式、参数来源和求解步骤，并使用短段落直接回答题目。}
+  {只堆公式；不解释参数来源；结果没有现实含义；结论没有回答问题。}
+
+\subsection{目标、输入与输出}
+说明问题一的研究目标、输入信息和需要输出的结果。
+
+\subsection{方法选择}
+比较可行方法的适用条件、优点、局限和计算要求，并说明最终选择依据。
+
+\subsection{模型建立}
+定义核心变量和参数，根据实际任务写出目标函数、统计模型、评价关系或机理方程，并解释符号、参数、单位和实际含义。
+
+\subsection{求解步骤}
+\begin{enumerate}[label=\textbf{Step \arabic*:},leftmargin=5.2em]
+  \item 准备问题一所需输入；
+  \item 估计参数、构造模型或初始化算法；
+  \item 执行拟合、计算、搜索或迭代；
+  \item 检查收敛、误差、约束和异常情况；
+  \item 整理结果并回答问题一。
+\end{enumerate}
+
+\subsection{结果与结论}
+报告决定性结果，解释其现实意义，并用一句话直接回答问题一。
+
+\subsection{敏感性分析}
+选择对问题一结论有实际影响的参数、阈值或数据误差，在合理范围内扰动；说明基准值、扰动范围和判断指标，并报告结论是否稳定。
+
+% ==================================================
+\section{问题二模型建立与求解}
+
+\WriteGuide
+  {说明问题二如何承接问题一，并突出新增目标、变量、约束或评价准则。}
+  {按照“目标与依赖—方法选择—模型建立—求解—结果—结论”展开。}
+  {重复抄写问题一；没有说明输入来源；只报告结果而不检查误差或约束。}
+
+\subsection{目标、输入与依赖关系}
+说明本问目标、输入和输出，并明确使用问题一的哪些参数或中间结果。
+
+\subsection{方法选择与模型建立}
+比较候选方法，根据数据规模、假设、精度、解释性和计算量选择模型，并说明新增变量、目标和约束。
+
+\subsection{求解流程与参数设置}
+说明输入准备、参数设置、求解顺序、停止条件和结果复核方式。
+
+\subsection{结果与结论}
+报告核心数值、类别、排序或方案，解释现实意义，并说明哪些结果将作为问题三的输入。
+
+\subsection{敏感性分析}
+围绕问题二新增参数、约束或预测误差设置合理扰动，重新求解或重新评价，比较核心输出和结论是否改变。
+
+% ==================================================
+\section{问题三模型建立与求解}
+
+\WriteGuide
+  {处理问题三的预测、分类、评价、优化或机理任务。}
+  {明确预测对象或决策变量；若使用优化，报告可行性；若使用预测或分类，说明训练与验证方式。}
+  {把可行解写成全局最优；训练与验证数据混用；多目标权重没有依据。}
+
+\subsection{目标、输入与方法选择}
+明确预测对象、决策变量、分类标签、评价对象或机理状态，并说明来自前两问的输入。
+
+\subsection{变量、目标与约束}
+定义变量、目标函数、约束条件或评价指标，并解释实际含义和量纲。
+
+\subsection{算法设计与参数设置}
+说明算法流程、初始化、搜索或训练范围、停止条件、精度和重复运行策略。
+
+\subsection{结果与结论}
+给出核心结果及不确定性，与基准方法或初始方案进行公平比较，并直接回答问题三。
+
+\subsection{敏感性分析}
+选取影响目标值、分类结果、预测精度或评价排序的关键因素进行扰动，比较结果变化并说明局部稳定性。
+
+% ==================================================
+\section{问题四模型建立与求解}
+
+\WriteGuide
+  {在前述结果上完成推广、改进、多目标权衡、策略设计或更严格的验证。}
+  {先说明继承哪些模型和参数，再定义新增目标或限制，并报告收益、代价和适用范围。}
+  {新模型与前文无关；只说进一步优化却没有明确指标；忽略改进代价。}
+
+\subsection{改进目标与基本思路}
+说明需要改进的原因、继承的模型和参数，以及新增目标、限制或评价指标。
+
+\subsection{方案比较与模型建立}
+比较可行路线并说明权衡依据，根据实际任务建立改进、推广、鲁棒或多目标模型。
+
+\subsection{求解流程与结果}
+说明求解顺序、参数、精度和复核方式，并与上一问或基准方法进行公平比较。
+
+\subsection{收益、代价与结论}
+同时报告收益和代价，解释权衡是否合理，并用一句话回答问题四。
+
+\subsection{敏感性分析}
+针对新增目标、权重、约束边界或外部条件进行扰动，比较候选方案、收益与代价是否发生实质变化。
+
+% ==================================================
+\section{模型检验与结果可靠性}
+
+\WriteGuide
+  {按问题说明方法为何适配、结果如何验证、是否存在独立证据以及可信边界。}
+  {根据题型选择误差指标、留出法、交叉验证、残差检验、基准方法、约束复核或独立方法交叉印证。}
+  {训练与验证使用同一数据却声称具有泛化能力；只报告单一指标；把相关性写成因果关系。}
+
+按问题顺序说明检验对象、检验方法、主要证据和结论适用边界。
+
+% ==================================================
+\section{模型评价、改进与推广}
+
+\subsection{模型优点}
+说明模型在结构、解释性、计算效率、验证充分性或结果稳定性方面的具体优点。
+
+\subsection{模型局限}
+说明数据质量、样本代表性、关键假设、参数辨识、计算量、近似误差或外推风险。
+
+\subsection{改进与推广}
+针对局限提出数据补充、模型替代、鲁棒处理、独立验证或实际推广方案。
+
+% ==================================================
+\section{结论}
+
+\WriteGuide
+  {按问题顺序汇总最终答案，并给出总体认识。}
+  {每个小问使用一段或一条结论，保留决定性结果、成立条件和适用范围，不重新推导。}
+  {加入正文没有的新结果；只写定性套话；摘要与结论不一致。}
+
+\begin{enumerate}[label=\textbf{问题\chinese*：},leftmargin=5.5em]
+  \item 问题一的最终答案及成立条件。
+  \item 问题二的最终答案及成立条件。
+  \item 问题三的最终答案及成立条件。
+  \item 问题四的最终答案及成立条件；无此问时删除。
+\end{enumerate}
+
+\subsection{人工智能使用声明}
+
+% ==================================================
+\section*{参考文献}
+\addcontentsline{toc}{section}{参考文献}
+
+% ==================================================
+\section*{附录}
+\addcontentsline{toc}{section}{附录}
+
+\subsection*{附录1：代码}
+\begin{lstlisting}
+代码
+\end{lstlisting}
+
+\subsection*{附录2：补充材料}
+补充材料
+
+\end{document}
