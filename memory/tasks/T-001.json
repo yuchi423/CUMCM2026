@@ -1,17 +1,25 @@
 {
   "id": "T-001",
   "title": "录入题目、数据清单和团队分工",
-  "status": "todo",
-  "owner": null,
-  "branch": null,
-  "updated_at": "2026-09-10T00:00:00+08:00",
+  "status": "in_progress",
+  "owner": "yuchi423 / current Agent",
+  "branch": "codex/T-001-yuchi-model-planning",
+  "updated_at": "2026-09-10T20:47:33.1560240+08:00",
   "depends_on": [],
   "goal": "形成题目要求、数据来源和可分配的建模任务",
-  "acceptance": ["problem/ 中存在真实赛题与问题拆解", "data/MANIFEST.csv 登记真实输入与哈希", "PROJECT 记录成员分工，后续任务具备验收条件"],
+  "acceptance": [
+    "problem/ 中存在真实赛题与问题拆解",
+    "data/MANIFEST.csv 登记真实输入与哈希",
+    "PROJECT 记录成员分工，后续任务具备验收条件"
+  ],
   "artifacts": [],
   "checks": [],
-  "decisions": ["memory/decisions/D-001-git-memory.md"],
+  "decisions": [
+    "memory/decisions/D-001-git-memory.md"
+  ],
   "latest_handoff": null,
-  "next_action": "先确认实际题目和成员分工；收到附件后原样保存并登记 SHA256，再拆解任务。",
-  "blockers": ["尚未提供正式题目、附件和成员分工"]
+  "next_action": "将已提供的 C 题及附件原样入库，登记哈希并保存 TaskMap 与 choose-model 路线比较；团队成员分工仍待补充。",
+  "blockers": [
+    "成员姓名与实际分工未提供；不阻塞题目录入和候选路线比较。"
+  ]
 }
