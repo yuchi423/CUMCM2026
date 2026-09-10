@@ -1,10 +1,10 @@
 {
   "id": "T-001",
   "title": "录入题目、数据清单和团队分工",
-  "status": "in_progress",
+  "status": "handoff",
   "owner": "yuchi423 / current Agent",
   "branch": "codex/T-001-yuchi-model-planning",
-  "updated_at": "2026-09-10T20:47:33.1560240+08:00",
+  "updated_at": "2026-09-10T20:58:03+08:00",
   "depends_on": [],
   "goal": "形成题目要求、数据来源和可分配的建模任务",
   "acceptance": [
@@ -12,14 +12,37 @@
     "data/MANIFEST.csv 登记真实输入与哈希",
     "PROJECT 记录成员分工，后续任务具备验收条件"
   ],
-  "artifacts": [],
-  "checks": [],
-  "decisions": [
-    "memory/decisions/D-001-git-memory.md"
+  "artifacts": [
+    "problem/task-map.md",
+    "data/MANIFEST.csv",
+    "planning/model-selection.md",
+    "memory/handoffs/2026-09-10-T-001-model-planning.md",
+    "data/AVAILABILITY.md"
   ],
-  "latest_handoff": null,
-  "next_action": "将已提供的 C 题及附件原样入库，登记哈希并保存 TaskMap 与 choose-model 路线比较；团队成员分工仍待补充。",
+  "checks": [
+    "python scripts/check_inputs.py: PASS locally, 10 files; originals not committed",
+    "python scripts/inspect_inputs.py: completed, 9 workbooks / 21 sheets; structure only",
+    "python scripts/check_state.py: PASS after final handoff update",
+    "Planning document structure: PASS, 5 tasks / 15 routes / required fields / Plan A/B / Mermaid",
+    "Input scripts syntax: PASS; no models executed"
+  ],
+  "decisions": [
+    "memory/decisions/D-001-git-memory.md",
+    "memory/decisions/D-002-c-model-planning.md"
+  ],
+  "latest_handoff": "memory/handoffs/2026-09-10-T-001-model-planning.md",
+  "next_action": "先阅读data/AVAILABILITY.md确认输入可得性；用户确认原始文件上传后再同步。补充分工及D-002口径，随后开展输入审计与Task 1最小求解。",
   "blockers": [
-    "成员姓名与实际分工未提供；不阻塞题目录入和候选路线比较。"
-  ]
+    "真实成员与分工未提供，T-001原验收条件尚未全部满足；候选路线阶段不受影响。",
+    "D-002中的时间轴、效率、跨日与结算口径待明确，尚未进行模型求解。",
+    "原题面、附件、模板与结构报告尚未提交Git；自动审批要求用户确认原始文件上传范围。"
+  ],
+  "phase_status": {
+    "problem_intake": "completed",
+    "candidate_model_menu": "completed",
+    "team_assignments": "pending",
+    "final_model_selection": "not_started",
+    "model_execution": "not_started",
+    "original_input_sync": "awaiting_user_approval"
+  }
 }
