@@ -53,8 +53,7 @@ def solve(p, load, pv, *, integer, capacity=5000/6, e0=6000., emin=1200., emax=1
     """All flows are AC-bus kWh; E is internal battery kWh.
 
     Strict MILP: PV serves load first; surplus charging equals min(surplus,
-    charge energy limit, pre-slot headroom / 0.9). Grid charging allowed in
-    deficit slots; no export or simultaneous charging/discharging.
+    charge energy limit, pre-slot headroom / 0.9). Additional grid charging remains allowed after PV is absorbed; no export or simultaneous charging/discharging.
     The LP removes modes and compulsory absorption, providing a lower bound.
     """
     n = len(p)
@@ -69,9 +68,7 @@ def solve(p, load, pv, *, integer, capacity=5000/6, e0=6000., emin=1200., emax=1
     lower[e], upper[e] = emin, emax
     lower[e[-1]], upper[e[-1]] = e0,e0
     upper[z], upper[w] = 1,1
-    # No grid purchase during PV surplus: the charge is entirely PV-sourced.
-    upper[g[surplus>0]] = 0
-    upper[c[surplus>0]] = np.minimum(capacity,surplus[surplus>0])
+    # PV-first does NOT forbid grid top-up while PV exceeds load.
     objective = np.zeros(7*n); objective[g] = p
     ri,ci,va,lo,hi = [],[],[],[],[]
     def add(terms, lb, ub):
@@ -89,9 +86,11 @@ def solve(p, load, pv, *, integer, capacity=5000/6, e0=6000., emin=1200., emax=1
             add({d[t]:1,z[t]:capacity},-np.inf,capacity)
             if surplus[t]>0:
                 lim=min(capacity,surplus[t])
-                # w=0: absorb full rate/surplus. w=1: battery ends at Emax.
-                add({c[t]:1,w[t]:lim},lim,np.inf)
-                add({e[t]:1,w[t]:-(emax-emin)},emin,np.inf)
+                # cp=surplus-s is PV-to-battery; c=cp+grid top-up.
+                # w=0: cp=lim. w=1: battery is full from PV alone,
+                # i.e. E_end - eta * grid_topup = Emax (therefore g=0).
+                add({s[t]:-1,w[t]:lim},lim-surplus[t],np.inf)
+                add({e[t]:1,g[t]:-.9,w[t]:-(emax-emin)},emin,np.inf)
             else:
                 upper[w[t]]=0
     integrality=np.zeros(7*n,dtype=int)
@@ -119,7 +118,7 @@ def audit(p, load, pv, f, objective, *, capacity=5000/6,e0=6000,emin=1200,emax=1
     energy=float(e0); trajectory=[]; balance=[]; priority=[]
     for l,v,c,d,g,s in zip(load,pv,f['c'],f['d'],f['g'],f['s']):
         target=min(max(v-l,0),capacity,max(0,(emax-energy)/.9))
-        priority.append(abs(c-target) if v>l else 0.)
+        priority.append(abs((v-l-s)-target) if v>l else 0.)
         balance.append(g+v+d-l-c-s)
         energy += .9*c-d/.9
         trajectory.append(energy)
@@ -133,7 +132,7 @@ def audit(p, load, pv, f, objective, *, capacity=5000/6,e0=6000,emin=1200,emax=1
         'negative_flow_kwh':float(max(0,-min(min(f[k]) for k in ['g','c','d','s']))),
         'mutual_violation_count':int(np.sum((f['c']>TOL)&(f['d']>TOL))),
         'pv_priority_max_kwh':float(max(priority)),
-        'pv_first_load_violation_kwh':float(max(0,max(f['d']-np.maximum(load-pv,0)),max(f['g'][pv>load],default=0))),
+        'pv_first_load_violation_kwh':float(max(0,max(f['d']-np.maximum(load-pv,0)),max(np.maximum(pv-load,0)-f['s']-f['c']))),
         'cost_recalculation_error_yuan':abs(float(math.fsum(float(a*b) for a,b in zip(p,f['g']))-objective)),
         'state_min_kwh':float(min(e0,min(reconstructed))), 'state_max_kwh':float(max(e0,max(reconstructed))),
     }
@@ -145,15 +144,16 @@ def audit(p, load, pv, f, objective, *, capacity=5000/6,e0=6000,emin=1200,emax=1
 def exact_small_tests():
     checks=[]
     # 100 AC charge -> 90 internal -> 81 AC discharge, terminal exactly zero.
-    for label,p,l,v,emax,expected in [
-        ('grid_efficiency',[1,2],[0,81],[0,0],200,100),
-        ('pv_efficiency',[1,2],[0,81],[100,0],200,0),
-        ('full_battery_spill',[1,2],[0,81],[200,0],90,0),
+    for label,p,l,v,emax,expected,expected_charge,expected_discharge in [
+        ('grid_efficiency',[1,2],[0,81],[0,0],200,100,100,81),
+        ('pv_efficiency',[1,2],[0,81],[100,0],200,0,100,81),
+        ('full_battery_spill',[1,2],[0,81],[200,0],90,0,100,81),
+        ('pv_and_grid_topup',[.1,1],[0,162],[100,0],200,10,200,162),
     ]:
         arrays=[np.array(a,dtype=float) for a in [p,l,v]]
         f,res=solve(*arrays,integer=True,capacity=300,e0=0,emin=0,emax=emax)
         chk=audit(*arrays,f,res['objective'],capacity=300,e0=0,emin=0,emax=emax)
-        assert chk['pass'] and abs(res['objective']-expected)<TOL and abs(f['c'][0]-100)<TOL and abs(f['d'][1]-81)<TOL
+        assert chk['pass'] and abs(res['objective']-expected)<TOL and abs(f['c'][0]-expected_charge)<TOL and abs(f['d'][1]-expected_discharge)<TOL
         if label=='full_battery_spill': assert abs(f['s'][0]-100)<TOL
         checks.append({'name':label,'expected_cost':expected,'actual_cost':res['objective'],'pass':True})
     # Independent exhaustive choice of binary modes; continuous variables remain exact LPs.
@@ -179,6 +179,8 @@ def export_case(directory,p,load,pv,f,res,check):
         rows.append({'interval':f'{clock(i*10)}-{clock((i+1)*10)}','price_yuan_kwh':p[i],
                      'load_kwh':load[i],'pv_kwh':pv[i],'grid_kwh':f['g'][i],
                      'charge_ac_kwh':f['c'][i],'discharge_ac_kwh':f['d'][i],
+                     'pv_charge_ac_kwh':max(pv[i]-load[i],0)-f['s'][i],
+                     'grid_charge_ac_kwh':f['c'][i]-max(pv[i]-load[i],0)+f['s'][i],
                      'curtailed_pv_kwh':f['s'][i],'stored_kwh':f['e'][i]})
     csv_write(directory/'dispatch.csv',rows)
     table1=[{'interval':rows[h*6]['interval'],'grid_kwh':float(f['g'][h*6])} for h in [10,12,14,16,18,20]]
@@ -326,10 +328,10 @@ def main():
               'A5：只改标签不重算不改变费用。但原模板覆盖00:10至次日00:10，缺当日首10分钟、多次日10分钟；若按标签查表就读错一行。正式候选副本修正区间，原模板不动；保留原标签的文件标TEST_ONLY并附144行映射，未作为完整提交品。',
               '', '## C 图表','Fig1展示主口径购电、充放电与储电量；Fig2比较不同时间解释的费用与弃光。',
               '', '## D 合理性检查','充/放电单程各90%，往返81%；100kWh交流充电→90kWh储存→81kWh交流供电。末状态独立累计回6000，逐段检查余额、功率、容量、互斥、光伏优先和费用。',
-              '严格光伏规则：先供负载，再尽可能按容量和功率上限充电，剩余弃光；限充功率触顶也可导致弃光。剩余光伏最大功率与是否实际触顶可从输入/明细核对。允许电网在缺口时段为储能充电。',
+              '严格光伏规则：先供负载，再尽可能按容量和功率上限充电，剩余弃光；限充功率触顶也可导致弃光。剩余光伏最大功率与是否实际触顶可从输入/明细核对。允许光伏优先吸收后仍允许电网为储能补充充电；不得将PV优先误写成PV盈余时禁购电。',
               '本轮同时求解允许自行决定弃光的LP松弛与严格MILP。三种时间解释的LP输出均通过完整严格审计，且与严格MILP费用差均小于0.01元，支持本实例直接采用LP；逐时LP结果见各方案lp_dispatch.csv。此结论依赖实际校验，不能无条件沿用旧文档的消环证明。',
-              '4个可手算/枚举小实例通过；3个144段严格方案通过独立审计和Excel往返读取。无储能费用仅是禁用储能的反事实对照，不能称为本严格优先规则下的同约束可行策略。',
-              '', '## E 迭代记录','从交接中的自由弃电LP提案改为光伏优先约束：原因是用户明确“先存再弃”；保留LP作为更宽松的费用下界，MILP明确表示充放电模式和充至功率/容量限制。没有改变费用目标或让初始库存自由变化。',
+              '5个可手算/枚举小实例通过；3个144段严格方案通过独立审计和Excel往返读取。无储能费用仅是禁用储能的反事实对照，不能称为本严格优先规则下的同约束可行策略。',
+              '', '## E 迭代记录','前两轮错误地额外禁止光伏盈余时从电网补充充电，并把总充电量限制为光伏盈余，因此得到35859.32元的过高最优费用。用户提供35126.95元后，独立标准LP复现该数值，定位并删除额外限制，保留PV先供负载和先吸收的规则；明确拆分PV充电与电网充电。新增可手算的PV与电网同时充电回归例：100度PV+100度低价网电充入，后续可供162度，费用10元。原错误费用与正确费用的差额为约732.37元。效率、初末库存和时间主口径未变。此前LP/MILP一致只说明它们共享的错误约束一致，不能证明题目模型正确。',
               '', '## F 最终可运行版本','仓库final_run/q1-contract-tests/main.py为复现入口，输出必须使用新的experiments目录；final_run表示可运行测试包，不表示最终模型已获批准。',
               '', '## G 下一步','优先确认A1区间末值解释与A5结果副本修正标签。若需进一步参数敏感性，再分别研究计量侧、效率和容量；本轮不扩展问题2—4。',
               '', '## H 评委视角','最有价值的是可复核的能量账本、严格光伏顺序、小实例精确对照和无静默错位的模板映射；不能把最低费用当成题意正确的证据，也不能把单日确定性结果宣传为真实天气验证。']

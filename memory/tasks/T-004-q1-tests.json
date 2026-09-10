@@ -1,10 +1,10 @@
 {
   "id": "T-004-q1-tests",
   "title": "问题1用户口径与A1/A5数值测试",
-  "status": "review",
+  "status": "in_progress",
   "owner": "yuchi423 / current Agent",
   "branch": "codex/T-004-q1-tests",
-  "updated_at": "2026-09-11T01:12:57+08:00",
+  "updated_at": "2026-09-11T01:26:10.0618673+08:00",
   "depends_on": [],
   "goal": "按用户确认的效率、固定库存、光伏优先规则，执行问题1最小优化与独立核算，分别比较时间解释和模板映射。",
   "acceptance": [
@@ -35,6 +35,6 @@
     "memory/decisions/D-005-q1-user-contract-tests.md"
   ],
   "latest_handoff": "memory/handoffs/2026-09-11-T-004-q1-tests.md",
-  "next_action": "团队复核planning/q1-test-verdict.md，确认A1区间末值与A5修正副本标签，以及本实例采用LP的最终决定。",
+  "next_action": "修正光伏盈余时额外禁网电充电的错误约束，重新求解并用独立LP交叉核验35126.95元。",
   "blockers": []
 }
