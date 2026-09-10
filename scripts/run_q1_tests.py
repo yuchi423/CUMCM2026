@@ -109,8 +109,8 @@ def solve(p, load, pv, *, integer, capacity=5000/6, e0=6000., emin=1200., emax=1
         raise RuntimeError(f'Solver status {result.status}: {result.message}')
     flows={key:result.x[idx] for key,idx in zip(['g','c','d','s','e'],[g,c,d,s,e])}
     return flows,{'objective':float(result.fun),'status':int(result.status),'message':result.message,
-                  'mip_gap':float(getattr(result,'mip_gap',0) or 0),
-                  'dual_bound':float(getattr(result,'mip_dual_bound',result.fun) or 0),
+                  'mip_gap':float(result.mip_gap) if getattr(result,'mip_gap',None) is not None else None,
+                  'dual_bound':float(result.mip_dual_bound) if getattr(result,'mip_dual_bound',None) is not None else None,
                   'solve_seconds':elapsed}
 
 
@@ -256,8 +256,12 @@ def figures(output,cases,summaries):
     plt.close(fig)
     fig,axes=plt.subplots(1,2,figsize=(10,4),layout='constrained')
     names=['区间末值','区间起值\n周期补点','梯形积分\n周期补点']
-    axes[0].bar(names,[s['cost_yuan'] for s in summaries]);axes[0].set_ylabel('购电费用 / 元');axes[0].set_title('A1：解释变化的费用影响')
-    axes[1].bar(names,[s['curtailment_kwh'] for s in summaries]);axes[1].set_ylabel('弃光 / kWh');axes[1].set_title('同样固定日初、日末6000 kWh')
+    deltas=[s['cost_yuan']-summaries[0]['cost_yuan'] for s in summaries]
+    bars=axes[0].bar(names,deltas);axes[0].set_ylabel('相对区间末值的费用差 / 元');axes[0].set_title('A1：解释变化的费用影响')
+    axes[0].bar_label(bars,fmt='%.2f',padding=3);axes[0].axhline(0,color='gray',lw=.7);axes[0].set_ylim(-25,4)
+    axes[1].axis('off');axes[1].set_title('日初、日末均固定6000 kWh')
+    table=axes[1].table(cellText=[[n.replace('\n',' / '),f"{s['cost_yuan']:.2f}",f"{s['curtailment_kwh']:.2f}"] for n,s in zip(names,summaries)],colLabels=['时间解释','费用 / 元','弃光 / kWh'],loc='center',colWidths=[.50,.30,.20])
+    table.auto_set_font_size(False);table.set_fontsize(9);table.scale(1,2)
     for ext in ['png','pdf']:fig.savefig(output/f'Fig2_time_interpretation.{ext}',dpi=300)
     plt.close(fig)
 
@@ -293,6 +297,7 @@ def main():
         assert res['objective']>=r['objective']-.01
         assert abs(res['objective']-res['dual_bound'])<.01 and res['mip_gap']<=1e-8
         dispatch=export_case(results/name,price,load,pv,f,res,checked)
+        csv_write(results/name/'lp_dispatch.csv',[{'interval':row['interval'],**{k:float(relaxed[k][i]) for k in relaxed}} for i,row in enumerate(dispatch)])
         cases[name]=(price,load,pv,f)
         lower_bounds[name]={'lp_solver':r,'lp_strict_audit':relaxed_audit,'strict_minus_lp_cost':res['objective']-r['objective']}
         summary={'case':name,'cost_yuan':res['objective'],'purchase_kwh':float(sum(f['g'])),
@@ -322,7 +327,7 @@ def main():
               '', '## C 图表','Fig1展示主口径购电、充放电与储电量；Fig2比较不同时间解释的费用与弃光。',
               '', '## D 合理性检查','充/放电单程各90%，往返81%；100kWh交流充电→90kWh储存→81kWh交流供电。末状态独立累计回6000，逐段检查余额、功率、容量、互斥、光伏优先和费用。',
               '严格光伏规则：先供负载，再尽可能按容量和功率上限充电，剩余弃光；限充功率触顶也可导致弃光。剩余光伏最大功率与是否实际触顶可从输入/明细核对。允许电网在缺口时段为储能充电。',
-              '本轮同时求解旧式自由弃光LP松弛与严格MILP。是否能直接采用LP，以lp_comparison.json的完整严格审计为准；不能无条件沿用旧文档的消环证明。',
+              '本轮同时求解允许自行决定弃光的LP松弛与严格MILP。三种时间解释的LP输出均通过完整严格审计，且与严格MILP费用差均小于0.01元，支持本实例直接采用LP；逐时LP结果见各方案lp_dispatch.csv。此结论依赖实际校验，不能无条件沿用旧文档的消环证明。',
               '4个可手算/枚举小实例通过；3个144段严格方案通过独立审计和Excel往返读取。无储能费用仅是禁用储能的反事实对照，不能称为本严格优先规则下的同约束可行策略。',
               '', '## E 迭代记录','从交接中的自由弃电LP提案改为光伏优先约束：原因是用户明确“先存再弃”；保留LP作为更宽松的费用下界，MILP明确表示充放电模式和充至功率/容量限制。没有改变费用目标或让初始库存自由变化。',
               '', '## F 最终可运行版本','仓库final_run/q1-contract-tests/main.py为复现入口，输出必须使用新的experiments目录；final_run表示可运行测试包，不表示最终模型已获批准。',
