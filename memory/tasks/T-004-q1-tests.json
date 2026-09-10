@@ -1,10 +1,10 @@
 {
   "id": "T-004-q1-tests",
   "title": "问题1用户口径与A1/A5数值测试",
-  "status": "in_progress",
+  "status": "review",
   "owner": "yuchi423 / current Agent",
   "branch": "codex/T-004-q1-tests",
-  "updated_at": "2026-09-11T01:07:47.289601+08:00",
+  "updated_at": "2026-09-11T01:12:57+08:00",
   "depends_on": [],
   "goal": "按用户确认的效率、固定库存、光伏优先规则，执行问题1最小优化与独立核算，分别比较时间解释和模板映射。",
   "acceptance": [
@@ -14,15 +14,27 @@
     "保存数值产物、真实运行记录和可接续交接"
   ],
   "artifacts": [
+    "planning/q1-test-verdict.md",
     "scripts/run_q1_tests.py",
     "final_run/q1-contract-tests/main.py",
-    "memory/decisions/D-005-q1-user-contract-tests.md"
+    "experiments/q1-contract-tests-20260911-02/run.json",
+    "experiments/q1-contract-tests-20260911-02/model_report.md",
+    "experiments/q1-contract-tests-20260911-02/results/summary_tables.csv",
+    "experiments/q1-contract-tests-20260911-02/results/end_rectangle/result1.xlsx",
+    "memory/handoffs/2026-09-11-T-004-q1-tests.md"
   ],
-  "checks": [],
+  "checks": [
+    "4 analytical/exhaustive-mode checks PASS",
+    "3 strict MILP and 3 LP output audits PASS",
+    "3 corrected result1.xlsx round trips and 144-row template mapping PASS",
+    "Run 01/02 strict dispatches identical",
+    "PNG visual review completed; PNG and PDF outputs generated",
+    "Input hashes and shared state rechecked before final commit"
+  ],
   "decisions": [
     "memory/decisions/D-005-q1-user-contract-tests.md"
   ],
-  "latest_handoff": null,
-  "next_action": "提交可复现代码后执行新运行目录；核验严格光伏顺序、固定库存与A1/A5差异。",
+  "latest_handoff": "memory/handoffs/2026-09-11-T-004-q1-tests.md",
+  "next_action": "团队复核planning/q1-test-verdict.md，确认A1区间末值与A5修正副本标签，以及本实例采用LP的最终决定。",
   "blockers": []
 }

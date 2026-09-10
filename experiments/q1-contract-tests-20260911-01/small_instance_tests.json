@@ -1,0 +1,27 @@
+[
+  {
+    "name": "grid_efficiency",
+    "expected_cost": 100,
+    "actual_cost": 100.0,
+    "pass": true
+  },
+  {
+    "name": "pv_efficiency",
+    "expected_cost": 0,
+    "actual_cost": 0.0,
+    "pass": true
+  },
+  {
+    "name": "full_battery_spill",
+    "expected_cost": 0,
+    "actual_cost": 0.0,
+    "pass": true
+  },
+  {
+    "name": "all_16_binary_assignments",
+    "actual_cost": 18.000000000000014,
+    "enumerated_best": 18.000000000000014,
+    "expected_cost": 18,
+    "pass": true
+  }
+]

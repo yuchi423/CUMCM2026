@@ -1,0 +1,80 @@
+{
+  "end_rectangle": {
+    "lp_solver": {
+      "objective": 35859.322183119795,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "mip_gap": 0.0,
+      "dual_bound": 0.0,
+      "solve_seconds": 0.005861700003151782
+    },
+    "lp_strict_audit": {
+      "balance_max_kwh": 1.1368683772161603e-13,
+      "state_reconstruction_max_kwh": 9.094947017729282e-13,
+      "terminal_error_kwh": 0.0,
+      "bound_violation_kwh": 4.547473508864641e-13,
+      "power_violation_kw": 0.0,
+      "negative_flow_kwh": 0.0,
+      "mutual_violation_count": 0,
+      "pv_priority_max_kwh": 0.0,
+      "pv_first_load_violation_kwh": 0.0,
+      "cost_recalculation_error_yuan": 7.275957614183426e-12,
+      "state_min_kwh": 1199.9999999999995,
+      "state_max_kwh": 10800.0,
+      "pass": true
+    },
+    "strict_minus_lp_cost": 7.275957614183426e-12
+  },
+  "start_rectangle_periodic": {
+    "lp_solver": {
+      "objective": 35859.222183119804,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "mip_gap": 0.0,
+      "dual_bound": 0.0,
+      "solve_seconds": 0.006468799998401664
+    },
+    "lp_strict_audit": {
+      "balance_max_kwh": 1.1368683772161603e-13,
+      "state_reconstruction_max_kwh": 9.094947017729282e-13,
+      "terminal_error_kwh": 0.0,
+      "bound_violation_kwh": 4.547473508864641e-13,
+      "power_violation_kw": 0.0,
+      "negative_flow_kwh": 0.0,
+      "mutual_violation_count": 0,
+      "pv_priority_max_kwh": 0.0,
+      "pv_first_load_violation_kwh": 0.0,
+      "cost_recalculation_error_yuan": 0.0,
+      "state_min_kwh": 1199.9999999999995,
+      "state_max_kwh": 10800.0,
+      "pass": true
+    },
+    "strict_minus_lp_cost": 0.0
+  },
+  "trapezoid_periodic": {
+    "lp_solver": {
+      "objective": 35839.05731085905,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "mip_gap": 0.0,
+      "dual_bound": 0.0,
+      "solve_seconds": 0.006629299998166971
+    },
+    "lp_strict_audit": {
+      "balance_max_kwh": 1.1368683772161603e-13,
+      "state_reconstruction_max_kwh": 5.4569682106375694e-12,
+      "terminal_error_kwh": 5.4569682106375694e-12,
+      "bound_violation_kwh": 3.637978807091713e-12,
+      "power_violation_kw": 0.0,
+      "negative_flow_kwh": 0.0,
+      "mutual_violation_count": 0,
+      "pv_priority_max_kwh": 0.0,
+      "pv_first_load_violation_kwh": 0.0,
+      "cost_recalculation_error_yuan": 7.275957614183426e-12,
+      "state_min_kwh": 1200.000000000005,
+      "state_max_kwh": 10800.000000000004,
+      "pass": true
+    },
+    "strict_minus_lp_cost": -1.4551915228366852e-11
+  }
+}

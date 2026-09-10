@@ -4,7 +4,7 @@
   "status": "handoff",
   "owner": "current user / Codex",
   "branch": "codex/T-002-codex-q1-judge",
-  "updated_at": "2026-09-10T22:12:47+08:00",
+  "updated_at": "2026-09-11T01:12:57+08:00",
   "depends_on": [],
   "goal": "仅推进问题1，按model-judge完成目标口径、结构筛选、获批后的PoC与模型裁决。",
   "acceptance": [
@@ -22,17 +22,20 @@
   "checks": [
     "inspect_q1_inputs.py: EXECUTED; 3 source hashes match, 144 timestamps continuous, numeric columns complete and finite",
     "Raw Q1 template inspected; proposed time mapping NOT APPROVED",
-    "PoC NOT EXECUTED; numerical delivery MISSING"
+    "PoC completed in T-004; see planning/q1-test-verdict.md and experiments/q1-contract-tests-20260911-02 for numerical evidence"
   ],
-  "decisions": ["memory/decisions/D-004-q1-target-contract.md"],
+  "decisions": [
+    "memory/decisions/D-004-q1-target-contract.md"
+  ],
   "latest_handoff": "memory/handoffs/2026-09-10-T-002-q1-target-gate.md",
-  "next_action": "用户确认planning/model_selection.md中的Q1-A1至Q1-A5及验证/回退规则后，开始问题1 Cheap PoC。",
-  "blockers": ["问题1效率计量侧及时间映射未确认，PoC前需要确认具体目标口径。"],
+  "next_action": "用户已在2026-09-11授权口径测试，PoC由T-004-q1-tests完成；先读该任务最新交接与planning/q1-test-verdict.md，不再将旧pending口径当作测试阻塞。等待最终A1/A5及模型验收。",
+  "blockers": [],
   "phase_status": {
     "input_audit": "completed",
     "structural_screen": "completed_conditionally",
-    "human_target_gate": "pending",
-    "poc": "not_executed",
-    "human_model_gate": "not_reached"
-  }
+    "human_target_gate": "modified_test_scope_authorized_in_D005",
+    "poc": "completed_in_T004",
+    "human_model_gate": "awaiting_user_review"
+  },
+  "continuation_task": "T-004-q1-tests"
 }
