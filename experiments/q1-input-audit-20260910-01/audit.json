@@ -1,0 +1,1422 @@
+{
+  "scope": "Q1 raw input and template audit only; no numerical optimization or PoC",
+  "created_at": "2026-09-10T14:12:02.867503+00:00",
+  "code_commit": "b7d3b657471259175c8c0c357a4bd8754e592463",
+  "versions": {
+    "python": "3.12.14",
+    "openpyxl": "3.1.5",
+    "numpy": "2.3.5",
+    "scipy": "NOT_INSTALLED"
+  },
+  "input_hashes": {
+    "problem/C题.pdf": {
+      "actual": "2c098f6ae9dd47ae965aebdec3b9facf3de6c173f999783c1012c08fc5fb9d2d",
+      "expected": "2c098f6ae9dd47ae965aebdec3b9facf3de6c173f999783c1012c08fc5fb9d2d",
+      "match": true
+    },
+    "data/raw/附件1.xlsx": {
+      "actual": "66b87134f5ecccd68184d3539bb1293ef039f9e0fdd955a589b9bfa7f227c377",
+      "expected": "66b87134f5ecccd68184d3539bb1293ef039f9e0fdd955a589b9bfa7f227c377",
+      "match": true
+    },
+    "data/templates/result1.xlsx": {
+      "actual": "28360e0974e7d6065394a8aba4e14a86773ae0036cc7d3ea1b211b515b03d688",
+      "expected": "28360e0974e7d6065394a8aba4e14a86773ae0036cc7d3ea1b211b515b03d688",
+      "match": true
+    }
+  },
+  "data": {
+    "sheet": "Sheet1",
+    "header": [
+      "时间",
+      "电价",
+      "小区负载",
+      "光伏发电预测功率"
+    ],
+    "records": 144,
+    "time_sequence_check": "PASS",
+    "numeric_check": "PASS",
+    "columns": {
+      "电价": {
+        "minimum": 0.3713,
+        "maximum": 1.3952,
+        "negative_count": 0,
+        "zero_count": 0,
+        "missing_or_nonfinite_count": 0
+      },
+      "小区负载": {
+        "minimum": 3309.3934,
+        "maximum": 5958.9696,
+        "negative_count": 0,
+        "zero_count": 0,
+        "missing_or_nonfinite_count": 0
+      },
+      "光伏发电预测功率": {
+        "minimum": 0,
+        "maximum": 7612.316,
+        "negative_count": 0,
+        "zero_count": 55,
+        "missing_or_nonfinite_count": 0
+      }
+    },
+    "pv_exceeds_load_count": 30,
+    "power_sample_semantics": "UNRESOLVED: average power versus instantaneous sample"
+  },
+  "template": {
+    "sheets": [
+      "计划购电量",
+      "充放电量"
+    ],
+    "plan_output_nonblank_count": 0,
+    "storage_sheet_rows": [
+      [
+        "时间段",
+        "充电量",
+        "放电量",
+        "时刻",
+        "储电量"
+      ],
+      [
+        "0:00-4:00",
+        null,
+        null,
+        "0:00",
+        null
+      ],
+      [
+        "4:00-8:00",
+        null,
+        null,
+        "24:00",
+        null
+      ],
+      [
+        "8:00-12:00",
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        "12:00-16:00",
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        "16:00-20:00",
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        "20:00-24:00",
+        null,
+        null,
+        null,
+        null
+      ]
+    ],
+    "interval_mapping_proposal": [
+      {
+        "source_cell": "Sheet1!A2",
+        "source_time": "00:10:00",
+        "proposed_interval_if_end_timestamp": "00:00-00:10",
+        "template_cell": "计划购电量!A2",
+        "template_original_label": "0:10-0:20",
+        "template_value_cell": "计划购电量!B2",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A3",
+        "source_time": "00:20:00",
+        "proposed_interval_if_end_timestamp": "00:10-00:20",
+        "template_cell": "计划购电量!A3",
+        "template_original_label": "0:20-0:30",
+        "template_value_cell": "计划购电量!B3",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A4",
+        "source_time": "00:30:00",
+        "proposed_interval_if_end_timestamp": "00:20-00:30",
+        "template_cell": "计划购电量!A4",
+        "template_original_label": "0:30-0:40",
+        "template_value_cell": "计划购电量!B4",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A5",
+        "source_time": "00:40:00",
+        "proposed_interval_if_end_timestamp": "00:30-00:40",
+        "template_cell": "计划购电量!A5",
+        "template_original_label": "0:40-0:50",
+        "template_value_cell": "计划购电量!B5",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A6",
+        "source_time": "00:50:00",
+        "proposed_interval_if_end_timestamp": "00:40-00:50",
+        "template_cell": "计划购电量!A6",
+        "template_original_label": "0:50-1:00",
+        "template_value_cell": "计划购电量!B6",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A7",
+        "source_time": "01:00:00",
+        "proposed_interval_if_end_timestamp": "00:50-01:00",
+        "template_cell": "计划购电量!A7",
+        "template_original_label": "1:00-1:10",
+        "template_value_cell": "计划购电量!B7",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A8",
+        "source_time": "01:10:00",
+        "proposed_interval_if_end_timestamp": "01:00-01:10",
+        "template_cell": "计划购电量!A8",
+        "template_original_label": "1:10-1:20",
+        "template_value_cell": "计划购电量!B8",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A9",
+        "source_time": "01:20:00",
+        "proposed_interval_if_end_timestamp": "01:10-01:20",
+        "template_cell": "计划购电量!A9",
+        "template_original_label": "1:20-1:30",
+        "template_value_cell": "计划购电量!B9",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A10",
+        "source_time": "01:30:00",
+        "proposed_interval_if_end_timestamp": "01:20-01:30",
+        "template_cell": "计划购电量!A10",
+        "template_original_label": "1:30-1:40",
+        "template_value_cell": "计划购电量!B10",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A11",
+        "source_time": "01:40:00",
+        "proposed_interval_if_end_timestamp": "01:30-01:40",
+        "template_cell": "计划购电量!A11",
+        "template_original_label": "1:40-1:50",
+        "template_value_cell": "计划购电量!B11",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A12",
+        "source_time": "01:50:00",
+        "proposed_interval_if_end_timestamp": "01:40-01:50",
+        "template_cell": "计划购电量!A12",
+        "template_original_label": "1:50-2:00",
+        "template_value_cell": "计划购电量!B12",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A13",
+        "source_time": "02:00:00",
+        "proposed_interval_if_end_timestamp": "01:50-02:00",
+        "template_cell": "计划购电量!A13",
+        "template_original_label": "2:00-2:10",
+        "template_value_cell": "计划购电量!B13",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A14",
+        "source_time": "02:10:00",
+        "proposed_interval_if_end_timestamp": "02:00-02:10",
+        "template_cell": "计划购电量!A14",
+        "template_original_label": "2:10-2:20",
+        "template_value_cell": "计划购电量!B14",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A15",
+        "source_time": "02:20:00",
+        "proposed_interval_if_end_timestamp": "02:10-02:20",
+        "template_cell": "计划购电量!A15",
+        "template_original_label": "2:20-2:30",
+        "template_value_cell": "计划购电量!B15",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A16",
+        "source_time": "02:30:00",
+        "proposed_interval_if_end_timestamp": "02:20-02:30",
+        "template_cell": "计划购电量!A16",
+        "template_original_label": "2:30-2:40",
+        "template_value_cell": "计划购电量!B16",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A17",
+        "source_time": "02:40:00",
+        "proposed_interval_if_end_timestamp": "02:30-02:40",
+        "template_cell": "计划购电量!A17",
+        "template_original_label": "2:40-2:50",
+        "template_value_cell": "计划购电量!B17",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A18",
+        "source_time": "02:50:00",
+        "proposed_interval_if_end_timestamp": "02:40-02:50",
+        "template_cell": "计划购电量!A18",
+        "template_original_label": "2:50-3:00",
+        "template_value_cell": "计划购电量!B18",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A19",
+        "source_time": "03:00:00",
+        "proposed_interval_if_end_timestamp": "02:50-03:00",
+        "template_cell": "计划购电量!A19",
+        "template_original_label": "3:00-3:10",
+        "template_value_cell": "计划购电量!B19",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A20",
+        "source_time": "03:10:00",
+        "proposed_interval_if_end_timestamp": "03:00-03:10",
+        "template_cell": "计划购电量!A20",
+        "template_original_label": "3:10-3:20",
+        "template_value_cell": "计划购电量!B20",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A21",
+        "source_time": "03:20:00",
+        "proposed_interval_if_end_timestamp": "03:10-03:20",
+        "template_cell": "计划购电量!A21",
+        "template_original_label": "3:20-3:30",
+        "template_value_cell": "计划购电量!B21",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A22",
+        "source_time": "03:30:00",
+        "proposed_interval_if_end_timestamp": "03:20-03:30",
+        "template_cell": "计划购电量!A22",
+        "template_original_label": "3:30-3:40",
+        "template_value_cell": "计划购电量!B22",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A23",
+        "source_time": "03:40:00",
+        "proposed_interval_if_end_timestamp": "03:30-03:40",
+        "template_cell": "计划购电量!A23",
+        "template_original_label": "3:40-3:50",
+        "template_value_cell": "计划购电量!B23",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A24",
+        "source_time": "03:50:00",
+        "proposed_interval_if_end_timestamp": "03:40-03:50",
+        "template_cell": "计划购电量!A24",
+        "template_original_label": "3:50-4:00",
+        "template_value_cell": "计划购电量!B24",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A25",
+        "source_time": "04:00:00",
+        "proposed_interval_if_end_timestamp": "03:50-04:00",
+        "template_cell": "计划购电量!A25",
+        "template_original_label": "4:00-4:10",
+        "template_value_cell": "计划购电量!B25",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A26",
+        "source_time": "04:10:00",
+        "proposed_interval_if_end_timestamp": "04:00-04:10",
+        "template_cell": "计划购电量!A26",
+        "template_original_label": "4:10-4:20",
+        "template_value_cell": "计划购电量!B26",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A27",
+        "source_time": "04:20:00",
+        "proposed_interval_if_end_timestamp": "04:10-04:20",
+        "template_cell": "计划购电量!A27",
+        "template_original_label": "4:20-4:30",
+        "template_value_cell": "计划购电量!B27",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A28",
+        "source_time": "04:30:00",
+        "proposed_interval_if_end_timestamp": "04:20-04:30",
+        "template_cell": "计划购电量!A28",
+        "template_original_label": "4:30-4:40",
+        "template_value_cell": "计划购电量!B28",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A29",
+        "source_time": "04:40:00",
+        "proposed_interval_if_end_timestamp": "04:30-04:40",
+        "template_cell": "计划购电量!A29",
+        "template_original_label": "4:40-4:50",
+        "template_value_cell": "计划购电量!B29",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A30",
+        "source_time": "04:50:00",
+        "proposed_interval_if_end_timestamp": "04:40-04:50",
+        "template_cell": "计划购电量!A30",
+        "template_original_label": "4:50-5:00",
+        "template_value_cell": "计划购电量!B30",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A31",
+        "source_time": "05:00:00",
+        "proposed_interval_if_end_timestamp": "04:50-05:00",
+        "template_cell": "计划购电量!A31",
+        "template_original_label": "5:00-5:10",
+        "template_value_cell": "计划购电量!B31",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A32",
+        "source_time": "05:10:00",
+        "proposed_interval_if_end_timestamp": "05:00-05:10",
+        "template_cell": "计划购电量!A32",
+        "template_original_label": "5:10-5:20",
+        "template_value_cell": "计划购电量!B32",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A33",
+        "source_time": "05:20:00",
+        "proposed_interval_if_end_timestamp": "05:10-05:20",
+        "template_cell": "计划购电量!A33",
+        "template_original_label": "5:20-5:30",
+        "template_value_cell": "计划购电量!B33",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A34",
+        "source_time": "05:30:00",
+        "proposed_interval_if_end_timestamp": "05:20-05:30",
+        "template_cell": "计划购电量!A34",
+        "template_original_label": "5:30-5:40",
+        "template_value_cell": "计划购电量!B34",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A35",
+        "source_time": "05:40:00",
+        "proposed_interval_if_end_timestamp": "05:30-05:40",
+        "template_cell": "计划购电量!A35",
+        "template_original_label": "5:40-5:50",
+        "template_value_cell": "计划购电量!B35",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A36",
+        "source_time": "05:50:00",
+        "proposed_interval_if_end_timestamp": "05:40-05:50",
+        "template_cell": "计划购电量!A36",
+        "template_original_label": "5:50-6:00",
+        "template_value_cell": "计划购电量!B36",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A37",
+        "source_time": "06:00:00",
+        "proposed_interval_if_end_timestamp": "05:50-06:00",
+        "template_cell": "计划购电量!A37",
+        "template_original_label": "6:00-6:10",
+        "template_value_cell": "计划购电量!B37",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A38",
+        "source_time": "06:10:00",
+        "proposed_interval_if_end_timestamp": "06:00-06:10",
+        "template_cell": "计划购电量!A38",
+        "template_original_label": "6:10-6:20",
+        "template_value_cell": "计划购电量!B38",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A39",
+        "source_time": "06:20:00",
+        "proposed_interval_if_end_timestamp": "06:10-06:20",
+        "template_cell": "计划购电量!A39",
+        "template_original_label": "6:20-6:30",
+        "template_value_cell": "计划购电量!B39",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A40",
+        "source_time": "06:30:00",
+        "proposed_interval_if_end_timestamp": "06:20-06:30",
+        "template_cell": "计划购电量!A40",
+        "template_original_label": "6:30-6:40",
+        "template_value_cell": "计划购电量!B40",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A41",
+        "source_time": "06:40:00",
+        "proposed_interval_if_end_timestamp": "06:30-06:40",
+        "template_cell": "计划购电量!A41",
+        "template_original_label": "6:40-6:50",
+        "template_value_cell": "计划购电量!B41",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A42",
+        "source_time": "06:50:00",
+        "proposed_interval_if_end_timestamp": "06:40-06:50",
+        "template_cell": "计划购电量!A42",
+        "template_original_label": "6:50-7:00",
+        "template_value_cell": "计划购电量!B42",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A43",
+        "source_time": "07:00:00",
+        "proposed_interval_if_end_timestamp": "06:50-07:00",
+        "template_cell": "计划购电量!A43",
+        "template_original_label": "7:00-7:10",
+        "template_value_cell": "计划购电量!B43",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A44",
+        "source_time": "07:10:00",
+        "proposed_interval_if_end_timestamp": "07:00-07:10",
+        "template_cell": "计划购电量!A44",
+        "template_original_label": "7:10-7:20",
+        "template_value_cell": "计划购电量!B44",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A45",
+        "source_time": "07:20:00",
+        "proposed_interval_if_end_timestamp": "07:10-07:20",
+        "template_cell": "计划购电量!A45",
+        "template_original_label": "7:20-7:30",
+        "template_value_cell": "计划购电量!B45",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A46",
+        "source_time": "07:30:00",
+        "proposed_interval_if_end_timestamp": "07:20-07:30",
+        "template_cell": "计划购电量!A46",
+        "template_original_label": "7:30-7:40",
+        "template_value_cell": "计划购电量!B46",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A47",
+        "source_time": "07:40:00",
+        "proposed_interval_if_end_timestamp": "07:30-07:40",
+        "template_cell": "计划购电量!A47",
+        "template_original_label": "7:40-7:50",
+        "template_value_cell": "计划购电量!B47",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A48",
+        "source_time": "07:50:00",
+        "proposed_interval_if_end_timestamp": "07:40-07:50",
+        "template_cell": "计划购电量!A48",
+        "template_original_label": "7:50-8:00",
+        "template_value_cell": "计划购电量!B48",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A49",
+        "source_time": "08:00:00",
+        "proposed_interval_if_end_timestamp": "07:50-08:00",
+        "template_cell": "计划购电量!A49",
+        "template_original_label": "8:00-8:10",
+        "template_value_cell": "计划购电量!B49",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A50",
+        "source_time": "08:10:00",
+        "proposed_interval_if_end_timestamp": "08:00-08:10",
+        "template_cell": "计划购电量!A50",
+        "template_original_label": "8:10-8:20",
+        "template_value_cell": "计划购电量!B50",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A51",
+        "source_time": "08:20:00",
+        "proposed_interval_if_end_timestamp": "08:10-08:20",
+        "template_cell": "计划购电量!A51",
+        "template_original_label": "8:20-8:30",
+        "template_value_cell": "计划购电量!B51",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A52",
+        "source_time": "08:30:00",
+        "proposed_interval_if_end_timestamp": "08:20-08:30",
+        "template_cell": "计划购电量!A52",
+        "template_original_label": "8:30-8:40",
+        "template_value_cell": "计划购电量!B52",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A53",
+        "source_time": "08:40:00",
+        "proposed_interval_if_end_timestamp": "08:30-08:40",
+        "template_cell": "计划购电量!A53",
+        "template_original_label": "8:40-8:50",
+        "template_value_cell": "计划购电量!B53",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A54",
+        "source_time": "08:50:00",
+        "proposed_interval_if_end_timestamp": "08:40-08:50",
+        "template_cell": "计划购电量!A54",
+        "template_original_label": "8:50-9:00",
+        "template_value_cell": "计划购电量!B54",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A55",
+        "source_time": "09:00:00",
+        "proposed_interval_if_end_timestamp": "08:50-09:00",
+        "template_cell": "计划购电量!A55",
+        "template_original_label": "9:00-9:10",
+        "template_value_cell": "计划购电量!B55",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A56",
+        "source_time": "09:10:00",
+        "proposed_interval_if_end_timestamp": "09:00-09:10",
+        "template_cell": "计划购电量!A56",
+        "template_original_label": "9:10-9:20",
+        "template_value_cell": "计划购电量!B56",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A57",
+        "source_time": "09:20:00",
+        "proposed_interval_if_end_timestamp": "09:10-09:20",
+        "template_cell": "计划购电量!A57",
+        "template_original_label": "9:20-9:30",
+        "template_value_cell": "计划购电量!B57",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A58",
+        "source_time": "09:30:00",
+        "proposed_interval_if_end_timestamp": "09:20-09:30",
+        "template_cell": "计划购电量!A58",
+        "template_original_label": "9:30-9:40",
+        "template_value_cell": "计划购电量!B58",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A59",
+        "source_time": "09:40:00",
+        "proposed_interval_if_end_timestamp": "09:30-09:40",
+        "template_cell": "计划购电量!A59",
+        "template_original_label": "9:40-9:50",
+        "template_value_cell": "计划购电量!B59",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A60",
+        "source_time": "09:50:00",
+        "proposed_interval_if_end_timestamp": "09:40-09:50",
+        "template_cell": "计划购电量!A60",
+        "template_original_label": "9:50-10:00",
+        "template_value_cell": "计划购电量!B60",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A61",
+        "source_time": "10:00:00",
+        "proposed_interval_if_end_timestamp": "09:50-10:00",
+        "template_cell": "计划购电量!A61",
+        "template_original_label": "10:00-10:10",
+        "template_value_cell": "计划购电量!B61",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A62",
+        "source_time": "10:10",
+        "proposed_interval_if_end_timestamp": "10:00-10:10",
+        "template_cell": "计划购电量!A62",
+        "template_original_label": "10:10-10:20",
+        "template_value_cell": "计划购电量!B62",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A63",
+        "source_time": "10:20",
+        "proposed_interval_if_end_timestamp": "10:10-10:20",
+        "template_cell": "计划购电量!A63",
+        "template_original_label": "10:20-10:30",
+        "template_value_cell": "计划购电量!B63",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A64",
+        "source_time": "10:30",
+        "proposed_interval_if_end_timestamp": "10:20-10:30",
+        "template_cell": "计划购电量!A64",
+        "template_original_label": "10:30-10:40",
+        "template_value_cell": "计划购电量!B64",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A65",
+        "source_time": "10:40",
+        "proposed_interval_if_end_timestamp": "10:30-10:40",
+        "template_cell": "计划购电量!A65",
+        "template_original_label": "10:40-10:50",
+        "template_value_cell": "计划购电量!B65",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A66",
+        "source_time": "10:50",
+        "proposed_interval_if_end_timestamp": "10:40-10:50",
+        "template_cell": "计划购电量!A66",
+        "template_original_label": "10:50-11:00",
+        "template_value_cell": "计划购电量!B66",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A67",
+        "source_time": "11:00",
+        "proposed_interval_if_end_timestamp": "10:50-11:00",
+        "template_cell": "计划购电量!A67",
+        "template_original_label": "11:00-11:10",
+        "template_value_cell": "计划购电量!B67",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A68",
+        "source_time": "11:10",
+        "proposed_interval_if_end_timestamp": "11:00-11:10",
+        "template_cell": "计划购电量!A68",
+        "template_original_label": "11:10-11:20",
+        "template_value_cell": "计划购电量!B68",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A69",
+        "source_time": "11:20",
+        "proposed_interval_if_end_timestamp": "11:10-11:20",
+        "template_cell": "计划购电量!A69",
+        "template_original_label": "11:20-11:30",
+        "template_value_cell": "计划购电量!B69",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A70",
+        "source_time": "11:30",
+        "proposed_interval_if_end_timestamp": "11:20-11:30",
+        "template_cell": "计划购电量!A70",
+        "template_original_label": "11:30-11:40",
+        "template_value_cell": "计划购电量!B70",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A71",
+        "source_time": "11:40",
+        "proposed_interval_if_end_timestamp": "11:30-11:40",
+        "template_cell": "计划购电量!A71",
+        "template_original_label": "11:40-11:50",
+        "template_value_cell": "计划购电量!B71",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A72",
+        "source_time": "11:50",
+        "proposed_interval_if_end_timestamp": "11:40-11:50",
+        "template_cell": "计划购电量!A72",
+        "template_original_label": "11:50-12:00",
+        "template_value_cell": "计划购电量!B72",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A73",
+        "source_time": "12:00",
+        "proposed_interval_if_end_timestamp": "11:50-12:00",
+        "template_cell": "计划购电量!A73",
+        "template_original_label": "12:00-12:10",
+        "template_value_cell": "计划购电量!B73",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A74",
+        "source_time": "12:10",
+        "proposed_interval_if_end_timestamp": "12:00-12:10",
+        "template_cell": "计划购电量!A74",
+        "template_original_label": "12:10-12:20",
+        "template_value_cell": "计划购电量!B74",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A75",
+        "source_time": "12:20",
+        "proposed_interval_if_end_timestamp": "12:10-12:20",
+        "template_cell": "计划购电量!A75",
+        "template_original_label": "12:20-12:30",
+        "template_value_cell": "计划购电量!B75",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A76",
+        "source_time": "12:30",
+        "proposed_interval_if_end_timestamp": "12:20-12:30",
+        "template_cell": "计划购电量!A76",
+        "template_original_label": "12:30-12:40",
+        "template_value_cell": "计划购电量!B76",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A77",
+        "source_time": "12:40",
+        "proposed_interval_if_end_timestamp": "12:30-12:40",
+        "template_cell": "计划购电量!A77",
+        "template_original_label": "12:40-12:50",
+        "template_value_cell": "计划购电量!B77",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A78",
+        "source_time": "12:50",
+        "proposed_interval_if_end_timestamp": "12:40-12:50",
+        "template_cell": "计划购电量!A78",
+        "template_original_label": "12:50-13:00",
+        "template_value_cell": "计划购电量!B78",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A79",
+        "source_time": "13:00",
+        "proposed_interval_if_end_timestamp": "12:50-13:00",
+        "template_cell": "计划购电量!A79",
+        "template_original_label": "13:00-13:10",
+        "template_value_cell": "计划购电量!B79",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A80",
+        "source_time": "13:10",
+        "proposed_interval_if_end_timestamp": "13:00-13:10",
+        "template_cell": "计划购电量!A80",
+        "template_original_label": "13:10-13:20",
+        "template_value_cell": "计划购电量!B80",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A81",
+        "source_time": "13:20",
+        "proposed_interval_if_end_timestamp": "13:10-13:20",
+        "template_cell": "计划购电量!A81",
+        "template_original_label": "13:20-13:30",
+        "template_value_cell": "计划购电量!B81",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A82",
+        "source_time": "13:30",
+        "proposed_interval_if_end_timestamp": "13:20-13:30",
+        "template_cell": "计划购电量!A82",
+        "template_original_label": "13:30-13:40",
+        "template_value_cell": "计划购电量!B82",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A83",
+        "source_time": "13:40",
+        "proposed_interval_if_end_timestamp": "13:30-13:40",
+        "template_cell": "计划购电量!A83",
+        "template_original_label": "13:40-13:50",
+        "template_value_cell": "计划购电量!B83",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A84",
+        "source_time": "13:50",
+        "proposed_interval_if_end_timestamp": "13:40-13:50",
+        "template_cell": "计划购电量!A84",
+        "template_original_label": "13:50-14:00",
+        "template_value_cell": "计划购电量!B84",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A85",
+        "source_time": "14:00",
+        "proposed_interval_if_end_timestamp": "13:50-14:00",
+        "template_cell": "计划购电量!A85",
+        "template_original_label": "14:00-14:10",
+        "template_value_cell": "计划购电量!B85",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A86",
+        "source_time": "14:10",
+        "proposed_interval_if_end_timestamp": "14:00-14:10",
+        "template_cell": "计划购电量!A86",
+        "template_original_label": "14:10-14:20",
+        "template_value_cell": "计划购电量!B86",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A87",
+        "source_time": "14:20",
+        "proposed_interval_if_end_timestamp": "14:10-14:20",
+        "template_cell": "计划购电量!A87",
+        "template_original_label": "14:20-14:30",
+        "template_value_cell": "计划购电量!B87",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A88",
+        "source_time": "14:30",
+        "proposed_interval_if_end_timestamp": "14:20-14:30",
+        "template_cell": "计划购电量!A88",
+        "template_original_label": "14:30-14:40",
+        "template_value_cell": "计划购电量!B88",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A89",
+        "source_time": "14:40",
+        "proposed_interval_if_end_timestamp": "14:30-14:40",
+        "template_cell": "计划购电量!A89",
+        "template_original_label": "14:40-14:50",
+        "template_value_cell": "计划购电量!B89",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A90",
+        "source_time": "14:50",
+        "proposed_interval_if_end_timestamp": "14:40-14:50",
+        "template_cell": "计划购电量!A90",
+        "template_original_label": "14:50-15:00",
+        "template_value_cell": "计划购电量!B90",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A91",
+        "source_time": "15:00",
+        "proposed_interval_if_end_timestamp": "14:50-15:00",
+        "template_cell": "计划购电量!A91",
+        "template_original_label": "15:00-15:10",
+        "template_value_cell": "计划购电量!B91",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A92",
+        "source_time": "15:10",
+        "proposed_interval_if_end_timestamp": "15:00-15:10",
+        "template_cell": "计划购电量!A92",
+        "template_original_label": "15:10-15:20",
+        "template_value_cell": "计划购电量!B92",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A93",
+        "source_time": "15:20",
+        "proposed_interval_if_end_timestamp": "15:10-15:20",
+        "template_cell": "计划购电量!A93",
+        "template_original_label": "15:20-15:30",
+        "template_value_cell": "计划购电量!B93",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A94",
+        "source_time": "15:30",
+        "proposed_interval_if_end_timestamp": "15:20-15:30",
+        "template_cell": "计划购电量!A94",
+        "template_original_label": "15:30-15:40",
+        "template_value_cell": "计划购电量!B94",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A95",
+        "source_time": "15:40",
+        "proposed_interval_if_end_timestamp": "15:30-15:40",
+        "template_cell": "计划购电量!A95",
+        "template_original_label": "15:40-15:50",
+        "template_value_cell": "计划购电量!B95",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A96",
+        "source_time": "15:50",
+        "proposed_interval_if_end_timestamp": "15:40-15:50",
+        "template_cell": "计划购电量!A96",
+        "template_original_label": "15:50-16:00",
+        "template_value_cell": "计划购电量!B96",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A97",
+        "source_time": "16:00",
+        "proposed_interval_if_end_timestamp": "15:50-16:00",
+        "template_cell": "计划购电量!A97",
+        "template_original_label": "16:00-16:10",
+        "template_value_cell": "计划购电量!B97",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A98",
+        "source_time": "16:10",
+        "proposed_interval_if_end_timestamp": "16:00-16:10",
+        "template_cell": "计划购电量!A98",
+        "template_original_label": "16:10-16:20",
+        "template_value_cell": "计划购电量!B98",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A99",
+        "source_time": "16:20",
+        "proposed_interval_if_end_timestamp": "16:10-16:20",
+        "template_cell": "计划购电量!A99",
+        "template_original_label": "16:20-16:30",
+        "template_value_cell": "计划购电量!B99",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A100",
+        "source_time": "16:30",
+        "proposed_interval_if_end_timestamp": "16:20-16:30",
+        "template_cell": "计划购电量!A100",
+        "template_original_label": "16:30-16:40",
+        "template_value_cell": "计划购电量!B100",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A101",
+        "source_time": "16:40",
+        "proposed_interval_if_end_timestamp": "16:30-16:40",
+        "template_cell": "计划购电量!A101",
+        "template_original_label": "16:40-16:50",
+        "template_value_cell": "计划购电量!B101",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A102",
+        "source_time": "16:50",
+        "proposed_interval_if_end_timestamp": "16:40-16:50",
+        "template_cell": "计划购电量!A102",
+        "template_original_label": "16:50-17:00",
+        "template_value_cell": "计划购电量!B102",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A103",
+        "source_time": "17:00",
+        "proposed_interval_if_end_timestamp": "16:50-17:00",
+        "template_cell": "计划购电量!A103",
+        "template_original_label": "17:00-17:10",
+        "template_value_cell": "计划购电量!B103",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A104",
+        "source_time": "17:10",
+        "proposed_interval_if_end_timestamp": "17:00-17:10",
+        "template_cell": "计划购电量!A104",
+        "template_original_label": "17:10-17:20",
+        "template_value_cell": "计划购电量!B104",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A105",
+        "source_time": "17:20",
+        "proposed_interval_if_end_timestamp": "17:10-17:20",
+        "template_cell": "计划购电量!A105",
+        "template_original_label": "17:20-17:30",
+        "template_value_cell": "计划购电量!B105",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A106",
+        "source_time": "17:30",
+        "proposed_interval_if_end_timestamp": "17:20-17:30",
+        "template_cell": "计划购电量!A106",
+        "template_original_label": "17:30-17:40",
+        "template_value_cell": "计划购电量!B106",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A107",
+        "source_time": "17:40",
+        "proposed_interval_if_end_timestamp": "17:30-17:40",
+        "template_cell": "计划购电量!A107",
+        "template_original_label": "17:40-17:50",
+        "template_value_cell": "计划购电量!B107",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A108",
+        "source_time": "17:50",
+        "proposed_interval_if_end_timestamp": "17:40-17:50",
+        "template_cell": "计划购电量!A108",
+        "template_original_label": "17:50-18:00",
+        "template_value_cell": "计划购电量!B108",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A109",
+        "source_time": "18:00",
+        "proposed_interval_if_end_timestamp": "17:50-18:00",
+        "template_cell": "计划购电量!A109",
+        "template_original_label": "18:00-18:10",
+        "template_value_cell": "计划购电量!B109",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A110",
+        "source_time": "18:10",
+        "proposed_interval_if_end_timestamp": "18:00-18:10",
+        "template_cell": "计划购电量!A110",
+        "template_original_label": "18:10-18:20",
+        "template_value_cell": "计划购电量!B110",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A111",
+        "source_time": "18:20",
+        "proposed_interval_if_end_timestamp": "18:10-18:20",
+        "template_cell": "计划购电量!A111",
+        "template_original_label": "18:20-18:30",
+        "template_value_cell": "计划购电量!B111",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A112",
+        "source_time": "18:30",
+        "proposed_interval_if_end_timestamp": "18:20-18:30",
+        "template_cell": "计划购电量!A112",
+        "template_original_label": "18:30-18:40",
+        "template_value_cell": "计划购电量!B112",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A113",
+        "source_time": "18:40",
+        "proposed_interval_if_end_timestamp": "18:30-18:40",
+        "template_cell": "计划购电量!A113",
+        "template_original_label": "18:40-18:50",
+        "template_value_cell": "计划购电量!B113",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A114",
+        "source_time": "18:50",
+        "proposed_interval_if_end_timestamp": "18:40-18:50",
+        "template_cell": "计划购电量!A114",
+        "template_original_label": "18:50-19:00",
+        "template_value_cell": "计划购电量!B114",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A115",
+        "source_time": "19:00",
+        "proposed_interval_if_end_timestamp": "18:50-19:00",
+        "template_cell": "计划购电量!A115",
+        "template_original_label": "19:00-19:10",
+        "template_value_cell": "计划购电量!B115",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A116",
+        "source_time": "19:10",
+        "proposed_interval_if_end_timestamp": "19:00-19:10",
+        "template_cell": "计划购电量!A116",
+        "template_original_label": "19:10-19:20",
+        "template_value_cell": "计划购电量!B116",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A117",
+        "source_time": "19:20",
+        "proposed_interval_if_end_timestamp": "19:10-19:20",
+        "template_cell": "计划购电量!A117",
+        "template_original_label": "19:20-19:30",
+        "template_value_cell": "计划购电量!B117",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A118",
+        "source_time": "19:30",
+        "proposed_interval_if_end_timestamp": "19:20-19:30",
+        "template_cell": "计划购电量!A118",
+        "template_original_label": "19:30-19:40",
+        "template_value_cell": "计划购电量!B118",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A119",
+        "source_time": "19:40",
+        "proposed_interval_if_end_timestamp": "19:30-19:40",
+        "template_cell": "计划购电量!A119",
+        "template_original_label": "19:40-19:50",
+        "template_value_cell": "计划购电量!B119",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A120",
+        "source_time": "19:50",
+        "proposed_interval_if_end_timestamp": "19:40-19:50",
+        "template_cell": "计划购电量!A120",
+        "template_original_label": "19:50-20:00",
+        "template_value_cell": "计划购电量!B120",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A121",
+        "source_time": "20:00",
+        "proposed_interval_if_end_timestamp": "19:50-20:00",
+        "template_cell": "计划购电量!A121",
+        "template_original_label": "20:00-20:10",
+        "template_value_cell": "计划购电量!B121",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A122",
+        "source_time": "20:10",
+        "proposed_interval_if_end_timestamp": "20:00-20:10",
+        "template_cell": "计划购电量!A122",
+        "template_original_label": "20:10-20:20",
+        "template_value_cell": "计划购电量!B122",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A123",
+        "source_time": "20:20",
+        "proposed_interval_if_end_timestamp": "20:10-20:20",
+        "template_cell": "计划购电量!A123",
+        "template_original_label": "20:20-20:30",
+        "template_value_cell": "计划购电量!B123",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A124",
+        "source_time": "20:30",
+        "proposed_interval_if_end_timestamp": "20:20-20:30",
+        "template_cell": "计划购电量!A124",
+        "template_original_label": "20:30-20:40",
+        "template_value_cell": "计划购电量!B124",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A125",
+        "source_time": "20:40",
+        "proposed_interval_if_end_timestamp": "20:30-20:40",
+        "template_cell": "计划购电量!A125",
+        "template_original_label": "20:40-20:50",
+        "template_value_cell": "计划购电量!B125",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A126",
+        "source_time": "20:50",
+        "proposed_interval_if_end_timestamp": "20:40-20:50",
+        "template_cell": "计划购电量!A126",
+        "template_original_label": "20:50-21:00",
+        "template_value_cell": "计划购电量!B126",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A127",
+        "source_time": "21:00",
+        "proposed_interval_if_end_timestamp": "20:50-21:00",
+        "template_cell": "计划购电量!A127",
+        "template_original_label": "21:00-21:10",
+        "template_value_cell": "计划购电量!B127",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A128",
+        "source_time": "21:10",
+        "proposed_interval_if_end_timestamp": "21:00-21:10",
+        "template_cell": "计划购电量!A128",
+        "template_original_label": "21:10-21:20",
+        "template_value_cell": "计划购电量!B128",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A129",
+        "source_time": "21:20",
+        "proposed_interval_if_end_timestamp": "21:10-21:20",
+        "template_cell": "计划购电量!A129",
+        "template_original_label": "21:20-21:30",
+        "template_value_cell": "计划购电量!B129",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A130",
+        "source_time": "21:30",
+        "proposed_interval_if_end_timestamp": "21:20-21:30",
+        "template_cell": "计划购电量!A130",
+        "template_original_label": "21:30-21:40",
+        "template_value_cell": "计划购电量!B130",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A131",
+        "source_time": "21:40",
+        "proposed_interval_if_end_timestamp": "21:30-21:40",
+        "template_cell": "计划购电量!A131",
+        "template_original_label": "21:40-21:50",
+        "template_value_cell": "计划购电量!B131",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A132",
+        "source_time": "21:50",
+        "proposed_interval_if_end_timestamp": "21:40-21:50",
+        "template_cell": "计划购电量!A132",
+        "template_original_label": "21:50-22:00",
+        "template_value_cell": "计划购电量!B132",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A133",
+        "source_time": "22:00",
+        "proposed_interval_if_end_timestamp": "21:50-22:00",
+        "template_cell": "计划购电量!A133",
+        "template_original_label": "22:00-22:10",
+        "template_value_cell": "计划购电量!B133",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A134",
+        "source_time": "22:10",
+        "proposed_interval_if_end_timestamp": "22:00-22:10",
+        "template_cell": "计划购电量!A134",
+        "template_original_label": "22:10-22:20",
+        "template_value_cell": "计划购电量!B134",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A135",
+        "source_time": "22:20",
+        "proposed_interval_if_end_timestamp": "22:10-22:20",
+        "template_cell": "计划购电量!A135",
+        "template_original_label": "22:20-22:30",
+        "template_value_cell": "计划购电量!B135",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A136",
+        "source_time": "22:30",
+        "proposed_interval_if_end_timestamp": "22:20-22:30",
+        "template_cell": "计划购电量!A136",
+        "template_original_label": "22:30-22:40",
+        "template_value_cell": "计划购电量!B136",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A137",
+        "source_time": "22:40",
+        "proposed_interval_if_end_timestamp": "22:30-22:40",
+        "template_cell": "计划购电量!A137",
+        "template_original_label": "22:40-22:50",
+        "template_value_cell": "计划购电量!B137",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A138",
+        "source_time": "22:50",
+        "proposed_interval_if_end_timestamp": "22:40-22:50",
+        "template_cell": "计划购电量!A138",
+        "template_original_label": "22:50-23:00",
+        "template_value_cell": "计划购电量!B138",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A139",
+        "source_time": "23:00",
+        "proposed_interval_if_end_timestamp": "22:50-23:00",
+        "template_cell": "计划购电量!A139",
+        "template_original_label": "23:00-23:10",
+        "template_value_cell": "计划购电量!B139",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A140",
+        "source_time": "23:10",
+        "proposed_interval_if_end_timestamp": "23:00-23:10",
+        "template_cell": "计划购电量!A140",
+        "template_original_label": "23:10-23:20",
+        "template_value_cell": "计划购电量!B140",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A141",
+        "source_time": "23:20",
+        "proposed_interval_if_end_timestamp": "23:10-23:20",
+        "template_cell": "计划购电量!A141",
+        "template_original_label": "23:20-23:30",
+        "template_value_cell": "计划购电量!B141",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A142",
+        "source_time": "23:30",
+        "proposed_interval_if_end_timestamp": "23:20-23:30",
+        "template_cell": "计划购电量!A142",
+        "template_original_label": "23:30-23:40",
+        "template_value_cell": "计划购电量!B142",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A143",
+        "source_time": "23:40",
+        "proposed_interval_if_end_timestamp": "23:30-23:40",
+        "template_cell": "计划购电量!A143",
+        "template_original_label": "23:40-23:50",
+        "template_value_cell": "计划购电量!B143",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A144",
+        "source_time": "23:50",
+        "proposed_interval_if_end_timestamp": "23:40-23:50",
+        "template_cell": "计划购电量!A144",
+        "template_original_label": "23:50-0:00+1",
+        "template_value_cell": "计划购电量!B144",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      },
+      {
+        "source_cell": "Sheet1!A145",
+        "source_time": "0:00+1",
+        "proposed_interval_if_end_timestamp": "23:50-24:00",
+        "template_cell": "计划购电量!A145",
+        "template_original_label": "0:00+1-0:10+1",
+        "template_value_cell": "计划购电量!B145",
+        "mapping_status": "PROPOSED_NOT_APPROVED"
+      }
+    ]
+  },
+  "poc": "NOT_EXECUTED"
+}
