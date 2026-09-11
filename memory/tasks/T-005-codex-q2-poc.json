@@ -1,0 +1,23 @@
+{
+  "id": "T-005-codex-q2-poc",
+  "title": "问题2已确认口径下的最小闭环PoC",
+  "status": "in_progress",
+  "owner": "current user / Codex",
+  "branch": "codex/T-005-codex-q2-poc",
+  "updated_at": "2026-09-11T17:15:00+08:00",
+  "depends_on": [],
+  "goal": "运行问题2小规模PoC，验证历史预测、日前计划、实际执行和费用闭环，并提交重点逻辑供人工判断。",
+  "acceptance": [
+    "记录本轮B0-B8确认与预先声明的试验设置",
+    "完成1月因果热启动及2月1日至14日的基线和余量候选回放",
+    "执行手算、信息边界、独立费用与物理核算",
+    "交付真实PoC明细、费用对照和人工审阅清单；不冒称全年最优模型"
+  ],
+  "artifacts": ["planning/q2-poc-protocol.md"],
+  "checks": [],
+  "decisions": [],
+  "latest_handoff": null,
+  "next_action": "完成PoC代码及局部环境，提交后运行预定的小规模验证。",
+  "blockers": [],
+  "phase_status": {"human_target_gate": "approved_by_current_user", "poc": "not_executed", "human_model_gate": "not_reached"}
+}
