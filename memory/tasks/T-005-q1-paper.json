@@ -1,10 +1,10 @@
 {
   "id": "T-005-q1-paper",
   "title": "第一问独立LaTeX论文源稿",
-  "status": "in_progress",
+  "status": "review",
   "owner": "yuchi423 / current Agent",
   "branch": "codex/T-005-q1-paper",
-  "updated_at": "2026-09-11T13:58:58+08:00",
+  "updated_at": "2026-09-11T14:08:38+08:00",
   "depends_on": [
     "T-004-q1-tests"
   ],
@@ -15,13 +15,25 @@
     "独立tex不依赖外置图片或数据文件，静态检查通过",
     "共享交接与GitHub任务分支同步"
   ],
-  "artifacts": [],
-  "checks": [],
+  "artifacts": [
+    "paper/q1/question1.tex",
+    "paper/q1/README.md",
+    "paper/q1/sources.json",
+    "paper/q1/check_source.py",
+    "paper/q1/static_check.json",
+    "memory/handoffs/2026-09-11-T-005-q1-paper.md"
+  ],
+  "checks": [
+    "Static TeX/source checks PASS: labels, references, braces, environments, standalone dependencies",
+    "All 6 purchase rows, 6 storage rows, 145 embedded plot rows and 9 result macros match run03",
+    "Costs and battery energy reconstructed from dispatch; 10 source hashes verified",
+    "No TeX compiler available; PDF compilation and visual page checks NOT performed"
+  ],
   "decisions": [
     "memory/decisions/D-006-q1-pv-grid-topup-fix.md",
     "memory/decisions/D-007-confirmed-contract.md"
   ],
-  "latest_handoff": null,
-  "next_action": "撰写paper/q1/question1.tex并验证数值和LaTeX结构，不安装编译器或生成PDF。",
+  "latest_handoff": "memory/handoffs/2026-09-11-T-005-q1-paper.md",
+  "next_action": "用户审阅paper/q1/question1.tex；如需PDF排版验收，在现有LaTeX环境编译两次并检查版面。保持Q1既定口径，不扩展Task2。",
   "blockers": []
 }

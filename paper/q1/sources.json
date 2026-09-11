@@ -1,0 +1,23 @@
+{
+  "created_at": "2026-09-11T14:04:21+08:00",
+  "source_run": "experiments/q1-contract-tests-20260911-03",
+  "model_code_commit": "5fb0e33cb30ef2900e41f5ad5832adfa47e59d07",
+  "source_files": {
+    "experiments/q1-contract-tests-20260911-03/run.json": "a8927a5ff1f152dd1cbf004dbd32c3121de5b0d21f2f6461a300bdad08436c92",
+    "experiments/q1-contract-tests-20260911-03/results/summary_tables.csv": "d9818f2645e6a85e8ccbb1975a2b26f8661a088fa6995f122d99e40aa5ea018f",
+    "experiments/q1-contract-tests-20260911-03/results/end_rectangle/dispatch.csv": "79a9a184fc71355a32574953d3e12d0f442d9be7ce1d320f7be4f1781f720122",
+    "experiments/q1-contract-tests-20260911-03/results/end_rectangle/table1.csv": "b70dbf1ac323ec6580b3048a40d1c9fe4ab4c248763965e6eb84bf63564fab9f",
+    "experiments/q1-contract-tests-20260911-03/results/end_rectangle/table2.csv": "ec04c3ded75158c4c885639dc40be1bfacab83fde130e078f9634240ef944ee9",
+    "experiments/q1-contract-tests-20260911-03/results/end_rectangle/validation.json": "3d4260b1b956de8fd9f9b1133d89c7ad2b48b35122e0b2a10e3f0cc53b320bd3",
+    "experiments/q1-contract-tests-20260911-03/results/lp_comparison.json": "86e671e8bac4485828b3f4379e9ff49938f0c551d0ee83022171ca6cfe05c129",
+    "experiments/q1-contract-tests-20260911-03/independent_lp_check.json": "210bbf416d2f15200a1af90e0593e29cafac172051b2188414c7ddc036e05b42",
+    "planning/confirmed-contract.md": "b66c064f8cfa62b265afb3279bf5df9f3d564652c6482653f958a612b0e17904",
+    "数模论文模板.tex": "5440398a7492a89e2e60f346724c5dc816dd47764dab1747c9f8f80a023783c1"
+  },
+  "tex_sha256": "b532b25ed9f6154d65fac4ecace4f357b4f02e21a386f858ff051e3317c3ca11",
+  "compiled": false,
+  "page_layout_verified": false,
+  "paper_scope": "Q1 only; LP lower bound and strict MILP, no DP claim",
+  "authoring": "Original prose based on local verified results; user-provided reference paper not copied",
+  "font": "ctex Fandol, TeX Live bundled; no SimHei dependency"
+}
