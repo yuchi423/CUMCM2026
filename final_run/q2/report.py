@@ -2,6 +2,7 @@
 import csv
 import json
 import sys
+import shutil
 from collections import defaultdict
 from pathlib import Path
 import matplotlib
@@ -19,12 +20,14 @@ def table(path,headers,rows):
 
 
 def md(headers,rows):
-    return "| "+" | ".join(headers)+" |\n|"+" --- |"*len(headers)+"\n"+"\n".join("| "+" | ".join(f"{v:,.2f}" if isinstance(v,(float,np.floating)) else str(v) for v in row)+" |" for row in rows)
+    return "| "+" | ".join(headers)+" |\n|"+" --- |"*len(headers)+"\n"+"\n".join("| "+" | ".join(f"{(0. if abs(v)<1e-8 else v):,.2f}" if isinstance(v,(float,np.floating)) else str(v) for v in row)+" |" for row in rows)
 
 
 def main(run):
     meta=json.loads((run/"run.json").read_text(encoding="utf-8"));cfg=meta["config"]
     totals=json.loads((run/"totals.json").read_text(encoding="utf-8"));lookup={r["strategy"]:r for r in totals}
+    (run/"results").mkdir(exist_ok=True)
+    for name in ["summary_tables.csv","monthly.csv","periods.csv"]:shutil.copyfile(run/name,run/"results"/name)
     audit=json.loads((run/"independent_audit.json").read_text(encoding="utf-8"));assert audit["pass"]
     daily=read(run/"daily_summary.csv");monthly=read(run/"monthly.csv");periods=read(run/"periods.csv")
     rows=read(run/"operational_dispatch.csv");group=defaultdict(list)
@@ -63,7 +66,9 @@ def main(run):
     def save(fig,name):
         fig.savefig(figdir/(name+".png"),dpi=300,bbox_inches="tight");fig.savefig(figdir/(name+".pdf"),bbox_inches="tight");plt.close(fig)
     fig,ax=plt.subplots(figsize=(9,4.3))
-    for name,label,color in [("baseline","无余量基线","#6D7785"),("q0.8","固定0.8","#C68A34"),("operational","按时间选参策略","#225EA8")]:
+    plot_specs=[("baseline","无余量基线","#6D7785"),("operational","正式策略（本次选参仍为0.8）" if meta["selected_quantile"]==.8 else "按时间选参策略","#225EA8")]
+    if meta["selected_quantile"]!=.8:plot_specs.insert(1,("q0.8","固定0.8","#C68A34"))
+    for name,label,color in plot_specs:
         a=[r for r in monthly if r["strategy"]==name];ax.plot([int(r["month"]) for r in a],[float(r["total_cost"])/1e4 for r in a],marker="o",label=label,color=color)
     ax.set(xlabel="月份",ylabel="月总费用（万元）",xticks=range(2,13));ax.legend();ax.grid(alpha=.2);save(fig,"Fig1_monthly_cost")
     fig,ax=plt.subplots(figsize=(9,4.3))
@@ -131,7 +136,7 @@ def main(run):
 
 ## C 图表解读
 
-- Fig1_monthly_cost：基线、固定0.8和按时间选参策略的各月现金费用，观察季节稳定性。
+- Fig1_monthly_cost：基线与正式策略各月现金费用；本次正式策略和固定0.8完全一致，合并同一曲线显示。
 - Fig2_quantile_comparison：选参、验证和留出分别展示库存调整日均费用，避免用月份天数差异误判。
 - Fig3_paper_day_storage：四个指定日的真实库存轨迹与安全上下界，展示跨日库存并非每天6000。
 

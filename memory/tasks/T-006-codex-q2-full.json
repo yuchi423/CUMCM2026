@@ -1,9 +1,11 @@
 {
   "id": "T-006-codex-q2-full", "title": "问题2全年历史分位数调度与正式结果",
-  "status": "in_progress", "owner": "current user / Codex", "branch": "codex/T-006-codex-q2-full",
-  "updated_at": "2026-09-11T19:00:00+08:00", "depends_on": ["T-005-codex-q2-poc"],
+  "status": "review", "owner": "current user / Codex", "branch": "codex/T-006-codex-q2-full",
+  "updated_at": "2026-09-11T19:20:47+08:00", "depends_on": ["T-005-codex-q2-poc"],
   "goal": "按获批方案运行全年、选择分位数并交付result2和指定四日结果。",
   "acceptance": ["334天因果调度及独立核算", "先选参后验证和留出，真实电量连续", "正式Excel、图、报告、一键入口"],
-  "artifacts": ["planning/q2-full-protocol.md"], "checks": [], "decisions": [], "latest_handoff": null,
-  "next_action": "提交固定协议及实现后运行全年。", "blockers": []
+  "artifacts": ["planning/q2-full-protocol.md", "planning/q2-full-results.md", "experiments/q2-full-20260911-01/model_report.md", "outputs/T-006-q2-full-20260911-01/result2.xlsx", "final_run/q2/README.md"],
+  "checks": ["365天原始输入核验PASS", "389232行多策略独立账本、预测、计划和选参复算PASS", "11项手算和32项多季节信息扰动检查PASS", "67437单元格回读及原始账本独立映射核验PASS", "7个工作表和3幅PNG/PDF图视觉核验PASS"],
+  "decisions": ["memory/decisions/D-009-q2-full-selection.md"], "latest_handoff": "memory/handoffs/2026-09-11-T-006-q2-full.md",
+  "next_action": "团队审阅全年模型报告和result2，按需转写论文；进一步窗口/库存/备用实验仅为建议，未执行。", "blockers": []
 }

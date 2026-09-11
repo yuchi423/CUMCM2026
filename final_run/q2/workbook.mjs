@@ -23,6 +23,12 @@ for(const [name,table] of Object.entries(data)){
   s.getRangeByIndexes(1,1,rows.length,nc-1).setNumberFormat('#,##0.00');
   s.getRangeByIndexes(1,0,rows.length,1).setNumberFormat('yyyy-mm-dd');
   s.getRangeByIndexes(0,0,nr,1).format.columnWidth=16;
+  s.getRangeByIndexes(0,0,nr,1).format.horizontalAlignment='center';
+  s.getRangeByIndexes(0,0,1,nc).format.horizontalAlignment='center';
+  if(name.includes('充放电')||name==='指定日表2'){
+    s.getRangeByIndexes(1,1,rows.length,1).format.horizontalAlignment='center';
+    s.getRangeByIndexes(1,4,rows.length,1).format.horizontalAlignment='center';
+  }
   s.freezePanes.freezeRows(1);
   if(name==='计划购电量'){
     s.getRangeByIndexes(1,145,rows.length,1).formulas=rows.map((_,i)=>[`=SUM(B${i+2}:${col(144)}${i+2})`]);
