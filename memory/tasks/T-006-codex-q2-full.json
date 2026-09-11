@@ -1,0 +1,9 @@
+{
+  "id": "T-006-codex-q2-full", "title": "问题2全年历史分位数调度与正式结果",
+  "status": "in_progress", "owner": "current user / Codex", "branch": "codex/T-006-codex-q2-full",
+  "updated_at": "2026-09-11T19:00:00+08:00", "depends_on": ["T-005-codex-q2-poc"],
+  "goal": "按获批方案运行全年、选择分位数并交付result2和指定四日结果。",
+  "acceptance": ["334天因果调度及独立核算", "先选参后验证和留出，真实电量连续", "正式Excel、图、报告、一键入口"],
+  "artifacts": ["planning/q2-full-protocol.md"], "checks": [], "decisions": [], "latest_handoff": null,
+  "next_action": "提交固定协议及实现后运行全年。", "blockers": []
+}

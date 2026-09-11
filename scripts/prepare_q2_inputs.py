@@ -82,12 +82,13 @@ def read_sources(config):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", required=True, type=Path)
+    parser.add_argument("--config", type=Path, default=ROOT / "configs/q2_poc.json")
     args = parser.parse_args()
     target = args.output.resolve()
     assert target.is_relative_to((ROOT / "experiments").resolve())
     if target.exists():
         raise FileExistsError("Choose a unique run directory")
-    config = json.loads((ROOT / "configs/q2_poc.json").read_text(encoding="utf-8"))
+    config = json.loads(args.config.read_text(encoding="utf-8"))
     data = read_sources(config)
     target.mkdir(parents=True)
     (target / "inputs.json").write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
