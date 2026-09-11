@@ -1,0 +1,26 @@
+{
+  "solver": {
+    "objective": 35859.3221831198,
+    "status": 0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "mip_gap": 0.0,
+    "dual_bound": 35859.3221831198,
+    "solve_seconds": 0.047821900006965734
+  },
+  "independent_audit": {
+    "balance_max_kwh": 1.1368683772161603e-13,
+    "state_reconstruction_max_kwh": 2.7284841053187847e-12,
+    "terminal_error_kwh": 1.8189894035458565e-12,
+    "bound_violation_kwh": 2.2737367544323206e-12,
+    "power_violation_kw": 0.0,
+    "negative_flow_kwh": 0.0,
+    "mutual_violation_count": 0,
+    "pv_priority_max_kwh": 0.0,
+    "pv_first_load_violation_kwh": 0.0,
+    "cost_recalculation_error_yuan": 0.0,
+    "state_min_kwh": 1199.9999999999977,
+    "state_max_kwh": 10800.0,
+    "pass": true
+  },
+  "xlsx_roundtrip": "PASS"
+}

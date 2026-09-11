@@ -1,0 +1,39 @@
+{
+  "id": "T-003-yuchi-q1-review-upload",
+  "title": "上传问题1模型复核补充文档",
+  "status": "review",
+  "owner": "current user / Codex",
+  "branch": "codex/T-003-yuchi-q1-review-upload",
+  "updated_at": "2026-09-11T00:33:38+08:00",
+  "depends_on": [
+    "T-002-codex-q1"
+  ],
+  "goal": "将用户指定的问题1模型复核文档放入 GitHub 私有库的 planning 目录，保留可移交的文件路径。",
+  "acceptance": [
+    "planning/model_selection2.md 存在且内容与用户提供文件一致，仅文件名和首行链接做仓库可移植性修正",
+    "planning/README.md 可直接导航到该文档",
+    "任务分支推送后远端 SHA 与本地 HEAD 一致"
+  ],
+  "artifacts": [
+    "planning/model_selection2.md",
+    "memory/handoffs/2026-09-11-T-003-yuchi-q1-review-upload.md"
+  ],
+  "checks": [
+    "Source SHA256 before portability edit: 06AB084FAAA1B45433F26D16E8091562F11DBB5004648D0AC2F3F370C4E67A5F",
+    "Repository artifact SHA256 after link edit: BD09FE953C198A6E88895B8513030855CBEF39A0AA96F03B61AC901972A8DA41",
+    "Content audit: 172 lines; lines 2-172 byte-equivalent after UTF-8 line parsing; only line 1 changed",
+    "python scripts/check_state.py: PASS",
+    "git diff --check: PASS",
+    "Local absolute path scan: PASS, none found",
+    "First remote checkpoint verified: local and remote SHA bdf4b3e8a82df2e215bf4c9399af147f91dbb880 matched"
+  ],
+  "decisions": [],
+  "latest_handoff": "memory/handoffs/2026-09-11-T-003-yuchi-q1-review-upload.md",
+  "next_action": "团队复核文档后合并该分支；模型 PoC 仍按 T-002 的 Human Gate 单独推进。",
+  "blockers": [],
+  "phase_status": {
+    "source_identified": "completed",
+    "portable_path": "completed",
+    "repository_upload": "completed"
+  }
+}

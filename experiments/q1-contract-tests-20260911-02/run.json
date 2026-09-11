@@ -1,0 +1,21 @@
+{
+  "code_commit": "a56a3353079600045be28cd06cabe9da45135dc8",
+  "command": "python scripts/run_q1_tests.py --output experiments/q1-contract-tests-20260911-02",
+  "python": "3.12.14",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "dependencies": {
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "openpyxl": "3.1.5",
+    "matplotlib": "3.11.1"
+  },
+  "input_hashes": {
+    "problem/C题.pdf": "2c098f6ae9dd47ae965aebdec3b9facf3de6c173f999783c1012c08fc5fb9d2d",
+    "data/raw/附件1.xlsx": "66b87134f5ecccd68184d3539bb1293ef039f9e0fdd955a589b9bfa7f227c377",
+    "data/templates/result1.xlsx": "28360e0974e7d6065394a8aba4e14a86773ae0036cc7d3ea1b211b515b03d688"
+  },
+  "randomness": "none; deterministic optimization",
+  "scope": "Q1 conditional contract tests only, no forecasting or final model approval",
+  "small_tests_pass": true,
+  "all_case_audits_pass": true
+}
