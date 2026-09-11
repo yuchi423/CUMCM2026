@@ -1,0 +1,18 @@
+{
+  "period": "2025-02-01..2025-04-30",
+  "choices": {
+    "forecast": "weekday",
+    "residual": "residual14",
+    "q": "control",
+    "target": "target1200"
+  },
+  "spec": {
+    "name": "combined",
+    "forecast": "weekday",
+    "q": 0.8,
+    "residual": 14,
+    "target": 1200,
+    "horizon": 1,
+    "controller": "greedy"
+  }
+}
