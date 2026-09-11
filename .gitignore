@@ -13,6 +13,8 @@ __pycache__/
 Thumbs.db
 tmp/
 scratch/
+final_run/q2/node_modules/
+outputs/**/result2.xlsx.inspect.ndjson
 *.aux
 *.fdb_latexmk
 *.fls

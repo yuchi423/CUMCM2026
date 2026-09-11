@@ -1,0 +1,4 @@
+# Exact packages used by the successful solver and independent workbook audit.
+numpy==2.4.2
+scipy==1.17.1
+openpyxl==3.1.5

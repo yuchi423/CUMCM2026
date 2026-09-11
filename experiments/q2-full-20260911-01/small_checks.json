@@ -1,0 +1,52 @@
+[
+  {
+    "name": "100_plan_plus_20_emergency_costs_200",
+    "pass": true
+  },
+  {
+    "name": "emergency_price_is_5_not_6",
+    "pass": true
+  },
+  {
+    "name": "unused_plan_is_paid_not_refunded",
+    "pass": true
+  },
+  {
+    "name": "pv_plus_grid_topup_and_roundtrip",
+    "pass": true
+  },
+  {
+    "name": "pv_fills_headroom_before_paid_grid",
+    "pass": true
+  },
+  {
+    "name": "power_limited_emergency_and_no_emergency_charge",
+    "pass": true
+  },
+  {
+    "name": "exact_grid_efficiency",
+    "pass": true,
+    "expected_cost": 100,
+    "actual_cost": 100.0
+  },
+  {
+    "name": "exact_grid_efficiency_perfect_forecast_replay",
+    "pass": true
+  },
+  {
+    "name": "exact_pv_and_grid_topup",
+    "pass": true,
+    "expected_cost": 10,
+    "actual_cost": 10.0
+  },
+  {
+    "name": "exact_pv_and_grid_topup_perfect_forecast_replay",
+    "pass": true
+  },
+  {
+    "name": "all_16_modes_continuous_exact_lp",
+    "pass": true,
+    "actual_cost": 18.000000000000014,
+    "enumeration_best": 18.000000000000014
+  }
+]

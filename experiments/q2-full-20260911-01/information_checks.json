@@ -1,0 +1,190 @@
+[
+  {
+    "date": "2025-02-01",
+    "quantile": null,
+    "max_forecast_change": 0.0,
+    "pass": true
+  },
+  {
+    "date": "2025-02-01",
+    "quantile": 0.6,
+    "max_forecast_change": 0.0,
+    "pass": true
+  },
+  {
+    "date": "2025-02-01",
+    "quantile": 0.7,
+    "max_forecast_change": 0.0,
+    "pass": true
+  },
+  {
+    "date": "2025-02-01",
+    "quantile": 0.8,
+    "max_forecast_change": 0.0,
+    "pass": true
+  },
+  {
+    "date": "2025-02-01",
+    "quantile": 0.85,
+    "max_forecast_change": 0.0,
+    "pass": true
+  },
+  {
+    "date": "2025-02-01",
+    "quantile": 0.9,
+    "max_forecast_change": 0.0,
+    "pass": true
+  },
+  {
+    "date": "2025-02-01",
+    "quantile": 0.95,
+    "max_forecast_change": 0.0,
+    "pass": true
+  },
+  {
+    "date": "2025-05-01",
+    "quantile": null,
+    "max_forecast_change": 0.0,
+    "pass": true
+  },
+  {
+    "date": "2025-05-01",
+    "quantile": 0.6,
+    "max_forecast_change": 0.0,
+    "pass": true
+  },
+  {
+    "date": "2025-05-01",
+    "quantile": 0.7,
+    "max_forecast_change": 0.0,
+    "pass": true
+  },
+  {
+    "date": "2025-05-01",
+    "quantile": 0.8,
+    "max_forecast_change": 0.0,
+    "pass": true
+  },
+  {
+    "date": "2025-05-01",
+    "quantile": 0.85,
+    "max_forecast_change": 0.0,
+    "pass": true
+  },
+  {
+    "date": "2025-05-01",
+    "quantile": 0.9,
+    "max_forecast_change": 0.0,
+    "pass": true
+  },
+  {
+    "date": "2025-05-01",
+    "quantile": 0.95,
+    "max_forecast_change": 0.0,
+    "pass": true
+  },
+  {
+    "date": "2025-09-01",
+    "quantile": null,
+    "max_forecast_change": 0.0,
+    "pass": true
+  },
+  {
+    "date": "2025-09-01",
+    "quantile": 0.6,
+    "max_forecast_change": 0.0,
+    "pass": true
+  },
+  {
+    "date": "2025-09-01",
+    "quantile": 0.7,
+    "max_forecast_change": 0.0,
+    "pass": true
+  },
+  {
+    "date": "2025-09-01",
+    "quantile": 0.8,
+    "max_forecast_change": 0.0,
+    "pass": true
+  },
+  {
+    "date": "2025-09-01",
+    "quantile": 0.85,
+    "max_forecast_change": 0.0,
+    "pass": true
+  },
+  {
+    "date": "2025-09-01",
+    "quantile": 0.9,
+    "max_forecast_change": 0.0,
+    "pass": true
+  },
+  {
+    "date": "2025-09-01",
+    "quantile": 0.95,
+    "max_forecast_change": 0.0,
+    "pass": true
+  },
+  {
+    "date": "2025-12-21",
+    "quantile": null,
+    "max_forecast_change": 0.0,
+    "pass": true
+  },
+  {
+    "date": "2025-12-21",
+    "quantile": 0.6,
+    "max_forecast_change": 0.0,
+    "pass": true
+  },
+  {
+    "date": "2025-12-21",
+    "quantile": 0.7,
+    "max_forecast_change": 0.0,
+    "pass": true
+  },
+  {
+    "date": "2025-12-21",
+    "quantile": 0.8,
+    "max_forecast_change": 0.0,
+    "pass": true
+  },
+  {
+    "date": "2025-12-21",
+    "quantile": 0.85,
+    "max_forecast_change": 0.0,
+    "pass": true
+  },
+  {
+    "date": "2025-12-21",
+    "quantile": 0.9,
+    "max_forecast_change": 0.0,
+    "pass": true
+  },
+  {
+    "date": "2025-12-21",
+    "quantile": 0.95,
+    "max_forecast_change": 0.0,
+    "pass": true
+  },
+  {
+    "date": "2025-03-20",
+    "future_slots_change": 0.0,
+    "pass": true
+  },
+  {
+    "date": "2025-06-21",
+    "future_slots_change": 0.0,
+    "pass": true
+  },
+  {
+    "date": "2025-09-23",
+    "future_slots_change": 0.0,
+    "pass": true
+  },
+  {
+    "date": "2025-12-21",
+    "future_slots_change": 0.0,
+    "pass": true
+  }
+]

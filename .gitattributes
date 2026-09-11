@@ -9,3 +9,4 @@
 *.jpg binary
 *.xlsx binary
 *.zip binary
+experiments/q2-full-*/inputs.json -text

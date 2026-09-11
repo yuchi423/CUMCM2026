@@ -1,0 +1,11 @@
+{
+  "pass": true,
+  "checked_cells": 67437,
+  "max_numeric_error": 0.0,
+  "sheets": 7,
+  "planned_days": 334,
+  "storage_rows": 2004,
+  "all_paper_dates": true,
+  "cash_total_matches": true,
+  "independent_ledger_to_plan_storage_paper_and_emergency_reconciliation": true
+}

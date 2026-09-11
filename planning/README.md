@@ -8,3 +8,7 @@
 [model_selection2.md](model_selection2.md) 保存用户提供的问题1模型复核补充文档；为便于 GitHub 内导航，仅规范了文件名并将首行的本地绝对链接改为相对链接。
 
 最新问题1数值口径测试与模型判断：[q1-test-verdict.md](q1-test-verdict.md)，对应T-004。
+
+问题2已确认口径下的两周PoC、独立核算与人工审阅项：[q2-poc-verdict.md](q2-poc-verdict.md)，对应T-005。
+
+问题2全年正式建模：[q2-full-results.md](q2-full-results.md)，含分位数选择、334天费用及结果文件，T-006已按用户授权执行。

@@ -1,0 +1,36 @@
+[
+  {
+    "test": "current_and_future_days_do_not_change_plan",
+    "strategy": "baseline",
+    "max_plan_difference_kwh": 0.0,
+    "pass": true
+  },
+  {
+    "test": "perfect_planning_scenario_replays_without_emergency",
+    "strategy": "baseline",
+    "pass": true
+  },
+  {
+    "test": "future_slots_do_not_change_past_actions",
+    "strategy": "baseline",
+    "max_difference": 0.0,
+    "pass": true
+  },
+  {
+    "test": "current_and_future_days_do_not_change_plan",
+    "strategy": "q80_margin",
+    "max_plan_difference_kwh": 0.0,
+    "pass": true
+  },
+  {
+    "test": "perfect_planning_scenario_replays_without_emergency",
+    "strategy": "q80_margin",
+    "pass": true
+  },
+  {
+    "test": "future_slots_do_not_change_past_actions",
+    "strategy": "q80_margin",
+    "max_difference": 0.0,
+    "pass": true
+  }
+]
