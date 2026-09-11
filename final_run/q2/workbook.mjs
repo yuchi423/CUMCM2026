@@ -1,10 +1,9 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import {fileURLToPath} from 'node:url';
 import {Workbook, SpreadsheetFile} from '@oai/artifact-tool';
 
 const run=path.resolve(process.argv[2]);
-const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'../..');
+const root=path.resolve(run,'../..');
 const out=path.join(root,'outputs',`T-006-${path.basename(run)}`);
 await fs.mkdir(out,{recursive:true});
 const data=JSON.parse(await fs.readFile(path.join(run,'workbook_data.json'),'utf8'));

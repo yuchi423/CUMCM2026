@@ -5,9 +5,11 @@ import gzip
 import hashlib
 import json
 import platform
+import shutil
 import subprocess
 import sys
 import time
+import tempfile
 from pathlib import Path
 
 import numpy as np
@@ -169,6 +171,7 @@ def main():
     p.add_argument("--output",type=Path,required=True)
     p.add_argument("--io-python",default=sys.executable)
     p.add_argument("--node",default="node")
+    p.add_argument("--node-modules",type=Path,help="Existing bundled Node module directory; creates a task-only temporary junction")
     p.add_argument("--compute-only",action="store_true")
     a=p.parse_args();run=a.output.resolve()
     assert run.is_relative_to(ROOT/"experiments") and not run.exists()
@@ -179,7 +182,14 @@ def main():
         subprocess.run([a.io_python,str(ROOT/"final_run/q2/audit.py"),str(run)],cwd=ROOT,check=True)
         subprocess.run([sys.executable,str(ROOT/"final_run/q2/report.py"),str(run)],cwd=ROOT,check=True)
         if not a.compute_only:
-            subprocess.run([a.node,str(ROOT/"final_run/q2/workbook.mjs"),str(run)],cwd=ROOT,check=True)
+            builder=ROOT/"final_run/q2/workbook.mjs"
+            if a.node_modules:
+                stage=Path(tempfile.mkdtemp(prefix="cumcm-q2-xlsx-"))
+                shutil.copyfile(builder,stage/"workbook.mjs");builder=stage/"workbook.mjs"
+                quoted=lambda p:"'"+str(p).replace("'","''")+"'"
+                subprocess.run(["powershell","-NoProfile","-Command",
+                    "New-Item -ItemType Junction -Path "+quoted(stage/"node_modules")+" -Target "+quoted(a.node_modules.resolve())],check=True)
+            subprocess.run([a.node,str(builder),str(run)],cwd=ROOT,check=True)
             subprocess.run([a.io_python,str(ROOT/"final_run/q2/check_workbook.py"),str(run)],cwd=ROOT,check=True)
     except Exception as e:
         dump(run/"failure.json",{"error":repr(e)});raise

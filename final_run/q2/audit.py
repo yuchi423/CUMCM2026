@@ -98,7 +98,7 @@ def main(run):
     for total in totals:
         subset=[r for r in daily if r["strategy"]==total["strategy"]]
         assert abs(total["total_cost"]-math.fsum(float(r["total_cost"]) for r in subset))<.01
-    result={"pass":max(errors.values())<1e-6 and predmax<1e-6 and planmax<1e-6,"rows":rows,
+    result={"pass":bool(max(errors.values())<1e-6 and predmax<1e-6 and planmax<1e-6),"rows":rows,
         "days_per_strategy":334,"all_365_source_days_checked":True,"max_errors":dict(errors),
         "independent_forecast_max_error":float(predmax),"independent_planned_flow_max_error":float(planmax),
         "lp_days":int(lp),"milp_days":int(milp),"max_solver_seconds":solve_max,"selected_quantile":chosen,
