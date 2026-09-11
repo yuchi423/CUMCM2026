@@ -1,0 +1,44 @@
+{
+  "id": "T-004-q1-tests",
+  "title": "问题1用户口径与A1/A5数值测试",
+  "status": "review",
+  "owner": "yuchi423 / current Agent",
+  "branch": "codex/T-004-q1-tests",
+  "updated_at": "2026-09-11T10:28:17+08:00",
+  "depends_on": [],
+  "goal": "按用户确认的效率、固定库存、光伏优先规则，执行问题1最小优化与独立核算，分别比较时间解释和模板映射。",
+  "acceptance": [
+    "3种A1解释分别求解并通过物理/费用核算",
+    "A5标签覆盖和Excel往返验证",
+    "手算与短期枚举验证",
+    "保存数值产物、真实运行记录和可接续交接"
+  ],
+  "artifacts": [
+    "planning/q1-test-verdict.md",
+    "scripts/run_q1_tests.py",
+    "scripts/independent_q1_check.py",
+    "experiments/q1-contract-tests-20260911-03/run.json",
+    "experiments/q1-contract-tests-20260911-03/model_report.md",
+    "experiments/q1-contract-tests-20260911-03/independent_lp_check.json",
+    "experiments/q1-contract-tests-20260911-03/results/end_rectangle/result1.xlsx",
+    "memory/handoffs/2026-09-11-T-004-q1-correction.md",
+    "planning/confirmed-contract.md",
+    "memory/handoffs/2026-09-11-T-004-contract-sync.md"
+  ],
+  "checks": [
+    "5 analytical/exhaustive-mode tests PASS including PV+grid top-up regression",
+    "3 LP and strict MILP cases pass physical, cost, priority and Excel checks",
+    "Independent LP reassembly matches saved strict main dispatch within 0.01 yuan",
+    "Earlier runs 01/02 invalidated for extra grid charging ban; use 03",
+    "New Q1 PNG visually reviewed; final shared-state and input-hash checks recorded in commit completion output",
+    "Q3 settlement examples checked algebraically: 100->80 = 90p; 100->80->90 = 105p; Q3/Q4 solver not executed"
+  ],
+  "decisions": [
+    "memory/decisions/D-005-q1-user-contract-tests.md",
+    "memory/decisions/D-006-q1-pv-grid-topup-fix.md",
+    "memory/decisions/D-007-confirmed-contract.md"
+  ],
+  "latest_handoff": "memory/handoffs/2026-09-11-T-004-contract-sync.md",
+  "next_action": "先读planning/confirmed-contract.md和D-007，再读D-006及Q1最新03结果；保留A1/A5最终验收与后续模型假设为待定，不自动采用外部DP方案。",
+  "blockers": []
+}

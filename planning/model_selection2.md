@@ -1,3 +1,5 @@
+> 后续更新（2026-09-11）：用户已授权口径测试，实际PoC和结论见 [q1-test-verdict.md](q1-test-verdict.md) 与 T-004 最新交接。下文保留前期审查原貌，其中“未执行/等待测试授权”是当时状态。
+
 基于 [model_selection.md](model_selection.md) 的结构性结论是：
 
 > **Baseline 确定性 LP 最适合做主模型；Candidate B 只适合作为出现退化解时的二级择优；Candidate A 应作为互斥条件无法由 LP 保证时的后备。**
