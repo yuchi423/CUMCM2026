@@ -51,7 +51,9 @@ def solve_plan(price, load, pv, initial, target, config, previous=None, strict=F
     ub[d] = np.minimum(cap, np.maximum(load - pv, 0.0))
     ub[s] = surplus
     lb[e], ub[e] = emin, emax
-    lb[e[-1]] = ub[e[-1]] = target
+    # Q3 has no equal terminal-SOC requirement.  This target is a lower bound;
+    # unavoidable PV charging may legitimately leave more energy.
+    lb[e[-1]] = max(lb[e[-1]], target)
     ub[z] = ub[w] = 1.0
     if previous is None:
         ub[up] = ub[down] = 0.0
@@ -102,6 +104,8 @@ def solve_plan(price, load, pv, initial, target, config, previous=None, strict=F
         raise RuntimeError(f"Solver status {result.status}: {result.message}")
     flow = {key: result.x[groups[key]] for key in ["g", "c", "d", "s", "e"]}
     check = plan_audit(price, load, pv, flow, initial, target, config)
+    check["terminal"] = max(0.0, target - float(flow["e"][-1]))
+    check["pass"] = all(v <= 1e-6 for key, v in check.items() if key != "pass")
     if previous is not None:
         check["adjustment_balance"] = float(np.max(np.abs(
             flow["g"] - previous - result.x[up] + result.x[down])))
