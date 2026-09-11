@@ -4,7 +4,7 @@
   "status": "handoff",
   "owner": "current user / Codex",
   "branch": "codex/T-002-codex-q1-judge",
-  "updated_at": "2026-09-11T01:12:57+08:00",
+  "updated_at": "2026-09-11T10:28:17+08:00",
   "depends_on": [],
   "goal": "仅推进问题1，按model-judge完成目标口径、结构筛选、获批后的PoC与模型裁决。",
   "acceptance": [
@@ -22,7 +22,7 @@
   "checks": [
     "inspect_q1_inputs.py: EXECUTED; 3 source hashes match, 144 timestamps continuous, numeric columns complete and finite",
     "Raw Q1 template inspected; proposed time mapping NOT APPROVED",
-    "PoC completed in T-004; see planning/q1-test-verdict.md and experiments/q1-contract-tests-20260911-02 for numerical evidence"
+    "PoC completed in T-004; see planning/q1-test-verdict.md and experiments/q1-contract-tests-20260911-03 for numerical evidence"
   ],
   "decisions": [
     "memory/decisions/D-004-q1-target-contract.md"

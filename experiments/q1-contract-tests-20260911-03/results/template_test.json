@@ -1,0 +1,47 @@
+{
+  "corrected_coverage": "00:00-24:00",
+  "raw_coverage": "00:10-next-day 00:10",
+  "missing_minutes_in_requested_day": 10,
+  "outside_minutes": 10,
+  "all_rows_label_shift_minutes": 10,
+  "relabel_only_cost_difference": 0.0,
+  "roundtrip": "PASS",
+  "table1_label_only_comparison": [
+    {
+      "interval": "10:00-10:10",
+      "correct_grid_kwh": 0.0,
+      "wrong_if_original_labels_trusted_kwh": 0.0,
+      "difference_kwh": 0.0
+    },
+    {
+      "interval": "12:00-12:10",
+      "correct_grid_kwh": 480.41245000000004,
+      "wrong_if_original_labels_trusted_kwh": 486.4028999999998,
+      "difference_kwh": 5.9904499999997824
+    },
+    {
+      "interval": "14:00-14:10",
+      "correct_grid_kwh": 0.0,
+      "wrong_if_original_labels_trusted_kwh": 0.0,
+      "difference_kwh": 0.0
+    },
+    {
+      "interval": "16:00-16:10",
+      "correct_grid_kwh": 445.43165000000005,
+      "wrong_if_original_labels_trusted_kwh": 394.9314833333334,
+      "difference_kwh": -50.500166666666644
+    },
+    {
+      "interval": "18:00-18:10",
+      "correct_grid_kwh": 531.8940499999999,
+      "wrong_if_original_labels_trusted_kwh": 636.9826166666667,
+      "difference_kwh": 105.0885666666668
+    },
+    {
+      "interval": "20:00-20:10",
+      "correct_grid_kwh": 0.0,
+      "wrong_if_original_labels_trusted_kwh": 0.0,
+      "difference_kwh": 0.0
+    }
+  ]
+}
