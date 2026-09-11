@@ -1,0 +1,30 @@
+{
+  "id": "T-008-q3-selection",
+  "title": "第三问模型路线选择",
+  "status": "review",
+  "owner": "yuchi423 / current Agent",
+  "branch": "codex/T-008-q3-selection",
+  "updated_at": "2026-09-11T20:57:29.345494+08:00",
+  "depends_on": [
+    "T-007-q2-improve"
+  ],
+  "goal": "核对第三问口径及预报结构，比较路线，提出主备方案和可执行验证设计。",
+  "acceptance": [
+    "至少三条路线及主备方案",
+    "区分调整权限和预报信息价值",
+    "不将提案冒充求解结果"
+  ],
+  "artifacts": [
+    "planning/model-selection.md"
+  ],
+  "checks": [
+    "题面第2页与D-007费用口径核对",
+    "附件3 1460条键唯一且24个预报值完整"
+  ],
+  "decisions": [
+    "memory/decisions/D-011-q3-model-selection.md"
+  ],
+  "latest_handoff": "memory/handoffs/2026-09-11-T-008-q3-selection.md",
+  "next_action": "按选型提案准备账本和时序映射小测试，再进行短期PoC比较。",
+  "blockers": []
+}
