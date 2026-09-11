@@ -1,0 +1,29 @@
+{
+  "id": "T-009-q3-model",
+  "title": "第三问三路线实测比较",
+  "status": "in_progress",
+  "owner": "yuchi423 / current Agent",
+  "branch": "codex/T-009-q3-model",
+  "updated_at": "2026-09-11T21:10:00+08:00",
+  "depends_on": ["T-008-q3-selection"],
+  "goal": "复用第二问物理执行器，运行第三问确定性滚动、误差余量和连续误差场景三条方向并审计。",
+  "acceptance": [
+    "三条方向和必要控制组完成334天运行",
+    "逐次调整账本、物理状态和信息边界通过独立检查",
+    "Git待提交区只含必要代码、汇总、报告和图表"
+  ],
+  "artifacts": [
+    "planning/q3-experiment-protocol.md",
+    "scripts/q3_core.py",
+    "scripts/run_q3_models.py",
+    "scripts/audit_q3_models.py",
+    "scripts/report_q3_models.py",
+    "final_run/q3/main.py",
+    "final_run/q3/README.md"
+  ],
+  "checks": [],
+  "decisions": ["memory/decisions/D-011-q3-model-selection.md"],
+  "latest_handoff": null,
+  "next_action": "提交运行前协议和代码，然后运行唯一实验目录并独立审计。",
+  "blockers": []
+}
