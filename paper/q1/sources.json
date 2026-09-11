@@ -12,12 +12,13 @@
     "experiments/q1-contract-tests-20260911-03/results/lp_comparison.json": "86e671e8bac4485828b3f4379e9ff49938f0c551d0ee83022171ca6cfe05c129",
     "experiments/q1-contract-tests-20260911-03/independent_lp_check.json": "210bbf416d2f15200a1af90e0593e29cafac172051b2188414c7ddc036e05b42",
     "planning/confirmed-contract.md": "b66c064f8cfa62b265afb3279bf5df9f3d564652c6482653f958a612b0e17904",
-    "数模论文模板.tex": "5440398a7492a89e2e60f346724c5dc816dd47764dab1747c9f8f80a023783c1"
+    "数模论文模板.tex": "2fd12e20f2e5ad26abb0b55f88f035284ddf3024d9f48b61a3c41a60ffdeebce"
   },
-  "tex_sha256": "b532b25ed9f6154d65fac4ecace4f357b4f02e21a386f858ff051e3317c3ca11",
+  "tex_sha256": "33ff64be6da06f5134b0d87ab8ade8ea27dd12c2bf13810441006894bfe7bd49",
   "compiled": false,
   "page_layout_verified": false,
   "paper_scope": "Q1 only; LP lower bound and strict MILP, no DP claim",
   "authoring": "Original prose based on local verified results; user-provided reference paper not copied",
-  "font": "ctex Fandol, TeX Live bundled; no SimHei dependency"
+  "font": "ctex Fandol, TeX Live bundled; no SimHei dependency",
+  "hash_mode": "SHA256 of UTF-8 text after universal-newline normalization to LF; binary original inputs use data/MANIFEST.csv"
 }

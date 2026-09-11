@@ -17,3 +17,5 @@
     python scripts/check_inputs.py
 
 check_source.py核验TeX括号/环境/交叉引用、内嵌曲线和结果表、主要数值与能量账本、来源哈希。它不替代LaTeX编译，不验证最终版面；后续修改tex后应审核并更新来源记录。
+
+文本来源哈希按UTF-8和LF换行规范化后计算，避免Windows/Linux拉取时换行差异导致误报；原始二进制输入仍按data/MANIFEST.csv的原始字节哈希核验。

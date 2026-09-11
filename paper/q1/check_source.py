@@ -12,6 +12,10 @@ ROOT = HERE.parents[1]
 RUN = ROOT / 'experiments/q1-contract-tests-20260911-03'
 errors = []
 
+def text_digest(path):
+    """Normalize text newlines so Git checkout OS does not change the digest."""
+    return hashlib.sha256(path.read_text(encoding="utf-8").encode("utf-8")).hexdigest()
+
 def require(condition, message):
     if not condition:
         errors.append(message)
@@ -109,8 +113,8 @@ require(abs(energy-6000) < 1e-6 and max_balance < 1e-6, 'Energy reconstruction m
 
 sources=json.loads((HERE/'sources.json').read_text(encoding='utf-8'))
 for rel, digest in sources['source_files'].items():
-    require(hashlib.sha256((ROOT/rel).read_bytes()).hexdigest()==digest, 'Source hash mismatch: '+rel)
-require(hashlib.sha256((HERE/'question1.tex').read_bytes()).hexdigest()==sources['tex_sha256'],
+    require(text_digest(ROOT/rel)==digest, 'Source hash mismatch: '+rel)
+require(text_digest(HERE/'question1.tex')==sources['tex_sha256'],
         'TeX changed since provenance recorded')
 
 result = {
