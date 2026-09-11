@@ -1,6 +1,6 @@
 # CUMCM2026
 
-> 输入同步范围：本检查点包含原始题面、4份数据、5份空白模板及结构报告。拉取当前任务分支后，按 `data/AVAILABILITY.md` 校验输入；数值模型尚未运行。
+> 已归档第一问成果、第二问全年模型及最新18方案优化比较。最新第二问过程与结果见下方入口；原始输入按 `data/AVAILABILITY.md` 校验。
 
 数模队伍的代码、实验、论文与 Agent 共享记忆仓库。所有正式成果归档于本仓库；不依赖某位队员的聊天历史或个人 Agent 记忆。
 
@@ -40,7 +40,14 @@ Codex 支持通过 `AGENTS.md` 加载项目指令；其他工具是否自动加�
 | `scripts/`、`tests/` | 运行入口、共享状态检查和有效性测试 |
 | `templates/` | 任务、交接、决策和实验记录模板 |
 
-本任务分支已录入C题与原始附件。请先看 [任务地图](problem/task-map.md) 和 [模型路线比较](planning/model-selection.md)，当前状态见 [T-001](memory/tasks/T-001.json)。成员分工和建模语言尚未确定，未运行模型或生成正式数值结果。项目状态检查仅需 Python 3.10+，输入结构脚本环境见 `environment/README.md`。
+## 第二问最新过程与结果
+
+- [优化思路、18方案对比与结论](planning/q2-improvement-results.md)：334天总费用由1597.18万元降至1380.51万元；库存价值近似修正后节省216.36万元。
+- [实验方案与选择规则](planning/q2-improvement-protocol.md)、[全部实验与审计](experiments/q2-improve-20260911-01/)、[最新候选Excel](outputs/T-007-q2-improve-20260911-01/result2.xlsx)。
+- [复现与交接](memory/handoffs/2026-09-11-T-007-q2-improve.md)、[T-007任务](memory/tasks/T-007-q2-improve.json)。
+- [原第二问结果](planning/q2-full-results.md)保留作对照。新结果属于回顾性优化候选；归档不等于已完成新数据盲测或论文最终验收。
+
+题目总览见[任务地图](problem/task-map.md)，当前工作导航见[共享状态](memory/STATUS.md)。
 
 ## 换账号 / 换电脑接着做
 
