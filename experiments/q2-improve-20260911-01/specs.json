@@ -1,0 +1,164 @@
+[
+  {
+    "name": "control",
+    "forecast": "mean7",
+    "q": 0.8,
+    "residual": 28,
+    "target": 6000,
+    "horizon": 1,
+    "controller": "greedy"
+  },
+  {
+    "name": "mean3",
+    "forecast": "mean3",
+    "q": 0.8,
+    "residual": 28,
+    "target": 6000,
+    "horizon": 1,
+    "controller": "greedy"
+  },
+  {
+    "name": "mean14",
+    "forecast": "mean14",
+    "q": 0.8,
+    "residual": 28,
+    "target": 6000,
+    "horizon": 1,
+    "controller": "greedy"
+  },
+  {
+    "name": "weighted",
+    "forecast": "weighted",
+    "q": 0.8,
+    "residual": 28,
+    "target": 6000,
+    "horizon": 1,
+    "controller": "greedy"
+  },
+  {
+    "name": "weekday",
+    "forecast": "weekday",
+    "q": 0.8,
+    "residual": 28,
+    "target": 6000,
+    "horizon": 1,
+    "controller": "greedy"
+  },
+  {
+    "name": "residual14",
+    "forecast": "mean7",
+    "q": 0.8,
+    "residual": 14,
+    "target": 6000,
+    "horizon": 1,
+    "controller": "greedy"
+  },
+  {
+    "name": "residual56",
+    "forecast": "mean7",
+    "q": 0.8,
+    "residual": 56,
+    "target": 6000,
+    "horizon": 1,
+    "controller": "greedy"
+  },
+  {
+    "name": "q0.75",
+    "forecast": "mean7",
+    "q": 0.75,
+    "residual": 28,
+    "target": 6000,
+    "horizon": 1,
+    "controller": "greedy"
+  },
+  {
+    "name": "q0.775",
+    "forecast": "mean7",
+    "q": 0.775,
+    "residual": 28,
+    "target": 6000,
+    "horizon": 1,
+    "controller": "greedy"
+  },
+  {
+    "name": "q0.825",
+    "forecast": "mean7",
+    "q": 0.825,
+    "residual": 28,
+    "target": 6000,
+    "horizon": 1,
+    "controller": "greedy"
+  },
+  {
+    "name": "q0.85",
+    "forecast": "mean7",
+    "q": 0.85,
+    "residual": 28,
+    "target": 6000,
+    "horizon": 1,
+    "controller": "greedy"
+  },
+  {
+    "name": "target1200",
+    "forecast": "mean7",
+    "q": 0.8,
+    "residual": 28,
+    "target": 1200,
+    "horizon": 1,
+    "controller": "greedy"
+  },
+  {
+    "name": "target3600",
+    "forecast": "mean7",
+    "q": 0.8,
+    "residual": 28,
+    "target": 3600,
+    "horizon": 1,
+    "controller": "greedy"
+  },
+  {
+    "name": "target8400",
+    "forecast": "mean7",
+    "q": 0.8,
+    "residual": 28,
+    "target": 8400,
+    "horizon": 1,
+    "controller": "greedy"
+  },
+  {
+    "name": "horizon48",
+    "forecast": "mean7",
+    "q": 0.8,
+    "residual": 28,
+    "target": 6000,
+    "horizon": 2,
+    "controller": "greedy"
+  },
+  {
+    "name": "planned_reserve",
+    "forecast": "mean7",
+    "q": 0.8,
+    "residual": 28,
+    "target": 6000,
+    "horizon": 1,
+    "controller": "planned_reserve"
+  },
+  {
+    "name": "combined",
+    "forecast": "weekday",
+    "q": 0.8,
+    "residual": 14,
+    "target": 1200,
+    "horizon": 1,
+    "controller": "greedy"
+  },
+  {
+    "name": "combined48",
+    "forecast": "weekday",
+    "q": 0.8,
+    "residual": 14,
+    "target": 1200,
+    "horizon": 2,
+    "controller": "greedy"
+  }
+]

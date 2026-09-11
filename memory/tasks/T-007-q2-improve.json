@@ -1,0 +1,42 @@
+{
+  "id": "T-007-q2-improve",
+  "title": "第二问多方案优化与实测比较",
+  "status": "done",
+  "owner": "yuchi423 / current Agent",
+  "branch": "codex/T-007-q2-improve",
+  "updated_at": "2026-09-11T20:27:28.104037+08:00",
+  "depends_on": [
+    "T-006-codex-q2-full"
+  ],
+  "goal": "复用现有模型，比较预测、余量、日末目标和执行规则并跑全年开发回测。",
+  "acceptance": [
+    "统一对照和库存条件",
+    "保存全部候选可复现数据和独立账本审核",
+    "明确比较结果与开发性验证边界"
+  ],
+  "artifacts": [
+    "planning/q2-improvement-protocol.md",
+    "planning/q2-improvement-results.md",
+    "scripts/q2_improve.py",
+    "scripts/q2_improve_audit.py",
+    "scripts/q2_improve_report.py",
+    "experiments/q2-improve-20260911-01/summary.csv",
+    "experiments/q2-improve-20260911-01/independent_audit.json",
+    "experiments/q2-improve-20260911-01/workbook_audit.json",
+    "outputs/T-007-q2-improve-20260911-01/result2.xlsx"
+  ],
+  "checks": [
+    "18 candidates x 334 days completed",
+    "865728 actual rows independently audited",
+    "control reproduced within 1e-8 yuan",
+    "future information perturbation checks passed",
+    "original table numeric regression passed",
+    "7 sheets / 67362 cells and annual formulas verified"
+  ],
+  "decisions": [
+    "memory/decisions/D-010-q2-improvement-candidate.md"
+  ],
+  "latest_handoff": "memory/handoffs/2026-09-11-T-007-q2-improve.md",
+  "next_action": "优化过程和结果已完成归档；下一阶段按用户要求决定正式采用、同末端补充比较或论文整合。",
+  "blockers": []
+}

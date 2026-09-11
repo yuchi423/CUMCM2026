@@ -1,0 +1,77 @@
+[
+  {
+    "method": "mean7",
+    "date": "2025-02-01",
+    "future_perturbation_pass": true
+  },
+  {
+    "method": "mean7",
+    "date": "2025-05-01",
+    "future_perturbation_pass": true
+  },
+  {
+    "method": "mean7",
+    "date": "2025-09-01",
+    "future_perturbation_pass": true
+  },
+  {
+    "method": "mean3",
+    "date": "2025-02-01",
+    "future_perturbation_pass": true
+  },
+  {
+    "method": "mean3",
+    "date": "2025-05-01",
+    "future_perturbation_pass": true
+  },
+  {
+    "method": "mean3",
+    "date": "2025-09-01",
+    "future_perturbation_pass": true
+  },
+  {
+    "method": "mean14",
+    "date": "2025-02-01",
+    "future_perturbation_pass": true
+  },
+  {
+    "method": "mean14",
+    "date": "2025-05-01",
+    "future_perturbation_pass": true
+  },
+  {
+    "method": "mean14",
+    "date": "2025-09-01",
+    "future_perturbation_pass": true
+  },
+  {
+    "method": "weighted",
+    "date": "2025-02-01",
+    "future_perturbation_pass": true
+  },
+  {
+    "method": "weighted",
+    "date": "2025-05-01",
+    "future_perturbation_pass": true
+  },
+  {
+    "method": "weighted",
+    "date": "2025-09-01",
+    "future_perturbation_pass": true
+  },
+  {
+    "method": "weekday",
+    "date": "2025-02-01",
+    "future_perturbation_pass": true
+  },
+  {
+    "method": "weekday",
+    "date": "2025-05-01",
+    "future_perturbation_pass": true
+  },
+  {
+    "method": "weekday",
+    "date": "2025-09-01",
+    "future_perturbation_pass": true
+  }
+]

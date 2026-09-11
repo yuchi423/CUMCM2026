@@ -23,14 +23,8 @@ def md(headers,rows):
     return "| "+" | ".join(headers)+" |\n|"+" --- |"*len(headers)+"\n"+"\n".join("| "+" | ".join(f"{(0. if abs(v)<1e-8 else v):,.2f}" if isinstance(v,(float,np.floating)) else str(v) for v in row)+" |" for row in rows)
 
 
-def main(run):
-    meta=json.loads((run/"run.json").read_text(encoding="utf-8"));cfg=meta["config"]
-    totals=json.loads((run/"totals.json").read_text(encoding="utf-8"));lookup={r["strategy"]:r for r in totals}
-    (run/"results").mkdir(exist_ok=True)
-    for name in ["summary_tables.csv","monthly.csv","periods.csv"]:shutil.copyfile(run/name,run/"results"/name)
-    audit=json.loads((run/"independent_audit.json").read_text(encoding="utf-8"));assert audit["pass"]
-    daily=read(run/"daily_summary.csv");monthly=read(run/"monthly.csv");periods=read(run/"periods.csv")
-    rows=read(run/"operational_dispatch.csv");group=defaultdict(list)
+def build_workbook_tables(run,cfg,rows,selected_quantile,initial_quantile=.8,switch_date="2025-05-01"):
+    group=defaultdict(list)
     for r in rows:group[r["date"]].append({k:float(v) for k,v in r.items() if k not in ["strategy","date"]})
     def time_label(t):return f"{t//6:02}:{t%6*10:02}"
     intervals=[time_label(t)+"-"+time_label(t+1) for t in range(144)]
@@ -38,7 +32,7 @@ def main(run):
     for date,g in group.items():
         plan=[r["plan_kwh"] for r in g];pc=sum(r["plan_cost"] for r in g);bc=sum(r["emergency_cost"] for r in g)
         p_rows.append([date]+plan+[sum(plan),pc])
-        cash.append([date,pc,bc,pc+bc,sum(r["emergency_kwh"] for r in g),sum(r["paid_grid_spill_kwh"] for r in g),sum(r["pv_spill_kwh"] for r in g),g[0]["e_start"],g[-1]["e_end"],.8 if date<"2025-05-01" else meta["selected_quantile"]])
+        cash.append([date,pc,bc,pc+bc,sum(r["emergency_kwh"] for r in g),sum(r["paid_grid_spill_kwh"] for r in g),sum(r["pv_spill_kwh"] for r in g),g[0]["e_start"],g[-1]["e_end"],initial_quantile if date<switch_date else selected_quantile])
         for b in range(6):
             sub=g[b*24:(b+1)*24]
             r=[date,f"{b*4:02}:00-{(b+1)*4:02}:00",sum(x["charge_kwh"] for x in sub),sum(x["discharge_kwh"] for x in sub),
@@ -61,6 +55,19 @@ def main(run):
     for key,r in sheets.items():
         if key.startswith("指定日"):table(run/(key+".csv"),r["headers"],r["rows"])
     (run/"workbook_data.json").write_text(json.dumps(sheets,ensure_ascii=False,separators=(",",":"))+"\n",encoding="utf-8")
+    return sheets,group
+
+
+def main(run):
+    meta=json.loads((run/"run.json").read_text(encoding="utf-8"));cfg=meta["config"]
+    totals=json.loads((run/"totals.json").read_text(encoding="utf-8"));lookup={r["strategy"]:r for r in totals}
+    (run/"results").mkdir(exist_ok=True)
+    for name in ["summary_tables.csv","monthly.csv","periods.csv"]:shutil.copyfile(run/name,run/"results"/name)
+    audit=json.loads((run/"independent_audit.json").read_text(encoding="utf-8"));assert audit["pass"]
+    daily=read(run/"daily_summary.csv");monthly=read(run/"monthly.csv");periods=read(run/"periods.csv")
+    rows=read(run/"operational_dispatch.csv")
+    sheets,group=build_workbook_tables(run,cfg,rows,meta["selected_quantile"])
+    paper1=sheets["指定日表1"]["rows"];paper2=sheets["指定日表2"]["rows"];paper3=sheets["指定日表3"]["rows"]
     figdir=run/"figures";figdir.mkdir(exist_ok=True)
     plt.rcParams.update({"font.family":"Microsoft YaHei","font.size":10,"axes.unicode_minus":False,"pdf.fonttype":42})
     def save(fig,name):

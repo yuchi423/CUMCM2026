@@ -1,0 +1,24 @@
+{
+  "selected_by_feb_apr": "combined",
+  "all_scores": {
+    "control": 3906948.2593566906,
+    "mean3": 5039247.786099592,
+    "mean14": 3914813.8597085737,
+    "weighted": 4239448.075228663,
+    "weekday": 3351919.7529385947,
+    "residual14": 3905061.9463251536,
+    "residual56": 3905311.4576877626,
+    "q0.75": 3932069.381952272,
+    "q0.775": 3913323.5136692454,
+    "q0.825": 3908601.326368087,
+    "q0.85": 3920156.225051203,
+    "target1200": 3880577.8406052357,
+    "target3600": 3882194.5797405364,
+    "target8400": 3935312.638770358,
+    "horizon48": 3937045.009990442,
+    "planned_reserve": 3947236.7034071945,
+    "combined": 3322942.837507891,
+    "combined48": 3323967.610134554
+  },
+  "note": "All results are retrospective; fixed-spec full-year candidate is not a prospective May-switch deployment."
+}
