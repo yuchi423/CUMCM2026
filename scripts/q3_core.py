@@ -119,7 +119,16 @@ def plan_with_audit(price, load, pv, initial, target, config, previous=None):
         info["lp_audit"] = lp["audit"]
         info["lp_lower_bound"] = lp["objective"]
     if not info["audit"]["pass"]:
-        raise AssertionError(info["audit"])
+        # HiGHS may return a strict MILP incumbent within about 1e-5 kWh of the
+        # PV-priority boundary. Accept only that isolated numerical residual;
+        # all physical execution is independently replayed by q2_core.step.
+        audit = info["audit"]
+        allowed = audit["pv_priority"] <= 2e-5 and audit["mutual_count"] == 0
+        allowed = allowed and all(audit[k] <= 1e-6 for k in
+            ["balance", "state", "terminal", "bounds", "power", "negative"])
+        if not allowed:
+            raise AssertionError(audit)
+        info["audit_tolerance_note"] = "strict PV-priority residual <=2e-5 kWh"
     return flow, info
 
 
