@@ -71,7 +71,8 @@ def read_q3_forecasts(cfg, actual_pv):
     current = None
     for row in rows:
         if row[0] not in (None, ""):
-            current = day(row[0])
+            value = str(row[0]).split()[0].replace("/", "-")
+            current = datetime.strptime(value, "%Y-%m-%d").date().isoformat()
         hour = int(str(row[1]).split(":")[0])
         values = np.asarray(row[2:26], dtype=float)
         if current is None or (current, hour) in raw or len(values) != 24 or not np.all(np.isfinite(values)):
