@@ -1,3 +1,4 @@
-# Solver environment; workbook extraction/export use the Codex bundled runtime.
-numpy==2.3.5
-scipy==1.16.3
+# Exact packages used by the successful solver and independent workbook audit.
+numpy==2.4.2
+scipy==1.17.1
+openpyxl==3.1.5

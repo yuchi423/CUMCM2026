@@ -1,0 +1,26 @@
+{
+  "pass": true,
+  "independence": "No optimizer/executor imports; source workbook re-read; ledger equations recomputed",
+  "max_errors": {
+    "balance_kwh": 3.410605131648481e-13,
+    "state_kwh": 0.0,
+    "continuity_kwh": 0.0,
+    "bound_kwh": 0.0,
+    "power_kw": 0.0,
+    "cost_yuan": 0.0,
+    "pv_priority_kwh": 0.0,
+    "source_allocation_kwh": 0.0,
+    "plan_change_kwh": 0.0,
+    "raw_input_kwh": 0.0,
+    "negative_kwh": 0.0,
+    "emergency_use_kwh": 0.0
+  },
+  "mutual_violation_count": 0,
+  "audited_rows": 8496,
+  "warmup_days": 31,
+  "evaluation_days_per_strategy": 14,
+  "analytical_checks": 11,
+  "information_checks": 6,
+  "full_year_delivery": "PARTIAL",
+  "scientific_validity": "NOT REQUIRED"
+}
