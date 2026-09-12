@@ -136,7 +136,8 @@ class PriceModels:
                     "history_days": len(history)}
         else:
             raise KeyError(method)
-        predicted = np.maximum(self.config["price_floor"], predicted)
+        if method != "oracle":
+            predicted = np.maximum(self.config["price_floor"], predicted)
         self.base_cache[key] = (predicted, info)
         return self.base_cache[key]
 

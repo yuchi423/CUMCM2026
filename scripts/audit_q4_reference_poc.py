@@ -79,7 +79,8 @@ class IndependentPrices:
             result = level * np.mean(np.asarray(shapes), axis=0)
         else:
             raise KeyError(method)
-        result = np.maximum(self.config["price_floor"], result)
+        if method != "oracle":
+            result = np.maximum(self.config["price_floor"], result)
         self.cache[key] = result
         return result
 
