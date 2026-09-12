@@ -1,0 +1,24 @@
+{
+  "id": "T-011-q3-scenario-main",
+  "title": "第三问方向3连续误差场景主模型结果包",
+  "status": "in_progress",
+  "owner": "current user / Codex",
+  "branch": "codex/T-011-q3-scenario-main",
+  "updated_at": "2026-09-13T00:00:00+08:00",
+  "depends_on": [
+    "T-009-q3-model"
+  ],
+  "goal": "根据用户最新选择，将已审计的rolling_scenario从三路线实验中提取为第三问主模型结果包，并更新可复现入口与共享决策。",
+  "acceptance": [
+    "只复用已审计实验04的rolling_scenario结果，不重新调参或伪造新运行",
+    "提取334天汇总、分期、发布时间、指定日期执行与计划版本",
+    "结果包指标与来源实验逐项一致并通过独立提取校验",
+    "明确方向3的连续残差场景、尾部风险目标、信息边界和局限"
+  ],
+  "artifacts": [],
+  "checks": [],
+  "decisions": [],
+  "latest_handoff": null,
+  "next_action": "参数化现有package_q3_main.py并提取rolling_scenario结果包。",
+  "blockers": []
+}
