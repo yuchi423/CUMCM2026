@@ -33,7 +33,12 @@
     "planning/q4-reference-poc-results.md",
     "experiments/q4-reference-poc-20260912-02/model_report.md",
     "experiments/q4-reference-poc-20260912-02/audit_summary.json",
-    "experiments/q4-reference-poc-20260912-02/results/effect_decomposition.csv"
+    "experiments/q4-reference-poc-20260912-02/results/effect_decomposition.csv",
+    "planning/q4-decision-forecast-poc-protocol.md",
+    "planning/q4-decision-forecast-poc-results.md",
+    "experiments/q4-decision-forecast-poc-20260912-01/model_report.md",
+    "experiments/q4-decision-forecast-poc-20260912-01/audit_summary.json",
+    "planning/q4-joint-scenario-poc-protocol.md"
   ],
   "checks": [
     "108864条10分钟执行记录独立复算PASS",
@@ -44,7 +49,9 @@
     "参考方法Detailed PoC复算96768条记录PASS",
     "参考方法1008项0点及日内未来价格扰动检查PASS",
     "净负荷形状法MAE降至0.050655但费用稳定性目标FAIL",
-    "价值控制在真实价格和oracle价格下均比对应贪心增费"
+    "价值控制在真实价格和oracle价格下均比对应贪心增费",
+    "决策导向价格PoC复算108864条记录和672项信息检查PASS",
+    "静态收缩退化为14日均值，滚动费用选择跨期稳定性FAIL"
   ],
   "decisions": [
     "memory/decisions/D-015-q4-target-approved.md",
@@ -52,6 +59,6 @@
     "memory/decisions/D-017-q4-candidate-search-modified.md"
   ],
   "latest_handoff": "memory/handoffs/2026-09-12-T-010-q4-reference-poc.md",
-  "next_action": "运行决策导向电价Cheap PoC，比较静态收缩价格与28日滚动费用选择器；不再测试已失败的库存价值控制。",
+  "next_action": "运行匹配价格—供需残差情景Cheap PoC，以当天供需预测和28个历史联合残差情景选择低维候选普通购电计划。",
   "blockers": []
 }
