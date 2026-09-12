@@ -8,6 +8,7 @@ import hashlib
 import json
 import math
 import platform
+import shutil
 import subprocess
 import sys
 import time
@@ -16,13 +17,11 @@ from datetime import date, datetime
 from pathlib import Path
 
 import numpy as np
-import openpyxl
 import scipy
 from scipy.stats import spearmanr
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
-from prepare_q2_inputs import day, minute
 from q2_core import execute, margin, plan
 
 
@@ -51,34 +50,24 @@ def manifest_hashes() -> dict[str, str]:
         return {row["path_or_uri"]: row["sha256"] for row in csv.DictReader(stream)}
 
 
-def read_price_matrix() -> tuple[list[str], np.ndarray, list[str], dict]:
+def read_price_matrix(snapshot_path: Path) -> tuple[list[str], np.ndarray, list[str], dict]:
     rel = "data/raw/附件4.xlsx"
     path = ROOT / rel
     expected = manifest_hashes()[rel]
     actual_hash = hashlib.sha256(path.read_bytes()).hexdigest()
     if actual_hash != expected:
         raise ValueError("附件4 hash mismatch")
-    book = openpyxl.load_workbook(path, read_only=True, data_only=True)
-    sheet = book["Sheet1"]
-    rows = iter(sheet.iter_rows(values_only=True))
-    header = next(rows)
-    if len(header) != 145 or [minute(x) for x in header[1:]] != list(range(10, 1441, 10)):
-        raise ValueError("附件4 time axis mismatch")
-    dates, values = [], []
-    for row in rows:
-        label = day(row[0])
-        curve = row[1:145]
-        if len(curve) != 144 or not all(
-            isinstance(x, (int, float)) and not isinstance(x, bool) and math.isfinite(x) and x > 0
-            for x in curve
-        ):
-            raise ValueError(f"Invalid price row {label}")
-        dates.append(label)
-        values.append([float(x) for x in curve])
-    book.close()
-    if len(dates) != 365 or len(set(dates)) != 365:
+    snapshot = json.loads(snapshot_path.read_text(encoding="utf-8"))
+    if snapshot["source"] != rel or snapshot["source_sha256"] != actual_hash:
+        raise ValueError("Prepared price snapshot does not match Attachment 4")
+    dates = snapshot["dates"]
+    values = snapshot["prices"]
+    headers = snapshot["headers"]
+    if len(dates) != 365 or len(set(dates)) != 365 or len(headers) != 144:
         raise ValueError("附件4 must contain 365 unique dates")
     array = np.asarray(values)
+    if array.shape != (365, 144) or not np.all(np.isfinite(array)) or np.min(array) <= 0:
+        raise ValueError("Invalid price snapshot values")
     audit = {
         "sha256": actual_hash,
         "days": len(dates),
@@ -88,8 +77,11 @@ def read_price_matrix() -> tuple[list[str], np.ndarray, list[str], dict]:
         "maximum": float(array.max()),
         "mean": float(array.mean()),
         "unique_day_curves": len({tuple(row) for row in values}),
+        "snapshot_sha256": hashlib.sha256(snapshot_path.read_bytes()).hexdigest(),
+        "reader_python": snapshot["python"],
+        "reader_openpyxl": snapshot["openpyxl"],
     }
-    return dates, array, [str(x) for x in header[1:]], audit
+    return dates, array, headers, audit
 
 
 def supply_forecast(load: np.ndarray, pv: np.ndarray, dates: list[str], i: int) -> tuple[np.ndarray, np.ndarray]:
@@ -180,7 +172,7 @@ def aggregate_windows(rows: list[dict]) -> dict:
     }
 
 
-def run(output: Path) -> None:
+def run(output: Path, price_input: Path) -> None:
     started = time.perf_counter()
     output.mkdir(parents=True, exist_ok=False)
     results = output / "results"
@@ -193,10 +185,11 @@ def run(output: Path) -> None:
     q2 = json.loads(q2_source.read_text(encoding="utf-8"))
     dates = q2["dates"]
     load, pv, fixed = np.asarray(q2["load"]), np.asarray(q2["pv"]), np.asarray(q2["prices"])
-    price_dates, actual_prices, headers, price_audit = read_price_matrix()
+    price_dates, actual_prices, headers, price_audit = read_price_matrix(price_input)
     if dates != price_dates or actual_prices.shape != (365, 144):
         raise ValueError("Price and supply dates do not align")
     cfg["dates"] = dates
+    shutil.copyfile(price_input, output / "input_prices.json")
 
     combined_states = {}
     with (ROOT / "experiments/q2-improve-20260911-01/daily.csv").open(encoding="utf-8-sig", newline="") as stream:
@@ -222,7 +215,8 @@ def run(output: Path) -> None:
         "python": platform.python_version(),
         "numpy": np.__version__,
         "scipy": scipy.__version__,
-        "openpyxl": openpyxl.__version__,
+        "price_reader_python": price_audit["reader_python"],
+        "price_reader_openpyxl": price_audit["reader_openpyxl"],
         "experiment_type": "approved Cheap PoC; six disjoint 14-day windows; not a full-year delivery",
     })
 
@@ -392,11 +386,12 @@ def run(output: Path) -> None:
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("output", type=Path)
+    parser.add_argument("--price-input", required=True, type=Path)
     args = parser.parse_args()
     target = args.output.resolve()
     if not target.is_relative_to((ROOT / "experiments").resolve()):
         raise ValueError("Output must be under experiments/")
-    run(target)
+    run(target, args.price_input.resolve())
 
 
 if __name__ == "__main__":

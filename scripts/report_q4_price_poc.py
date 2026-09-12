@@ -194,7 +194,7 @@ def report(experiment: Path) -> None:
 在仓库根目录执行：
 
 ```powershell
-C:\\Users\\14592\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe final_run/q4_poc/main.py experiments/q4-price-poc-20260912-01
+D:\\Users\\python.exe final_run/q4_poc/main.py experiments/q4-price-poc-20260912-01 --io-python C:\\Users\\14592\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe
 ```
 
 目标目录必须不存在。入口依次运行PoC、独立审计和制图报告；任一步失败都会返回非零状态。

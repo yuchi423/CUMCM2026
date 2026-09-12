@@ -5,13 +5,12 @@ import argparse
 import csv
 import gzip
 import json
-import math
+import hashlib
 from collections import defaultdict
 from datetime import date
 from pathlib import Path
 
 import numpy as np
-import openpyxl
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -58,25 +57,19 @@ def independent_price_forecast(
     raise KeyError(method)
 
 
-def read_prices() -> tuple[list[str], np.ndarray]:
-    book = openpyxl.load_workbook(ROOT / "data/raw/附件4.xlsx", read_only=True, data_only=True)
-    sheet = book["Sheet1"]
-    iterator = iter(sheet.iter_rows(values_only=True))
-    next(iterator)
-    dates, prices = [], []
-    for row in iterator:
-        value = row[0]
-        label = value.date().isoformat() if hasattr(value, "date") else date.fromisoformat(str(value)[:10]).isoformat()
-        dates.append(label)
-        prices.append([float(x) for x in row[1:145]])
-    book.close()
-    return dates, np.asarray(prices)
+def read_prices(experiment: Path) -> tuple[list[str], np.ndarray]:
+    snapshot_path = experiment / "input_prices.json"
+    snapshot = json.loads(snapshot_path.read_text(encoding="utf-8"))
+    raw_hash = hashlib.sha256((ROOT / snapshot["source"]).read_bytes()).hexdigest()
+    if raw_hash != snapshot["source_sha256"]:
+        raise AssertionError("Price snapshot no longer matches raw Attachment 4")
+    return snapshot["dates"], np.asarray(snapshot["prices"], dtype=float)
 
 
 def audit(experiment: Path) -> dict:
     config = json.loads((ROOT / "configs/q4_price_poc.json").read_text(encoding="utf-8"))
     q2 = json.loads((ROOT / "experiments/q2-full-20260911-01/inputs.json").read_text(encoding="utf-8"))
-    dates, prices = read_prices()
+    dates, prices = read_prices(experiment)
     if dates != q2["dates"]:
         raise AssertionError("Independent date alignment failed")
     fixed = np.asarray(q2["prices"], dtype=float)
