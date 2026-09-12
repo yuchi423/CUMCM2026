@@ -1,0 +1,15 @@
+{
+  "dates_aligned": true,
+  "days": 365,
+  "slots": 144,
+  "saa_records": 252,
+  "methods": [
+    "fixed",
+    "mean7",
+    "mean14",
+    "saa_load",
+    "saa_joint",
+    "saa_shuffled",
+    "oracle_actual"
+  ]
+}

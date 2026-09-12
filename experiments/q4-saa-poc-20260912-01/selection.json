@@ -1,0 +1,37 @@
+{
+  "selection_period": "development only",
+  "candidate_development_costs": {
+    "saa_load": 934263.5047376289,
+    "saa_joint": 935147.7696379749
+  },
+  "raw_best": "saa_load",
+  "eligible_within_tolerance": [
+    "saa_load",
+    "saa_joint"
+  ],
+  "selected": "saa_load",
+  "later_checks": {
+    "validation": {
+      "selected_cost": 1328849.715072086,
+      "mean7_cost": 1335282.0834708852,
+      "fixed_cost": 1344430.943123603,
+      "shuffled_cost": 1331025.7755190658,
+      "beats_mean7_threshold": true,
+      "beats_fixed_threshold": true,
+      "joint_beats_shuffled_if_selected": true
+    },
+    "evaluation": {
+      "selected_cost": 1369785.7377558772,
+      "mean7_cost": 1373412.7300816406,
+      "fixed_cost": 1372676.9686900019,
+      "shuffled_cost": 1370247.8259725221,
+      "beats_mean7_threshold": true,
+      "beats_fixed_threshold": true,
+      "joint_beats_shuffled_if_selected": true
+    }
+  },
+  "scientific_target_pass": true,
+  "oracle_excluded": true,
+  "shuffled_is_negative_control": true,
+  "fallback_if_fail": "D-015 lag1 operational baseline, then fixed_attachment1"
+}
