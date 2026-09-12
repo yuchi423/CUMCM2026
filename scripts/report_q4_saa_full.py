@@ -30,8 +30,8 @@ def report(experiment: Path) -> None:
     amap={r["method"]:r for r in annual}; qmap={(r["method"],r["period"]):r for r in quarterly}; mmap={(r["method"],r["period"]):r for r in monthly}
     months=sorted({r["period"] for r in monthly}); fig,ax=plt.subplots(figsize=(12,5.8))
     for method,marker in [("saa_load","o"),("mean7","s"),("mean14","^"),("fixed","D")]:
-        vals=[float(mmap[(method,m)]["inventory_adjusted_cost"])/10000 for m in months]; ax.plot(months,vals,marker=marker,label=LABELS[method])
-    ax.set_ylabel("月度库存调整费用（万元）"); ax.set_title("图1 334天各方法月度费用"); ax.tick_params(axis="x",rotation=35); ax.legend(); save(fig,figdir,"Fig1_FullMonthlyCost")
+        vals=[(float(mmap[("mean7",m)]["inventory_adjusted_cost"])-float(mmap[(method,m)]["inventory_adjusted_cost"]))/10000 for m in months]; ax.plot(months,vals,marker=marker,label=LABELS[method])
+    ax.axhline(0,color="#333",lw=.8); ax.set_ylabel("相对7日均价的月度节省（万元）"); ax.set_title("图1 334天各方法月度费用差异"); ax.tick_params(axis="x",rotation=35); ax.legend(); save(fig,figdir,"Fig1_FullMonthlyCost")
     quarters=sorted({r["period"] for r in quarterly}); fig,ax=plt.subplots(figsize=(9.5,5.8)); x=np.arange(len(quarters)); width=.34
     for off,base in [(-.5,"mean7"),(.5,"fixed")]:
         gains=[100*(float(qmap[(base,q)]["inventory_adjusted_cost"])-float(qmap[("saa_load",q)]["inventory_adjusted_cost"]))/float(qmap[(base,q)]["inventory_adjusted_cost"]) for q in quarters]
@@ -39,7 +39,9 @@ def report(experiment: Path) -> None:
     ax.axhline(0,color="#333",lw=.8); ax.axhline(.1,color="#777",lw=.8,ls="--"); ax.set_xticks(x,quarters); ax.set_ylabel("SAA费用改善（%）"); ax.set_title("图2 SAA季度稳定性"); ax.legend(); save(fig,figdir,"Fig2_FullQuarterlyRobustness")
     methods=["fixed","mean7","mean14","saa_load"]; fig,ax=plt.subplots(figsize=(9.5,5.8)); spill=[float(amap[m]["paid_grid_spill_kwh"]) for m in methods]; emergency=[float(amap[m]["emergency_kwh"]) for m in methods]
     ax.scatter(spill,emergency,s=85,c=np.arange(len(methods)),cmap="viridis")
-    for xx,yy,m in zip(spill,emergency,methods): ax.annotate(LABELS[m],(xx,yy),xytext=(5,5),textcoords="offset points")
+    offsets={"fixed":(5,5),"mean7":(5,3),"mean14":(5,15),"saa_load":(5,5)}
+    for xx,yy,m in zip(spill,emergency,methods): ax.annotate(LABELS[m],(xx,yy),xytext=offsets[m],textcoords="offset points")
+    ax.margins(x=.10,y=.15)
     ax.set_xlabel("全年已付未用电量（kWh）"); ax.set_ylabel("全年紧急购电量（kWh）"); ax.set_title("图3 全年风险电量对比"); save(fig,figdir,"Fig3_FullRiskEnergy")
     lines=[]
     for m in LABELS:
@@ -68,7 +70,7 @@ def report(experiment: Path) -> None:
 
 # C 图表解读（每张图一句话：展示什么、说明什么）
 
-- 图1展示各方法逐月库存调整费用，用于识别季节性失稳月份。
+- 图1展示各方法相对7日均价的逐月费用差，用于识别季节性失稳月份。
 - 图2展示SAA相对两条基线的季度改善率，虚线为0.1%参考门槛。
 - 图3同时比较紧急购电和已付未用电，判断费用改善是否以更高风险电量为代价。
 

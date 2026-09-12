@@ -1,0 +1,10 @@
+{
+  "methods": 5,
+  "days_per_method": 334,
+  "dispatch_rows": 240480,
+  "saa_records": 334,
+  "information_checks": 1336,
+  "model_selection_pass": true,
+  "selected_delivery": "saa_load",
+  "runtime_seconds": 1107.0044520999945
+}
