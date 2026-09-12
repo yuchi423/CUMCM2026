@@ -58,7 +58,7 @@ def _flow_audit(load, pv, flow, initial, cfg, terminal=None):
     cap = cfg["power_kw"] * cfg["step_hours"]
     prev = np.r_[initial, flow["e"][:-1]]
     vals = {
-        "balance": float(np.max(np.abs(flow["g"] + pv + flow["d"] - load - flow["c"] - flow["s"] - flow.get("b", 0.0)))),
+        "balance": float(np.max(np.abs(flow["g"] + pv + flow["d"] + flow.get("b", 0.0) - load - flow["c"] - flow["s"]))),
         "state": float(np.max(np.abs(flow["e"] - prev - eta * flow["c"] + flow["d"] / ed))),
         "bounds": float(max(0., cfg["energy_min"] - np.min(flow["e"]), np.max(flow["e"]) - cfg["energy_max"])),
         "power": float(max(0., np.max(flow["c"]) - cap, np.max(flow["d"]) - cap)),
