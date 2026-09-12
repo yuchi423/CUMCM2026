@@ -19,16 +19,17 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("output", nargs="?", default="experiments/q4-saa-poc-20260912-01", type=Path)
     parser.add_argument("--io-python", required=True, type=Path)
+    parser.add_argument("--model-python", default=r"D:\Users\python.exe", type=Path)
     args = parser.parse_args()
     output = args.output if args.output.is_absolute() else ROOT / args.output
     temporary = ROOT / "experiments" / f".q4-saa-price-{os.getpid()}-{time.time_ns()}.json"
     try:
         call(args.io_python, "prepare_q4_price_inputs.py", str(temporary))
-        call(Path(sys.executable), "run_q4_saa_poc.py", str(output), "--price-input", str(temporary))
+        call(args.model_python, "run_q4_saa_poc.py", str(output), "--price-input", str(temporary))
     finally:
         temporary.unlink(missing_ok=True)
-    call(Path(sys.executable), "audit_q4_saa_poc.py", str(output))
-    call(Path(sys.executable), "report_q4_saa_poc.py", str(output))
+    call(args.model_python, "audit_q4_saa_poc.py", str(output))
+    call(args.model_python, "report_q4_saa_poc.py", str(output))
     print(f"Q4 SAA PoC complete: {output}")
 
 
