@@ -49,6 +49,30 @@ def main(run_arg):
                            float(r["emergency_kwh"]) - float(r["load_kwh"]) - float(r["charge_kwh"]) -
                            float(r["pv_spill_kwh"]) - float(r["paid_grid_spill_kwh"]))
                 err("physical_balance", balance)
+                ordinary, load, pv = float(r["ordinary_kwh"]), float(r["load_kwh"]), float(r["pv_kwh"])
+                cap = cfg["power_kw"] * cfg["step_hours"]
+                expected_pv_load = min(load, pv)
+                expected_grid_load = min(ordinary, load - expected_pv_load)
+                shortage = max(0.0, load - expected_pv_load - expected_grid_load)
+                if shortage > 0:
+                    expected_discharge = min(shortage, cap, max(0.0, e0 - cfg["energy_min"]) * cfg["discharge_efficiency"])
+                    expected_emergency = shortage - expected_discharge
+                    expected_pv_charge = expected_grid_charge = 0.0
+                else:
+                    available = min(cap, max(0.0, cfg["energy_max"] - e0) / cfg["charge_efficiency"])
+                    expected_pv_charge = min(pv - expected_pv_load, available)
+                    expected_grid_charge = min(ordinary - expected_grid_load,
+                                               max(0.0, available - expected_pv_charge))
+                    expected_discharge = expected_emergency = 0.0
+                err("pv_load_priority", float(r["pv_load_kwh"]) - expected_pv_load)
+                err("grid_load_priority", float(r["grid_load_kwh"]) - expected_grid_load)
+                err("discharge_rule", float(r["discharge_kwh"]) - expected_discharge)
+                err("emergency_rule", float(r["emergency_kwh"]) - expected_emergency)
+                err("pv_charge_priority", float(r["pv_charge_kwh"]) - expected_pv_charge)
+                err("grid_charge_rule", float(r["grid_charge_kwh"]) - expected_grid_charge)
+                err("charge_total", float(r["charge_kwh"]) - expected_pv_charge - expected_grid_charge)
+                if int(r["slot"]) < int(r["issue_hour"]) * 6:
+                    errors["past_plan_modified"] = 1.0
         for a, b in zip(rows, rows[1:]):
             if (a["strategy"], a["date"], int(a["slot"]) + 1) == (b["strategy"], b["date"], int(b["slot"])) or \
                (a["strategy"] == b["strategy"] and int(a["slot"]) == 143 and int(b["slot"]) == 0):
@@ -65,6 +89,10 @@ def main(run_arg):
         with gzip.open(version_path, "rt", encoding="utf-8") as file:
             for line in file:
                 v = json.loads(line)
+                err("version_start", v["start_slot"] - v["issue_hour"] * 6)
+                err("version_length", len(v["new"]) - (144 - v["start_slot"]))
+                if v["old"] is not None:
+                    err("old_version_length", len(v["old"]) - len(v["new"]))
                 if v["old"] is None:
                     fee = 0.0
                 else:

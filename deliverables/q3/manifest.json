@@ -1,0 +1,69 @@
+{
+  "strategy": "rolling_margin",
+  "source_run": "experiments/q3-models-20260911-04",
+  "horizon": "issue time through current-day 24:00",
+  "parameters": {
+    "warmup_start": "2025-01-01",
+    "evaluation_start": "2025-02-01",
+    "evaluation_end": "2025-12-31",
+    "development_end": "2025-04-30",
+    "validation_end": "2025-08-31",
+    "issue_hours": [
+      0,
+      6,
+      12,
+      18
+    ],
+    "forecast_days": 35,
+    "fallback_days": 7,
+    "residual_days": 28,
+    "robust_quantile": 0.8,
+    "scenario_days": 8,
+    "scenario_risk_weight": 0.25,
+    "scenario_alpha": 0.9,
+    "charge_efficiency": 0.9,
+    "discharge_efficiency": 0.9,
+    "power_kw": 5000.0,
+    "step_hours": 0.16666666666666666,
+    "energy_min": 1200.0,
+    "energy_max": 10800.0,
+    "initial_energy": 6000.0,
+    "planned_terminal_energy": 1200.0,
+    "terminal_value_multiple": 0.9,
+    "emergency_price_multiple": 5.0,
+    "forecast_interpolation": "linear from last observed issue-time PV anchor to each future hourly endpoint",
+    "paper_dates": [
+      "2025-03-20",
+      "2025-06-21",
+      "2025-09-23",
+      "2025-12-21"
+    ],
+    "seed": null
+  },
+  "validation": {
+    "pass_": true,
+    "daily_rows": 334,
+    "paper_dispatch_rows": 576,
+    "paper_plan_versions": 16,
+    "sum_errors": {
+      "ordinary_cost": 0.0,
+      "adjustment_cost": 0.0,
+      "emergency_cost": 0.0,
+      "total_cost": 0.0,
+      "ordinary_kwh": 0.0,
+      "emergency_kwh": 0.0
+    }
+  },
+  "source_sha256": {
+    "experiments/q3-models-20260911-04/audit_summary.json": "f6e37bcb1f7b558a97e3dd798e239cb3b09ee0a188e62371f19721abaa877ef6",
+    "experiments/q3-models-20260911-04/run.json": "38bd9905cf62719ac1a32b126ec75a543ba1fdf2a0d68bbac0a7639ac1cf544a",
+    "configs/q3_models.json": "9cc95d59ba09eea317843d6e717ef946f05e1cd89310b33af85734beb43ef8c4",
+    "experiments/q3-models-20260911-04/results/summary_tables.csv": "bb9212f2738ff65736fda9216675605106cfbf3190f3e6458bb24ec52cb03588",
+    "experiments/q3-models-20260911-04/results/daily_summary.csv": "67804af22979b4e2b6ab2e82b2dfcd77943e8cc98e81d414d2956491ad20ef19",
+    "experiments/q3-models-20260911-04/results/periods.csv": "a05e370d239dc57532b762edd5c7beffb89d065e313c164de5dea073893e0887",
+    "experiments/q3-models-20260911-04/results/paper_dates_summary.csv": "7437effd26a6018a5a2b2ae90c97800bfdfaa0ee4eed9a9d9f34576303bd1ba6",
+    "experiments/q3-models-20260911-04/results/issue_summary.csv": "787af6c5c3b7d16ca959bf57bb340cc2598926d63dae5b29e331d26f71230f15",
+    "experiments/q3-models-20260911-04/details/rolling_margin_dispatch.csv.gz": "399edc3f3645a43867543456ff1dcdcee397197f60c6f0465f3ff10a4cd4913c",
+    "experiments/q3-models-20260911-04/details/rolling_margin_plan_versions.jsonl.gz": "c23f6654574f357dbf78a2379de2a6f9cd2a598b73b27617e8d5db3043fd24e4"
+  }
+}

@@ -7,5 +7,6 @@ ROOT = Path(__file__).resolve().parents[2]
 if len(sys.argv) != 2:
     raise SystemExit("usage: python final_run/q3/main.py experiments/<unique-run-id>")
 target = sys.argv[1]
-for script in ["scripts/run_q3_models.py", "scripts/audit_q3_models.py", "scripts/report_q3_models.py"]:
+for script in ["scripts/run_q3_models.py", "scripts/audit_q3_models.py",
+               "scripts/analyze_q3_evidence.py", "scripts/report_q3_models.py"]:
     subprocess.run([sys.executable, str(ROOT / script), target], cwd=ROOT, check=True)

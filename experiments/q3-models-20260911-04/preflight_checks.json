@@ -1,0 +1,18 @@
+{
+  "pass_": true,
+  "calculated": {
+    "100_to_80": 90.0,
+    "100_to_80_to_90": 105.0,
+    "100_to_120_to_100": 120.0
+  },
+  "expected": {
+    "100_to_80": 90.0,
+    "100_to_80_to_90": 105.0,
+    "100_to_120_to_100": 120.0
+  },
+  "attachment3_rows": 1460,
+  "forecast_values": 35040,
+  "issue_keys_unique": true,
+  "future_load_perturbation": true,
+  "target_mapping": "issue+h hours; same-day remainder only"
+}

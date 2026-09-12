@@ -28,10 +28,14 @@ def main(run_arg):
         raise AssertionError("Audit must pass before reporting")
     summary = rows(run / "results/summary_tables.csv")
     periods = rows(run / "results/periods.csv")
+    mapping = rows(run / "results/forecast_mapping.csv")
     lookup = {r["strategy"]: r for r in summary}
     directions = ["rolling_point", "rolling_margin", "rolling_scenario"]
     best = min(directions, key=lambda x: float(lookup[x]["inventory_adjusted_cost"]))
+    recommended = "rolling_margin"
     base = lookup["no_update"]
+    period_lookup = {(r["strategy"], r["period"]): r for r in periods}
+    mapping_lookup = {(r["mapping"], r["issue_hour"]): r for r in mapping}
 
     table = ["| 方案 | 普通购电/万元 | 调整费/万元 | 紧急购电/万元 | 总费用/万元 | 期末SOC/kWh | 库存调整费用/万元 |",
              "| --- | ---: | ---: | ---: | ---: | ---: | ---: |"]
@@ -53,10 +57,14 @@ def main(run_arg):
         "一键入口为`final_run/q3/main.py`；配置为`configs/q3_models.json`。必要结果在`results/`，"
         "三张论文候选图在`figures/`，独立审计为`audit_summary.json`。完整逐时账本仅留在本地`details/`，可由入口重建。", "",
         "## B 核心结果", "", *table, "",
-        f"三条正式方向中，按库存调整费用选择的本轮最佳路线是**{LABELS[best]}**。相对仅0时预报，现金费用变化"
-        f"{delta('no_update', best) / 1e4:,.2f}万元，库存调整口径变化{delta('no_update', best, 'inventory_adjusted_cost') / 1e4:,.2f}万元。", "",
-        f"状态反馈对照相对不调整变化{delta('no_update', 'state_only') / 1e4:,.2f}万元；"
-        f"使用最新PV点预报相对状态反馈对照变化{delta('state_only', 'rolling_point') / 1e4:,.2f}万元。"
+        f"三条正式方向中，数值最低的是**{LABELS[best]}**。相对仅0时预报，现金费用降低"
+        f"{delta('no_update', best) / 1e4:,.2f}万元，库存调整费用降低{delta('no_update', best, 'inventory_adjusted_cost') / 1e4:,.2f}万元。", "",
+        f"论文主线暂推荐**{LABELS[recommended]}**：场景路线全年仅再降低"
+        f"{delta('rolling_margin', 'rolling_scenario') / 1e4:,.2f}万元，在9—12月只降低"
+        f"{(float(period_lookup[('rolling_margin','evaluation')]['total_cost']) - float(period_lookup[('rolling_scenario','evaluation')]['total_cost'])) / 1e4:,.2f}万元，"
+        "但需要多次候选求解和场景回放。场景路线保留为冲奖增强项，不能只因总数最低就自动取代稳健路线。", "",
+        f"状态反馈对照相对不调整降低{delta('no_update', 'state_only') / 1e4:,.2f}万元；"
+        f"使用最新PV点预报相对状态反馈对照降低{delta('state_only', 'rolling_point') / 1e4:,.2f}万元。"
         "后一个差值更接近新增PV预报的净价值，但仍包含由预报引起的计划联动。", "", *period_table, "",
         "## C 图表解读", "",
         "- `Fig1_Q3_TotalCost`比较控制组、三条方向和插值敏感性的334天现金费用。",
@@ -67,11 +75,15 @@ def main(run_arg):
         f"{audit['counts'].get('updates', 0):,}次计划版本逐项用旧/新计划重算调整费。"
         "附件3的1460个发布键唯一且24小时值完整；未来负载扰动不改变当日历史预测。", "",
         "计划生成内部要求预测日末不低于1200kWh，但真实期末由因果执行决定，因此比较同时报告现金和库存调整费用。"
-        "整点预报到10分钟的线性插值不是题面唯一解释，阶梯映射作为独立敏感性。夜间PV接近零，未使用MAPE。", "",
+        f"整点预报到10分钟的线性插值不是题面唯一解释：线性映射总体MAE为{float(mapping_lookup[('linear','all')]['mae_kw']):,.2f}kW，"
+        f"阶梯映射为{float(mapping_lookup[('step','all')]['mae_kw']):,.2f}kW；后者实际费用也高"
+        f"{(float(lookup['rolling_point_step']['total_cost']) - float(lookup['rolling_point']['total_cost'])) / 1e4:,.2f}万元。"
+        "该误差比较支持线性映射，但仍须在论文中列为建模近似。夜间PV接近零，未使用MAPE。", "",
         "## E 微调记录", "",
         "- 在正式运行前加入“保留上一版计划”候选：避免硬终端目标把修改计划变成强制行为；该修正属于有效性要求，未用全年费用决定。",
         "- 场景方向由允许场景内提前看见未来的理想调度，改为连续历史残差生成固定购电候选、再用同一因果执行器评分；避免预见性偏差。",
-        f"- 对预报映射增加阶梯敏感性：相对线性点预报，现金费用变化{delta('rolling_point', 'rolling_point_step') / 1e4:,.2f}万元。"
+        f"- 对预报映射增加阶梯敏感性：相对线性点预报，阶梯映射现金费用增加"
+        f"{(float(lookup['rolling_point_step']['total_cost']) - float(lookup['rolling_point']['total_cost'])) / 1e4:,.2f}万元。"
         "本轮没有看到结果后重新选择0.8分位、8条场景或风险权重。", "",
         "## F 最终版本说明", "",
         "在仓库根目录使用项目现有Python依赖运行：", "",
@@ -86,7 +98,9 @@ def main(run_arg):
         "容易扣分的是把整点预报插值写成题面事实、只报现金而隐藏期末SOC，或把时间回测称为外部盲测。", "",
         "本轮属于已经接触该年度供需后的时间顺序回测；三条路线均真实运行，但尚未据此批准论文最终模型。", ""]
     (run / "model_report.md").write_text("\n".join(lines), encoding="utf-8")
-    (run / "selection.json").write_text(json.dumps({"selected_by_inventory_adjusted_cost": best,
+    (run / "selection.json").write_text(json.dumps({"numeric_winner_by_inventory_adjusted_cost": best,
+        "recommended_main": recommended,
+        "recommendation_reason": "Scenario saves little in Sep-Dec versus margin but is much more complex; retain as innovation extension.",
         "directions": directions, "controls": ["no_update", "state_only"],
         "sensitivity": ["rolling_point_step"],
         "status": "computed candidate; not final paper approval"}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
