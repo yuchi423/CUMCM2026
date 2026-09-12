@@ -1,0 +1,46 @@
+{
+  "selection_period": "development only",
+  "static_alpha_development_costs": {
+    "0.0": 937289.1283088902,
+    "0.25": 935159.7297842738,
+    "0.5": 935118.2724545237,
+    "0.75": 935083.7928062256,
+    "1.0": 934265.7425252025
+  },
+  "static_alpha": 1.0,
+  "static_method": "blend_a100",
+  "candidate_development_costs": {
+    "static_blend": 934265.7425252025,
+    "rolling_cost_selector": 934446.9206141861
+  },
+  "raw_best": "static_blend",
+  "eligible_within_tolerance": [
+    "static_blend",
+    "rolling_cost_selector"
+  ],
+  "selected_concept": "static_blend",
+  "selected_method": "blend_a100",
+  "later_checks": {
+    "validation": {
+      "selected_cost": 1334307.248452399,
+      "mean7_cost": 1335282.0834708852,
+      "fixed_cost": 1344430.943123603,
+      "rolling_mae_selector_cost": 1335021.6472726446,
+      "beats_mean7_threshold": false,
+      "beats_fixed_threshold": true,
+      "beats_mae_selector": true
+    },
+    "evaluation": {
+      "selected_cost": 1373303.4881125349,
+      "mean7_cost": 1373412.7300816406,
+      "fixed_cost": 1372676.9686900019,
+      "rolling_mae_selector_cost": 1374619.2084402246,
+      "beats_mean7_threshold": false,
+      "beats_fixed_threshold": false,
+      "beats_mae_selector": true
+    }
+  },
+  "scientific_target_pass": false,
+  "oracle_excluded": true,
+  "fallback_if_fail": "D-015 lag1 operational baseline, then fixed_attachment1"
+}

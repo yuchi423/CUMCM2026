@@ -1,0 +1,11 @@
+{
+  "methods": 9,
+  "days_per_method": 84,
+  "dispatch_rows": 108864,
+  "selector_target_days": 84,
+  "shadow_day_alpha_runs": 1140,
+  "information_checks": 672,
+  "selected_method": "blend_a100",
+  "scientific_target_pass": false,
+  "runtime_seconds": 89.81719060000614
+}

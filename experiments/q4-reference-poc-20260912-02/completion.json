@@ -1,0 +1,9 @@
+{
+  "methods": 8,
+  "days_per_method": 84,
+  "dispatch_rows": 96768,
+  "information_checks": 1008,
+  "selected": "mean7_greedy",
+  "scientific_target_pass": false,
+  "runtime_seconds": 28.378794500022195
+}

@@ -1,0 +1,14 @@
+{
+  "dates_aligned": true,
+  "days": 365,
+  "slots": 144,
+  "scenario_history_first_date": "2025-02-07",
+  "shared_window_initial_states": {
+    "dev_march": 1607.6682326867735,
+    "dev_april": 1618.0719069862432,
+    "val_june": 1781.3549957153423,
+    "val_august": 2178.160729337569,
+    "eval_september": 4786.2408636984155,
+    "eval_december": 1451.3861965089911
+  }
+}

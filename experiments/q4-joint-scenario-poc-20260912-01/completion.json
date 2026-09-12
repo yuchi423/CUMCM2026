@@ -1,0 +1,11 @@
+{
+  "methods": 8,
+  "days_per_method": 84,
+  "dispatch_rows": 96768,
+  "selector_candidate_scores": 2520,
+  "scenario_replays": 43344,
+  "information_checks": 588,
+  "selected": "load_scenario_selector",
+  "scientific_target_pass": false,
+  "runtime_seconds": 170.63007429998834
+}

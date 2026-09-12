@@ -1,0 +1,39 @@
+{
+  "selection_period": "development only",
+  "raw_best": "netload_shape_greedy",
+  "development_costs": {
+    "mean7_greedy": 934939.261780394,
+    "netload_shape_greedy": 934703.2800570481,
+    "mean7_value_update": 942810.5750108962,
+    "netload_shape_value_update": 942256.7351635706
+  },
+  "eligible_within_tolerance": [
+    "mean7_greedy",
+    "netload_shape_greedy"
+  ],
+  "selected": "mean7_greedy",
+  "later_checks": {
+    "validation": {
+      "selected_cost": 1335282.0834708852,
+      "mean7_greedy_cost": 1335282.0834708852,
+      "fixed_greedy_cost": 1344430.943123603,
+      "shifted_value_cost": 1349541.6335098785,
+      "beats_mean7_by_threshold": false,
+      "beats_fixed_by_threshold": true,
+      "beats_shifted_control": true
+    },
+    "evaluation": {
+      "selected_cost": 1373412.7300816406,
+      "mean7_greedy_cost": 1373412.7300816406,
+      "fixed_greedy_cost": 1372676.9686900019,
+      "shifted_value_cost": 1424138.0266120909,
+      "beats_mean7_by_threshold": false,
+      "beats_fixed_by_threshold": false,
+      "beats_shifted_control": true
+    }
+  },
+  "scientific_target_pass": false,
+  "oracle_excluded": true,
+  "shifted_control_excluded": true,
+  "fallback_if_fail": "D-015 lag1 operational baseline, then fixed_attachment1"
+}

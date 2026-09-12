@@ -1,0 +1,54 @@
+{
+  "pass": true,
+  "errors": [],
+  "maximum_errors": {
+    "forecast_reconstruction": 0.0,
+    "end_energy": 0.0,
+    "daily_plan_kwh": 0.0,
+    "daily_emergency_kwh": 0.0,
+    "daily_plan_cost": 0.0,
+    "daily_emergency_cost": 0.0,
+    "daily_total_cost": 0.0,
+    "daily_paid_grid_spill_kwh": 0.0,
+    "daily_pv_spill_kwh": 0.0,
+    "daily_charge_kwh": 0.0,
+    "daily_discharge_kwh": 0.0,
+    "g_match": 0.0,
+    "nominal": 1.3745307114731986e-09,
+    "scenario_inputs": 4.547473508864641e-13,
+    "scenario": 1.2280452210688964e-09,
+    "dispatch_rows": 0,
+    "information_checks": 0,
+    "information_failures": 0
+  },
+  "expected": {
+    "methods": [
+      "fixed",
+      "mean7",
+      "mean14",
+      "saa_load",
+      "saa_joint",
+      "saa_shuffled",
+      "oracle_actual"
+    ],
+    "days": 84,
+    "plan_records": 588,
+    "saa_records": 252,
+    "dispatch_rows": 84672
+  },
+  "price_audit": {
+    "sha256": "20e9c93aeab5e8e21ae4dd15587f9e190f7408692504c1319598461cd654fe71",
+    "days": 365,
+    "slots_per_day": 144,
+    "missing": 0,
+    "minimum": 0.0076,
+    "maximum": 1.7936,
+    "mean": 0.7661976046423136,
+    "unique_day_curves": 365,
+    "snapshot_sha256": "e78e2584b3e8ecacdc3f045cba301244f1a6ec58a8b94069dd0ac424dffddb1e",
+    "reader_python": "3.12.14",
+    "reader_openpyxl": "3.1.5"
+  },
+  "scientific_target_pass": true,
+  "selected": "saa_load"
+}

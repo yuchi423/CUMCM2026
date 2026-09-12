@@ -1,0 +1,29 @@
+{
+  "q2_snapshot_sha256": "b26ec2e681f30b337480c917da05655c5a7d5fcd84d295a62b920849b17b1c80",
+  "attachment4": {
+    "sha256": "20e9c93aeab5e8e21ae4dd15587f9e190f7408692504c1319598461cd654fe71",
+    "days": 365,
+    "slots_per_day": 144,
+    "missing": 0,
+    "minimum": 0.0076,
+    "maximum": 1.7936,
+    "mean": 0.7661976046423136,
+    "unique_day_curves": 365,
+    "snapshot_sha256": "e78e2584b3e8ecacdc3f045cba301244f1a6ec58a8b94069dd0ac424dffddb1e",
+    "reader_python": "3.12.14",
+    "reader_openpyxl": "3.1.5"
+  },
+  "dates_aligned": true,
+  "shared_window_initial_states": {
+    "dev_march": 1607.6682326867735,
+    "dev_april": 1618.0719069862432,
+    "val_june": 1781.3549957153423,
+    "val_august": 2178.160729337569,
+    "eval_september": 4786.2408636984155,
+    "eval_december": 1451.3861965089911
+  },
+  "time_headers_first_last": [
+    "00:10:00",
+    "0:00+1"
+  ]
+}

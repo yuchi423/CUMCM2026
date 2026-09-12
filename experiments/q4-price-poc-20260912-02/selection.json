@@ -1,0 +1,36 @@
+{
+  "selection_period": "development windows only",
+  "raw_best": "mean14",
+  "best_inventory_adjusted_cost": 934265.7425252026,
+  "eligible_within_tolerance": [
+    "mean7",
+    "mean14",
+    "mean28",
+    "weekday35",
+    "ewma14"
+  ],
+  "selected": "mean7",
+  "tie_rule": "within 0.5% prefer lag1, mean7, mean14, mean28, weekday35, ewma14",
+  "later_checks": {
+    "validation": {
+      "selected_cost": 1335282.0834708852,
+      "fixed_control_cost": 1344430.9431236028,
+      "negative_control_cost": 1679945.6091921506,
+      "beats_fixed_control": true,
+      "beats_negative_control": true
+    },
+    "evaluation": {
+      "selected_cost": 1373412.7300816406,
+      "fixed_control_cost": 1372676.9686900014,
+      "negative_control_cost": 1735638.167004026,
+      "beats_fixed_control": false,
+      "beats_negative_control": true
+    }
+  },
+  "scientific_target_pass": false,
+  "fallback_triggered": true,
+  "recommended_delivery_method": "lag1",
+  "fallback_note": "Selected method was not stably better than both controls; retain lag1 only as the approved causal baseline, without claiming savings.",
+  "oracle_excluded": true,
+  "negative_control_excluded": true
+}

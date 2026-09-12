@@ -1,0 +1,6 @@
+# Modeling Python
+numpy==2.4.2
+scipy==1.17.1
+matplotlib==3.10.8
+# Separate read-only input Python
+openpyxl==3.1.5

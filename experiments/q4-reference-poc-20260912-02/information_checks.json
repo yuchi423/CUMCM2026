@@ -1,0 +1,8066 @@
+[
+  {
+    "date": "2025-03-07",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-07",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-07",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.344309,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-03-07",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-07",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-07",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.425373,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-03-07",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-07",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-07",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.425373,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-03-07",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-07",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-07",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.425373,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-03-08",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-08",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-08",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.34076700000000004,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-03-08",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-08",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-08",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.42059899999999995,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-03-08",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-08",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-08",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.42059899999999995,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-03-08",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-08",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-08",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.42059899999999995,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-03-09",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-09",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-09",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.37818799999999997,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-03-09",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-09",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-09",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.471036,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-03-09",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-09",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-09",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.471036,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-03-09",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-09",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-09",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.471036,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-03-10",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-10",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-10",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.377084,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-03-10",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-10",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-10",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.4695480000000001,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-03-10",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-10",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-10",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.4695480000000001,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-03-10",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-10",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-10",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.4695480000000001,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-03-11",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-11",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-11",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.3785559999999999,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-03-11",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-11",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-11",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.47153200000000006,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-03-11",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-11",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-11",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.47153200000000006,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-03-11",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-11",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-11",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.47153200000000006,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-03-12",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-12",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-12",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.3811549999999999,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-03-12",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-12",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-12",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.4750350000000001,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-03-12",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-12",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-12",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.4750350000000001,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-03-12",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-12",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-12",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.4750350000000001,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-03-13",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-13",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-13",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.37729100000000004,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-03-13",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-13",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-13",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.469827,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-03-13",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-13",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-13",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.469827,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-03-13",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-13",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-13",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.469827,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-03-14",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-14",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-14",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.34596499999999986,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-03-14",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-14",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-14",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.427605,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-03-14",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-14",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-14",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.427605,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-03-14",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-14",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-14",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.427605,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-03-15",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-15",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-15",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.3418709999999998,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-03-15",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-15",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-15",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.4220870000000001,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-03-15",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-15",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-15",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.4220870000000001,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-03-15",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-15",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-15",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.4220870000000001,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-03-16",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-16",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-16",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.372185,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-03-16",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-16",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-16",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.46294499999999994,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-03-16",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-16",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-16",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.46294499999999994,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-03-16",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-16",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-16",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.46294499999999994,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-03-17",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-17",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-17",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.374347,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-03-17",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-17",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-17",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.465859,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-03-17",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-17",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-17",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.465859,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-03-17",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-17",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-17",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.465859,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-03-18",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-18",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-18",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.37450800000000006,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-03-18",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-18",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-18",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.46607599999999993,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-03-18",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-18",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-18",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.46607599999999993,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-03-18",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-18",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-18",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.46607599999999993,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-03-19",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-19",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-19",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.381362,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-03-19",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-19",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-19",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.475314,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-03-19",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-19",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-19",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.475314,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-03-19",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-19",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-19",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.475314,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-03-20",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-20",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-20",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.3752439999999999,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-03-20",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-20",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-20",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.46706800000000004,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-03-20",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-20",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-20",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.46706800000000004,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-03-20",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-20",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-03-20",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.46706800000000004,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-04-17",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-17",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-17",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.37340399999999985,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-04-17",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-17",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-17",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.464588,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-04-17",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-17",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-17",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.464588,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-04-17",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-17",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-17",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.464588,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-04-18",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-18",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-18",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.3403529999999999,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-04-18",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-18",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-18",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.4200410000000001,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-04-18",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-18",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-18",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.4200410000000001,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-04-18",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-18",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-18",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.4200410000000001,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-04-19",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-19",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-19",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.33915699999999993,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-04-19",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-19",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-19",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.41842899999999994,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-04-19",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-19",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-19",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.41842899999999994,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-04-19",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-19",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-19",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.41842899999999994,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-04-20",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-20",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-20",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.3710579999999999,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-04-20",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-20",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-20",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.4614260000000001,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-04-20",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-20",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-20",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.4614260000000001,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-04-20",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-20",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-20",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.4614260000000001,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-04-21",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-21",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-21",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.37604899999999986,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-04-21",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-21",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-21",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.46815300000000004,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-04-21",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-21",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-21",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.46815300000000004,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-04-21",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-21",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-21",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.46815300000000004,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-04-22",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-22",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-22",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.3791769999999999,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-04-22",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-22",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-22",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.47236900000000004,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-04-22",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-22",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-22",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.47236900000000004,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-04-22",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-22",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-22",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.47236900000000004,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-04-23",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-23",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-23",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.3914359999999999,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-04-23",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-23",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-23",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.4888920000000001,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-04-23",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-23",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-23",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.4888920000000001,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-04-23",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-23",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-23",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.4888920000000001,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-04-24",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-24",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-24",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.38127,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-04-24",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-24",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-24",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.47519,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-04-24",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-24",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-24",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.47519,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-04-24",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-24",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-24",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.47519,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-04-25",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-25",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-25",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.3397779999999999,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-04-25",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-25",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-25",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.41926600000000014,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-04-25",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-25",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-25",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.41926600000000014,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-04-25",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-25",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-25",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.41926600000000014,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-04-26",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-26",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-26",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.34607999999999994,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-04-26",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-26",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-26",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.4277599999999999,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-04-26",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-26",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-26",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.4277599999999999,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-04-26",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-26",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-26",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.4277599999999999,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-04-27",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-27",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-27",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.37407100000000004,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-04-27",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-27",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-27",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.465487,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-04-27",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-27",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-27",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.465487,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-04-27",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-27",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-27",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.465487,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-04-28",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-28",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-28",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.37926899999999986,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-04-28",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-28",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-28",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.47249300000000005,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-04-28",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-28",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-28",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.47249300000000005,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-04-28",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-28",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-28",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.47249300000000005,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-04-29",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-29",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-29",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.37653199999999987,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-04-29",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-29",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-29",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.468804,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-04-29",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-29",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-29",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.468804,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-04-29",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-29",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-29",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.468804,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-04-30",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-30",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-30",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.3773139999999999,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-04-30",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-30",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-30",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.4698580000000001,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-04-30",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-30",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-30",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.4698580000000001,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-04-30",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-30",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-04-30",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.4698580000000001,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-06-08",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-08",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-08",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.3967719999999999,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-06-08",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-08",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-08",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.49608399999999997,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-06-08",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-08",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-08",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.49608399999999997,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-06-08",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-08",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-08",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.49608399999999997,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-06-09",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-09",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-09",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.396887,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-06-09",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-09",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-09",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.4962390000000001,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-06-09",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-09",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-09",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.4962390000000001,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-06-09",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-09",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-09",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.4962390000000001,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-06-10",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-10",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-10",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.401556,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-06-10",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-10",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-10",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.502532,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-06-10",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-10",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-10",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.502532,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-06-10",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-10",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-10",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.502532,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-06-11",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-11",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-11",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.40266,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-06-11",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-11",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-11",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.5040199999999999,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-06-11",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-11",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-11",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.5040199999999999,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-06-11",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-11",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-11",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.5040199999999999,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-06-12",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-12",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-12",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.4020619999999999,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-06-12",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-12",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-12",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.503214,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-06-12",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-12",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-12",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.503214,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-06-12",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-12",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-12",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.503214,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-06-13",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-13",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-13",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.36954,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-06-13",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-13",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-13",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.4593800000000001,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-06-13",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-13",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-13",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.4593800000000001,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-06-13",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-13",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-13",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.4593800000000001,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-06-14",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-14",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-14",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.35573999999999995,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-06-14",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-14",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-14",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.44077999999999995,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-06-14",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-14",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-14",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.44077999999999995,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-06-14",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-14",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-14",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.44077999999999995,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-06-15",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-15",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-15",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.4036719999999998,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-06-15",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-15",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-15",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.505384,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-06-15",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-15",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-15",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.505384,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-06-15",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-15",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-15",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.505384,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-06-16",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-16",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-16",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.39272399999999985,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-06-16",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-16",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-16",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.49062800000000006,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-06-16",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-16",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-16",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.49062800000000006,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-06-16",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-16",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-16",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.49062800000000006,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-06-17",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-17",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-17",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.40470699999999993,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-06-17",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-17",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-17",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.5067790000000001,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-06-17",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-17",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-17",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.5067790000000001,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-06-17",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-17",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-17",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.5067790000000001,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-06-18",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-18",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-18",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.39550699999999983,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-06-18",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-18",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-18",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.4943790000000001,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-06-18",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-18",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-18",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.4943790000000001,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-06-18",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-18",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-18",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.4943790000000001,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-06-19",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-19",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-19",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.398428,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-06-19",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-19",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-19",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.498316,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-06-19",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-19",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-19",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.498316,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-06-19",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-19",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-19",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.498316,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-06-20",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-20",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-20",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.35624599999999984,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-06-20",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-20",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-20",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.441462,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-06-20",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-20",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-20",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.441462,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-06-20",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-20",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-20",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.441462,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-06-21",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-21",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-21",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.36155899999999996,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-06-21",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-21",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-21",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.448623,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-06-21",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-21",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-21",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.448623,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-06-21",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-21",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-06-21",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.448623,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-08-18",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-18",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-18",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.47616800000000037,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-08-18",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-18",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-18",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.6030959999999999,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-08-18",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-18",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-18",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.6030959999999999,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-08-18",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-18",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-18",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.6030959999999999,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-08-19",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-19",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-19",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.4666460000000001,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-08-19",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-19",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-19",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.5902619999999998,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-08-19",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-19",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-19",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.5902619999999998,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-08-19",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-19",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-19",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.5902619999999998,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-08-20",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-20",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-20",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.467773,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-08-20",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-20",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-20",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.5917809999999999,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-08-20",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-20",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-20",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.5917809999999999,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-08-20",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-20",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-20",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.5917809999999999,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-08-21",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-21",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-21",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.465611,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-08-21",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-21",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-21",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.588867,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-08-21",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-21",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-21",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.588867,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-08-21",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-21",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-21",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.588867,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-08-22",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-22",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-22",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.4300759999999999,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-08-22",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-22",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-22",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.540972,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-08-22",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-22",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-22",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.540972,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-08-22",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-22",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-22",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.540972,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-08-23",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-23",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-23",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.42080699999999993,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-08-23",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-23",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-23",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.5284790000000001,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-08-23",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-23",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-23",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.5284790000000001,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-08-23",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-23",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-23",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.5284790000000001,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-08-24",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-24",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-24",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.46372500000000016,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-08-24",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-24",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-24",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.586325,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-08-24",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-24",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-24",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.586325,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-08-24",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-24",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-24",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.586325,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-08-25",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-25",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-25",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.4639090000000001,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-08-25",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-25",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-25",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.586573,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-08-25",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-25",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-25",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.586573,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-08-25",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-25",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-25",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.586573,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-08-26",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-26",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-26",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.46170100000000014,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-08-26",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-26",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-26",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.5835970000000001,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-08-26",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-26",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-26",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.5835970000000001,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-08-26",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-26",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-26",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.5835970000000001,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-08-27",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-27",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-27",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.46333400000000013,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-08-27",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-27",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-27",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.585798,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-08-27",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-27",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-27",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.585798,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-08-27",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-27",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-27",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.585798,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-08-28",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-28",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-28",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.4672210000000001,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-08-28",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-28",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-28",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.5910369999999998,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-08-28",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-28",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-28",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.5910369999999998,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-08-28",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-28",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-28",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.5910369999999998,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-08-29",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-29",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-29",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.4299839999999999,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-08-29",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-29",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-29",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.540848,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-08-29",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-29",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-29",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.540848,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-08-29",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-29",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-29",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.540848,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-08-30",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-30",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-30",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.43849400000000016,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-08-30",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-30",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-30",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.5523179999999999,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-08-30",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-30",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-30",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.5523179999999999,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-08-30",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-30",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-30",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.5523179999999999,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-08-31",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-31",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-31",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.462782,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-08-31",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-31",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-31",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.5850540000000002,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-08-31",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-31",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-31",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.5850540000000002,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-08-31",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-31",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-08-31",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.5850540000000002,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-09-10",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-10",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-10",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.3864909999999999,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-09-10",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-10",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-10",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.48222699999999996,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-09-10",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-10",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-10",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.48222699999999996,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-09-10",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-10",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-10",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.48222699999999996,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-09-11",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-11",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-11",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.38564,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-09-11",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-11",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-11",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.48107999999999995,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-09-11",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-11",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-11",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.48107999999999995,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-09-11",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-11",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-11",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.48107999999999995,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-09-12",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-12",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-12",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.35136999999999996,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-09-12",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-12",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-12",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.43489,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-09-12",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-12",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-12",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.43489,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-09-12",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-12",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-12",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.43489,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-09-13",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-13",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-13",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.362479,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-09-13",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-13",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-13",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.4498630000000001,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-09-13",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-13",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-13",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.4498630000000001,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-09-13",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-13",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-13",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.4498630000000001,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-09-14",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-14",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-14",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.3886529999999999,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-09-14",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-14",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-14",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.48514100000000004,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-09-14",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-14",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-14",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.48514100000000004,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-09-14",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-14",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-14",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.48514100000000004,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-09-15",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-15",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-15",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.3853179999999998,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-09-15",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-15",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-15",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.48064600000000013,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-09-15",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-15",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-15",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.48064600000000013,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-09-15",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-15",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-15",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.48064600000000013,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-09-16",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-16",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-16",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.38639899999999994,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-09-16",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-16",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-16",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.48210299999999995,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-09-16",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-16",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-16",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.48210299999999995,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-09-16",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-16",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-16",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.48210299999999995,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-09-17",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-17",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-17",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.38253499999999985,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-09-17",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-17",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-17",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.47689500000000007,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-09-17",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-17",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-17",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.47689500000000007,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-09-17",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-17",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-17",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.47689500000000007,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-09-18",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-18",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-18",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.39808299999999996,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-09-18",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-18",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-18",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.49785100000000004,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-09-18",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-18",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-18",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.49785100000000004,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-09-18",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-18",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-18",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.49785100000000004,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-09-19",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-19",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-19",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.366711,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-09-19",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-19",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-19",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.45556700000000006,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-09-19",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-19",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-19",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.45556700000000006,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-09-19",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-19",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-19",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.45556700000000006,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-09-20",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-20",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-20",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.3554409999999999,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-09-20",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-20",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-20",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.440377,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-09-20",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-20",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-20",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.440377,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-09-20",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-20",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-20",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.440377,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-09-21",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-21",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-21",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.3870659999999999,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-09-21",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-21",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-21",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.48300199999999993,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-09-21",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-21",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-21",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.48300199999999993,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-09-21",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-21",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-21",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.48300199999999993,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-09-22",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-22",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-22",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.3914819999999999,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-09-22",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-22",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-22",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.4889540000000001,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-09-22",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-22",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-22",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.4889540000000001,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-09-22",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-22",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-22",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.4889540000000001,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-09-23",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-23",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-23",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.389918,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-09-23",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-23",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-23",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.4868460000000001,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-09-23",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-23",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-23",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.4868460000000001,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-09-23",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-23",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-09-23",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.4868460000000001,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-12-08",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-08",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-08",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.45505400000000007,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-12-08",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-08",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-08",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.5746380000000002,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-12-08",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-08",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-08",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.5746380000000002,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-12-08",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-08",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-08",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.5746380000000002,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-12-09",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-09",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-09",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.425292,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-12-09",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-09",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-09",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.5345240000000002,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-12-09",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-09",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-09",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.5345240000000002,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-12-09",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-09",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-09",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.5345240000000002,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-12-10",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-10",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-10",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.44228900000000015,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-12-10",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-10",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-10",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.5574330000000001,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-12-10",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-10",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-10",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.5574330000000001,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-12-10",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-10",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-10",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.5574330000000001,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-12-11",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-11",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-11",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.43520499999999984,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-12-11",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-11",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-11",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.547885,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-12-11",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-11",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-11",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.547885,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-12-11",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-11",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-11",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.547885,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-12-12",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-12",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-12",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.40588,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-12-12",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-12",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-12",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.5083599999999999,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-12-12",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-12",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-12",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.5083599999999999,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-12-12",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-12",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-12",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.5083599999999999,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-12-13",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-13",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-13",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.3968179999999999,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-12-13",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-13",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-13",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.496146,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-12-13",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-13",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-13",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.496146,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-12-13",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-13",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-13",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.496146,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-12-14",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-14",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-14",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.4318009999999999,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-12-14",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-14",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-14",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.5432970000000001,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-12-14",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-14",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-14",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.5432970000000001,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-12-14",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-14",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-14",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.5432970000000001,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-12-15",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-15",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-15",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.42883399999999994,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-12-15",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-15",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-15",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.539298,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-12-15",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-15",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-15",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.539298,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-12-15",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-15",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-15",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.539298,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-12-16",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-16",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-16",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.42777599999999993,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-12-16",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-16",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-16",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.5378719999999999,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-12-16",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-16",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-16",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.5378719999999999,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-12-16",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-16",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-16",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.5378719999999999,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-12-17",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-17",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-17",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.4305819999999998,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-12-17",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-17",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-17",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.5416540000000001,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-12-17",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-17",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-17",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.5416540000000001,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-12-17",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-17",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-17",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.5416540000000001,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-12-18",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-18",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-18",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.43207700000000004,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-12-18",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-18",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-18",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.543669,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-12-18",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-18",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-18",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.543669,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-12-18",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-18",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-18",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.543669,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-12-19",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-19",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-19",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.39161999999999986,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-12-19",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-19",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-19",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.4891399999999999,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-12-19",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-19",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-19",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.4891399999999999,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-12-19",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-19",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-19",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.4891399999999999,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-12-20",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-20",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-20",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.389343,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-12-20",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-20",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-20",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.48607100000000014,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-12-20",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-20",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-20",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.48607100000000014,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-12-20",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-20",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-20",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.48607100000000014,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-12-21",
+    "issue_slot": 0,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-21",
+    "issue_slot": 0,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-21",
+    "issue_slot": 0,
+    "price_method": "oracle",
+    "max_change": 0.431157,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-12-21",
+    "issue_slot": 36,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-21",
+    "issue_slot": 36,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-21",
+    "issue_slot": 36,
+    "price_method": "oracle",
+    "max_change": 0.5424289999999998,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-12-21",
+    "issue_slot": 72,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-21",
+    "issue_slot": 72,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-21",
+    "issue_slot": 72,
+    "price_method": "oracle",
+    "max_change": 0.5424289999999998,
+    "expected_change": true,
+    "pass": true
+  },
+  {
+    "date": "2025-12-21",
+    "issue_slot": 108,
+    "price_method": "mean7",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-21",
+    "issue_slot": 108,
+    "price_method": "netload_shape",
+    "max_change": 0.0,
+    "expected_change": false,
+    "pass": true
+  },
+  {
+    "date": "2025-12-21",
+    "issue_slot": 108,
+    "price_method": "oracle",
+    "max_change": 0.5424289999999998,
+    "expected_change": true,
+    "pass": true
+  }
+]

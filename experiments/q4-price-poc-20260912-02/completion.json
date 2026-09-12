@@ -1,0 +1,8 @@
+{
+  "methods": 9,
+  "windows": 6,
+  "days_per_method": 84,
+  "dispatch_rows": 108864,
+  "selected": "mean7",
+  "runtime_seconds": 23.383915399987018
+}

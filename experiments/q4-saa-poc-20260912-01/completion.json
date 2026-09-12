@@ -1,0 +1,10 @@
+{
+  "methods": 7,
+  "days_per_method": 84,
+  "dispatch_rows": 84672,
+  "saa_records": 252,
+  "information_checks": 504,
+  "selected": "saa_load",
+  "scientific_target_pass": true,
+  "runtime_seconds": 767.6500308999966
+}

@@ -8,5 +8,6 @@
 *.png binary
 *.jpg binary
 *.xlsx binary
+*.gz binary
 *.zip binary
 experiments/q2-full-*/inputs.json -text
