@@ -1,0 +1,32 @@
+{
+  "id": "T-010-q4-price-poc",
+  "title": "问题4-2因果电价预测与combined调度PoC",
+  "status": "in_progress",
+  "owner": "current user / Codex",
+  "branch": "codex/T-010-q4-price-poc",
+  "updated_at": "2026-09-12T00:00:00+08:00",
+  "depends_on": [
+    "T-007-q2-improve"
+  ],
+  "goal": "冻结问题2 combined 的供需预测、余量、储能和执行口径，比较只用历史电价的因果预测方法并运行Task 4 Cheap PoC。",
+  "acceptance": [
+    "至少比较前日同刻、滚动同刻均值、同星期均值和指数加权价格预测",
+    "计划阶段不读取当天未来真实价格，所有策略在附件4同一实际价格轨迹结算",
+    "完成价格错位负对照、完美预知参考、费用与物理独立复核",
+    "生成results、figures、model_report和final_run一键入口"
+  ],
+  "artifacts": [
+    "planning/q4-poc-protocol.md",
+    "scripts/run_q4_price_poc.py",
+    "scripts/audit_q4_price_poc.py",
+    "scripts/report_q4_price_poc.py",
+    "final_run/q4_poc/main.py"
+  ],
+  "checks": [],
+  "decisions": [
+    "memory/decisions/D-015-q4-target-approved.md"
+  ],
+  "latest_handoff": null,
+  "next_action": "编写预声明PoC协议并实现因果价格预测比较。",
+  "blockers": []
+}
