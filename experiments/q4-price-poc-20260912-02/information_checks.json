@@ -1,0 +1,6050 @@
+[
+  {
+    "window": "dev_march",
+    "date": "2025-03-07",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-07",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-07",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-07",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-07",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-07",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-07",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-07",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-07",
+    "method": "oracle",
+    "max_change": 0.5626710000000001,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-08",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-08",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-08",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-08",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-08",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-08",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-08",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-08",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-08",
+    "method": "oracle",
+    "max_change": 0.5569730000000002,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-09",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-09",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-09",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-09",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-09",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-09",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-09",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-09",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-09",
+    "method": "oracle",
+    "max_change": 0.617172,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-10",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-10",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-10",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-10",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-10",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-10",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-10",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-10",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-10",
+    "method": "oracle",
+    "max_change": 0.615396,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-11",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-11",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-11",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-11",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-11",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-11",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-11",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-11",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-11",
+    "method": "oracle",
+    "max_change": 0.6177640000000002,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-12",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-12",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-12",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-12",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-12",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-12",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-12",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-12",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-12",
+    "method": "oracle",
+    "max_change": 0.6219450000000002,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-13",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-13",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-13",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-13",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-13",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-13",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-13",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-13",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-13",
+    "method": "oracle",
+    "max_change": 0.6157290000000002,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-14",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-14",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-14",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-14",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-14",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-14",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-14",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-14",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-14",
+    "method": "oracle",
+    "max_change": 0.5653350000000001,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-15",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-15",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-15",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-15",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-15",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-15",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-15",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-15",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-15",
+    "method": "oracle",
+    "max_change": 0.5587490000000002,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-16",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-16",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-16",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-16",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-16",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-16",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-16",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-16",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-16",
+    "method": "oracle",
+    "max_change": 0.6075150000000002,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-17",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-17",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-17",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-17",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-17",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-17",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-17",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-17",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-17",
+    "method": "oracle",
+    "max_change": 0.6109930000000001,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-18",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-18",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-18",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-18",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-18",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-18",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-18",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-18",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-18",
+    "method": "oracle",
+    "max_change": 0.6112520000000001,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-19",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-19",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-19",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-19",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-19",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-19",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-19",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-19",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-19",
+    "method": "oracle",
+    "max_change": 0.6222780000000001,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-20",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-20",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-20",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-20",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-20",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-20",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-20",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-20",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_march",
+    "date": "2025-03-20",
+    "method": "oracle",
+    "max_change": 0.6124360000000002,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-17",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-17",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-17",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-17",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-17",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-17",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-17",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-17",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-17",
+    "method": "oracle",
+    "max_change": 0.6094760000000001,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-18",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-18",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-18",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-18",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-18",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-18",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-18",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-18",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-18",
+    "method": "oracle",
+    "max_change": 0.5563070000000001,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-19",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-19",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-19",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-19",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-19",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-19",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-19",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-19",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-19",
+    "method": "oracle",
+    "max_change": 0.5543830000000001,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-20",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-20",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-20",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-20",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-20",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-20",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-20",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-20",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-20",
+    "method": "oracle",
+    "max_change": 0.6057020000000002,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-21",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-21",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-21",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-21",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-21",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-21",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-21",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-21",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-21",
+    "method": "oracle",
+    "max_change": 0.6137310000000002,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-22",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-22",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-22",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-22",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-22",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-22",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-22",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-22",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-22",
+    "method": "oracle",
+    "max_change": 0.6187630000000002,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-23",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-23",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-23",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-23",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-23",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-23",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-23",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-23",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-23",
+    "method": "oracle",
+    "max_change": 0.6384840000000003,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-24",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-24",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-24",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-24",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-24",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-24",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-24",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-24",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-24",
+    "method": "oracle",
+    "max_change": 0.6221300000000001,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-25",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-25",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-25",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-25",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-25",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-25",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-25",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-25",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-25",
+    "method": "oracle",
+    "max_change": 0.5553820000000003,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-26",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-26",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-26",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-26",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-26",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-26",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-26",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-26",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-26",
+    "method": "oracle",
+    "max_change": 0.56552,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-27",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-27",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-27",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-27",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-27",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-27",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-27",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-27",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-27",
+    "method": "oracle",
+    "max_change": 0.6105490000000002,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-28",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-28",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-28",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-28",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-28",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-28",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-28",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-28",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-28",
+    "method": "oracle",
+    "max_change": 0.6189110000000002,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-29",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-29",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-29",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-29",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-29",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-29",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-29",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-29",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-29",
+    "method": "oracle",
+    "max_change": 0.614508,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-30",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-30",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-30",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-30",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-30",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-30",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-30",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-30",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "dev_april",
+    "date": "2025-04-30",
+    "method": "oracle",
+    "max_change": 0.6157660000000003,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-08",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-08",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-08",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-08",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-08",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-08",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-08",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-08",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-08",
+    "method": "oracle",
+    "max_change": 0.6470680000000002,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-09",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-09",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-09",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-09",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-09",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-09",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-09",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-09",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-09",
+    "method": "oracle",
+    "max_change": 0.6472530000000001,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-10",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-10",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-10",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-10",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-10",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-10",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-10",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-10",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-10",
+    "method": "oracle",
+    "max_change": 0.6547639999999999,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-11",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-11",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-11",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-11",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-11",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-11",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-11",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-11",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-11",
+    "method": "oracle",
+    "max_change": 0.6565399999999999,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-12",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-12",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-12",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-12",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-12",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-12",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-12",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-12",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-12",
+    "method": "oracle",
+    "max_change": 0.6555780000000002,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-13",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-13",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-13",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-13",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-13",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-13",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-13",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-13",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-13",
+    "method": "oracle",
+    "max_change": 0.6032600000000001,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-14",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-14",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-14",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-14",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-14",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-14",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-14",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-14",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-14",
+    "method": "oracle",
+    "max_change": 0.5810600000000001,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-15",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-15",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-15",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-15",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-15",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-15",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-15",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-15",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-15",
+    "method": "oracle",
+    "max_change": 0.6581680000000001,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-16",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-16",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-16",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-16",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-16",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-16",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-16",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-16",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-16",
+    "method": "oracle",
+    "max_change": 0.6405560000000001,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-17",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-17",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-17",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-17",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-17",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-17",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-17",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-17",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-17",
+    "method": "oracle",
+    "max_change": 0.6598330000000001,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-18",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-18",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-18",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-18",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-18",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-18",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-18",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-18",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-18",
+    "method": "oracle",
+    "max_change": 0.6450330000000004,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-19",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-19",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-19",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-19",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-19",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-19",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-19",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-19",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-19",
+    "method": "oracle",
+    "max_change": 0.6497320000000002,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-20",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-20",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-20",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-20",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-20",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-20",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-20",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-20",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-20",
+    "method": "oracle",
+    "max_change": 0.5818740000000002,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-21",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-21",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-21",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-21",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-21",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-21",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-21",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-21",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_june",
+    "date": "2025-06-21",
+    "method": "oracle",
+    "max_change": 0.5904210000000001,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-18",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-18",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-18",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-18",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-18",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-18",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-18",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-18",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-18",
+    "method": "oracle",
+    "max_change": 0.7747920000000001,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-19",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-19",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-19",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-19",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-19",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-19",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-19",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-19",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-19",
+    "method": "oracle",
+    "max_change": 0.7594740000000002,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-20",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-20",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-20",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-20",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-20",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-20",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-20",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-20",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-20",
+    "method": "oracle",
+    "max_change": 0.7612870000000005,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-21",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-21",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-21",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-21",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-21",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-21",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-21",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-21",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-21",
+    "method": "oracle",
+    "max_change": 0.757809,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-22",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-22",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-22",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-22",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-22",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-22",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-22",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-22",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-22",
+    "method": "oracle",
+    "max_change": 0.700644,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-23",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-23",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-23",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-23",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-23",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-23",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-23",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-23",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-23",
+    "method": "oracle",
+    "max_change": 0.6857330000000001,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-24",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-24",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-24",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-24",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-24",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-24",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-24",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-24",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-24",
+    "method": "oracle",
+    "max_change": 0.754775,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-25",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-25",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-25",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-25",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-25",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-25",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-25",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-25",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-25",
+    "method": "oracle",
+    "max_change": 0.7550710000000005,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-26",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-26",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-26",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-26",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-26",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-26",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-26",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-26",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-26",
+    "method": "oracle",
+    "max_change": 0.7515190000000005,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-27",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-27",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-27",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-27",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-27",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-27",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-27",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-27",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-27",
+    "method": "oracle",
+    "max_change": 0.7541460000000004,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-28",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-28",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-28",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-28",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-28",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-28",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-28",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-28",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-28",
+    "method": "oracle",
+    "max_change": 0.7603990000000003,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-29",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-29",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-29",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-29",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-29",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-29",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-29",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-29",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-29",
+    "method": "oracle",
+    "max_change": 0.7004959999999998,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-30",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-30",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-30",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-30",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-30",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-30",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-30",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-30",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-30",
+    "method": "oracle",
+    "max_change": 0.714186,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-31",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-31",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-31",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-31",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-31",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-31",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-31",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-31",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "val_august",
+    "date": "2025-08-31",
+    "method": "oracle",
+    "max_change": 0.753258,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-10",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-10",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-10",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-10",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-10",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-10",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-10",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-10",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-10",
+    "method": "oracle",
+    "max_change": 0.6305289999999999,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-11",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-11",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-11",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-11",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-11",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-11",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-11",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-11",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-11",
+    "method": "oracle",
+    "max_change": 0.6291600000000002,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-12",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-12",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-12",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-12",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-12",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-12",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-12",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-12",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-12",
+    "method": "oracle",
+    "max_change": 0.5740300000000003,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-13",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-13",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-13",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-13",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-13",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-13",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-13",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-13",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-13",
+    "method": "oracle",
+    "max_change": 0.5919010000000002,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-14",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-14",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-14",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-14",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-14",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-14",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-14",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-14",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-14",
+    "method": "oracle",
+    "max_change": 0.6340070000000004,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-15",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-15",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-15",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-15",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-15",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-15",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-15",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-15",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-15",
+    "method": "oracle",
+    "max_change": 0.6286420000000001,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-16",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-16",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-16",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-16",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-16",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-16",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-16",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-16",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-16",
+    "method": "oracle",
+    "max_change": 0.6303810000000001,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-17",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-17",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-17",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-17",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-17",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-17",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-17",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-17",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-17",
+    "method": "oracle",
+    "max_change": 0.6241650000000001,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-18",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-18",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-18",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-18",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-18",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-18",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-18",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-18",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-18",
+    "method": "oracle",
+    "max_change": 0.6491770000000003,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-19",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-19",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-19",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-19",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-19",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-19",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-19",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-19",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-19",
+    "method": "oracle",
+    "max_change": 0.5987090000000002,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-20",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-20",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-20",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-20",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-20",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-20",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-20",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-20",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-20",
+    "method": "oracle",
+    "max_change": 0.5805790000000002,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-21",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-21",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-21",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-21",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-21",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-21",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-21",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-21",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-21",
+    "method": "oracle",
+    "max_change": 0.6314540000000002,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-22",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-22",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-22",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-22",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-22",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-22",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-22",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-22",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-22",
+    "method": "oracle",
+    "max_change": 0.6385580000000004,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-23",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-23",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-23",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-23",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-23",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-23",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-23",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-23",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_september",
+    "date": "2025-09-23",
+    "method": "oracle",
+    "max_change": 0.6360420000000002,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-08",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-08",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-08",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-08",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-08",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-08",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-08",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-08",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-08",
+    "method": "oracle",
+    "max_change": 0.7408259999999998,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-09",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-09",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-09",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-09",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-09",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-09",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-09",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-09",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-09",
+    "method": "oracle",
+    "max_change": 0.6929480000000003,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-10",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-10",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-10",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-10",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-10",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-10",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-10",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-10",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-10",
+    "method": "oracle",
+    "max_change": 0.7202910000000005,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-11",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-11",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-11",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-11",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-11",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-11",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-11",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-11",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-11",
+    "method": "oracle",
+    "max_change": 0.708895,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-12",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-12",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-12",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-12",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-12",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-12",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-12",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-12",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-12",
+    "method": "oracle",
+    "max_change": 0.6617200000000003,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-13",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-13",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-13",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-13",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-13",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-13",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-13",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-13",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-13",
+    "method": "oracle",
+    "max_change": 0.6471420000000003,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-14",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-14",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-14",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-14",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-14",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-14",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-14",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-14",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-14",
+    "method": "oracle",
+    "max_change": 0.703419,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-15",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-15",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-15",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-15",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-15",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-15",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-15",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-15",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-15",
+    "method": "oracle",
+    "max_change": 0.6986460000000005,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-16",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-16",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-16",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-16",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-16",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-16",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-16",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-16",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-16",
+    "method": "oracle",
+    "max_change": 0.696944,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-17",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-17",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-17",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-17",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-17",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-17",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-17",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-17",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-17",
+    "method": "oracle",
+    "max_change": 0.7014580000000004,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-18",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-18",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-18",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-18",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-18",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-18",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-18",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-18",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-18",
+    "method": "oracle",
+    "max_change": 0.7038630000000006,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-19",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-19",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-19",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-19",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-19",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-19",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-19",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-19",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-19",
+    "method": "oracle",
+    "max_change": 0.6387799999999999,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-20",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-20",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-20",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-20",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-20",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-20",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-20",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-20",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-20",
+    "method": "oracle",
+    "max_change": 0.6351170000000002,
+    "oracle_expected_to_change": true,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-21",
+    "method": "fixed_attachment1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-21",
+    "method": "lag1",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-21",
+    "method": "mean7",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-21",
+    "method": "mean14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-21",
+    "method": "mean28",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-21",
+    "method": "weekday35",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-21",
+    "method": "ewma14",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-21",
+    "method": "lag1_shift6h",
+    "max_change": 0.0,
+    "oracle_expected_to_change": false,
+    "pass": true
+  },
+  {
+    "window": "eval_december",
+    "date": "2025-12-21",
+    "method": "oracle",
+    "max_change": 0.7023830000000002,
+    "oracle_expected_to_change": true,
+    "pass": true
+  }
+]

@@ -12,3 +12,5 @@
 问题2已确认口径下的两周PoC、独立核算与人工审阅项：[q2-poc-verdict.md](q2-poc-verdict.md)，对应T-005。
 
 问题2全年正式建模：[q2-full-results.md](q2-full-results.md)，含分位数选择、334天费用及结果文件，T-006已按用户授权执行。
+
+问题4-2价格预测PoC：[q4-poc-results.md](q4-poc-results.md)。9种方法×84天已运行并通过独立审计；稳定收益目标失败，触发 `lag1` 操作性回退建议，完整334天与 `result4-2.xlsx` 尚未生成，当前停在Human Model Gate。

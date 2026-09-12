@@ -1,10 +1,10 @@
 {
   "id": "T-010-q4-price-poc",
   "title": "问题4-2因果电价预测与combined调度PoC",
-  "status": "in_progress",
+  "status": "review",
   "owner": "current user / Codex",
   "branch": "codex/T-010-q4-price-poc",
-  "updated_at": "2026-09-12T00:00:00+08:00",
+  "updated_at": "2026-09-12T23:00:00+08:00",
   "depends_on": [
     "T-007-q2-improve"
   ],
@@ -20,13 +20,23 @@
     "scripts/run_q4_price_poc.py",
     "scripts/audit_q4_price_poc.py",
     "scripts/report_q4_price_poc.py",
-    "final_run/q4_poc/main.py"
+    "final_run/q4_poc/main.py",
+    "planning/q4-poc-results.md",
+    "experiments/q4-price-poc-20260912-02/model_report.md",
+    "experiments/q4-price-poc-20260912-02/audit_summary.json",
+    "experiments/q4-price-poc-20260912-02/results/summary_tables.csv"
   ],
-  "checks": [],
+  "checks": [
+    "108864条10分钟执行记录独立复算PASS",
+    "756个未来价格扰动信息边界检查PASS",
+    "预测从价格快照独立重建最大误差0",
+    "同时充放电0次，求解失败0次，费用与物理误差小于1e-6",
+    "三张PNG/PDF图人工查看通过"
+  ],
   "decisions": [
     "memory/decisions/D-015-q4-target-approved.md"
   ],
-  "latest_handoff": null,
-  "next_action": "编写预声明PoC协议并实现因果价格预测比较。",
+  "latest_handoff": "memory/handoffs/2026-09-12-T-010-q4-price-poc.md",
+  "next_action": "等待Human Model Gate；如选择RUN Detailed PoC，固定lag1回退与固定价控制组运行334天连续SOC并生成result4-2.xlsx。",
   "blockers": []
 }
