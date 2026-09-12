@@ -1,7 +1,7 @@
 {
   "id": "T-010-q4-price-poc",
   "title": "问题4-2因果电价预测与combined调度PoC",
-  "status": "review",
+  "status": "in_progress",
   "owner": "current user / Codex",
   "branch": "codex/T-010-q4-price-poc",
   "updated_at": "2026-09-12T23:55:00+08:00",
@@ -48,9 +48,10 @@
   ],
   "decisions": [
     "memory/decisions/D-015-q4-target-approved.md",
-    "memory/decisions/D-016-q4-reference-detailed-poc-approved.md"
+    "memory/decisions/D-016-q4-reference-detailed-poc-approved.md",
+    "memory/decisions/D-017-q4-candidate-search-modified.md"
   ],
   "latest_handoff": "memory/handoffs/2026-09-12-T-010-q4-reference-poc.md",
-  "next_action": "停在Human Model Gate；没有参考文稿第5.2节完整结构等新证据时，维持D-015的lag1操作性回退，不运行失败控制器的334天版本。",
+  "next_action": "运行决策导向电价Cheap PoC，比较静态收缩价格与28日滚动费用选择器；不再测试已失败的库存价值控制。",
   "blockers": []
 }
