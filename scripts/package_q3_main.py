@@ -8,7 +8,7 @@ import math
 import sys
 
 ROOT = Path(__file__).resolve().parents[1]
-STRATEGY = 'rolling_margin'
+DEFAULT_STRATEGY = 'rolling_scenario'
 
 
 def read_csv(path):
@@ -24,7 +24,7 @@ def write_csv(path, rows):
         writer.writerows(rows)
 
 
-def main(run_arg, out_arg):
+def main(run_arg, out_arg, strategy=DEFAULT_STRATEGY):
     run, out = ROOT / run_arg, ROOT / out_arg
     audit = json.loads((run / 'audit_summary.json').read_text(encoding='utf8'))
     assert audit['pass_']
@@ -33,7 +33,7 @@ def main(run_arg, out_arg):
     tables = {}
     for name in ['summary_tables', 'daily_summary', 'periods', 'paper_dates_summary', 'issue_summary']:
         path = run / 'results' / (name + '.csv')
-        tables[name] = [r for r in read_csv(path) if r['strategy'] == STRATEGY]
+        tables[name] = [r for r in read_csv(path) if r['strategy'] == strategy]
         sources.append(path)
     summary = tables['summary_tables'][0]
     daily = tables['daily_summary']
@@ -44,8 +44,8 @@ def main(run_arg, out_arg):
         assert errors[key] < 1e-6, (key, errors[key])
     assert abs(sum(float(summary[k]) for k in ['ordinary_cost', 'adjustment_cost', 'emergency_cost']) - float(summary['total_cost'])) < 1e-6
     dates = set(config['paper_dates'])
-    dispatch_path = run / 'details' / (STRATEGY + '_dispatch.csv.gz')
-    versions_path = run / 'details' / (STRATEGY + '_plan_versions.jsonl.gz')
+    dispatch_path = run / 'details' / (strategy + '_dispatch.csv.gz')
+    versions_path = run / 'details' / (strategy + '_plan_versions.jsonl.gz')
     sources.extend([dispatch_path, versions_path])
     with gzip.open(dispatch_path, 'rt', encoding='utf8', newline='') as f:
         dispatch = [r for r in csv.DictReader(f) if r['date'] in dates]
@@ -91,7 +91,7 @@ def main(run_arg, out_arg):
         write_csv(out / (name + '.csv'), rows)
     write_csv(out / 'paper_dates_dispatch.csv', dispatch)
     write_csv(out / 'paper_dates_plan_versions.csv', plans)
-    manifest = dict(strategy=STRATEGY, source_run=run.relative_to(ROOT).as_posix(),
+    manifest = dict(strategy=strategy, source_run=run.relative_to(ROOT).as_posix(),
                     horizon='issue time through current-day 24:00',
                     parameters=config, validation=dict(pass_=True, daily_rows=len(daily),
                     paper_dispatch_rows=len(dispatch), paper_plan_versions=len(versions), sum_errors=errors),

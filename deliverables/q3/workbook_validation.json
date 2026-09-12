@@ -1,0 +1,19 @@
+{
+  "status": "pass",
+  "strategy": "rolling_scenario",
+  "workbook": "output/result3.xlsx",
+  "workbook_sha256": "c854ea69dc56b19ae4fde5cb2f6141ff2060ea8f935a1b897c254406e4430c95",
+  "template": "data/templates/result3.xlsx",
+  "template_sha256": "c59da470cabd0be23f602c95c8aa9d11ec224a0cdac216b3e1f218e65d006bdc",
+  "checks": {
+    "official_headers_exact": true,
+    "plan_days": 334,
+    "plan_and_adjusted_slots_per_day": 144,
+    "storage_rows": 2004,
+    "emergency_rows": 566,
+    "emergency_kwh": 19362.54141880097,
+    "ordinary_plus_adjustment_plus_emergency_cost": 13697255.49594712,
+    "formula_error_scan": "pass"
+  },
+  "validated_at": "2026-09-13T00:00:00+08:00"
+}

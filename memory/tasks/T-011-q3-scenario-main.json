@@ -1,0 +1,46 @@
+{
+  "id": "T-011-q3-scenario-main",
+  "title": "第三问方向3连续误差场景主模型结果包",
+  "status": "review",
+  "owner": "current user / Codex",
+  "branch": "codex/T-011-q3-scenario-main",
+  "updated_at": "2026-09-13T00:44:28+08:00",
+  "depends_on": [
+    "T-009-q3-model"
+  ],
+  "goal": "根据用户最新选择，将已审计的rolling_scenario从三路线实验中提取为第三问主模型结果包，并更新可复现入口与共享决策。",
+  "acceptance": [
+    "只复用已审计实验04的rolling_scenario结果，不重新调参或伪造新运行",
+    "提取334天汇总、分期、发布时间、指定日期执行与计划版本",
+    "结果包指标与来源实验逐项一致并通过独立提取校验",
+    "明确方向3的连续残差场景、尾部风险目标、信息边界和局限"
+  ],
+  "artifacts": [
+    "scripts/package_q3_main.py",
+    "deliverables/q3/README.md",
+    "deliverables/q3/manifest.json",
+    "deliverables/q3/summary_tables.csv",
+    "deliverables/q3/daily_summary.csv",
+    "deliverables/q3/periods.csv",
+    "deliverables/q3/issue_summary.csv",
+    "deliverables/q3/paper_dates_summary.csv",
+    "deliverables/q3/paper_dates_dispatch.csv",
+    "deliverables/q3/paper_dates_plan_versions.csv",
+    "deliverables/q3/workbook_validation.json",
+    "output/result3.xlsx"
+  ],
+  "checks": [
+    "来源实验04独立审计PASS：六策略315360条执行记录、7650次计划版本更新",
+    "方向3提取PASS：334天汇总、576条指定日期执行记录、16个指定日期计划版本，费用与电量汇总误差为0",
+    "result3.xlsx官方表头逐格一致，334天初始计划和调整计划各144时段与方向3账本一致",
+    "result3.xlsx包含2004条充放电汇总和566条紧急购电明细，紧急购电量19362.541419kWh",
+    "工作簿普通购电费、累计调整费与紧急购电费合计13697255.495947元，公式错误扫描0项",
+    "主要工作表渲染并人工查看通过"
+  ],
+  "decisions": [
+    "memory/decisions/D-019-q2-q3-direction3-main.md"
+  ],
+  "latest_handoff": "memory/handoffs/2026-09-13-T-011-q3-scenario-main.md",
+  "next_action": "人工审查方向3结果包与result3.xlsx；通过后合并PR。第二问方向3另立任务实现并运行，不能沿用本任务数值。",
+  "blockers": []
+}

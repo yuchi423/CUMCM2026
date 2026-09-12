@@ -1,5 +1,5 @@
 {
-  "strategy": "rolling_margin",
+  "strategy": "rolling_scenario",
   "source_run": "experiments/q3-models-20260911-04",
   "horizon": "issue time through current-day 24:00",
   "parameters": {
@@ -55,15 +55,15 @@
     }
   },
   "source_sha256": {
-    "experiments/q3-models-20260911-04/audit_summary.json": "f6e37bcb1f7b558a97e3dd798e239cb3b09ee0a188e62371f19721abaa877ef6",
-    "experiments/q3-models-20260911-04/run.json": "38bd9905cf62719ac1a32b126ec75a543ba1fdf2a0d68bbac0a7639ac1cf544a",
+    "experiments/q3-models-20260911-04/audit_summary.json": "4ab5c2a968c188b4cb12aba121e2bb8238a39223531a966d97574ee70cc0f42b",
+    "experiments/q3-models-20260911-04/run.json": "b4967ebe1c87483037d3f3e348c76b762775c85b578c3310f79d3c878645b3cc",
     "configs/q3_models.json": "9cc95d59ba09eea317843d6e717ef946f05e1cd89310b33af85734beb43ef8c4",
-    "experiments/q3-models-20260911-04/results/summary_tables.csv": "bb9212f2738ff65736fda9216675605106cfbf3190f3e6458bb24ec52cb03588",
-    "experiments/q3-models-20260911-04/results/daily_summary.csv": "67804af22979b4e2b6ab2e82b2dfcd77943e8cc98e81d414d2956491ad20ef19",
-    "experiments/q3-models-20260911-04/results/periods.csv": "a05e370d239dc57532b762edd5c7beffb89d065e313c164de5dea073893e0887",
-    "experiments/q3-models-20260911-04/results/paper_dates_summary.csv": "7437effd26a6018a5a2b2ae90c97800bfdfaa0ee4eed9a9d9f34576303bd1ba6",
-    "experiments/q3-models-20260911-04/results/issue_summary.csv": "787af6c5c3b7d16ca959bf57bb340cc2598926d63dae5b29e331d26f71230f15",
-    "experiments/q3-models-20260911-04/details/rolling_margin_dispatch.csv.gz": "399edc3f3645a43867543456ff1dcdcee397197f60c6f0465f3ff10a4cd4913c",
-    "experiments/q3-models-20260911-04/details/rolling_margin_plan_versions.jsonl.gz": "c23f6654574f357dbf78a2379de2a6f9cd2a598b73b27617e8d5db3043fd24e4"
+    "experiments/q3-models-20260911-04/results/summary_tables.csv": "52d251197498ba0936546deeb12e8e3735c908caf36c9eb8f6065de33d4e2659",
+    "experiments/q3-models-20260911-04/results/daily_summary.csv": "5347f59bfd3c9fbfb0410885cfd2e796dddba6ac50cca5491bcc8f4c9f3365a4",
+    "experiments/q3-models-20260911-04/results/periods.csv": "fd0987a4ed6eb908a9e7ff61a51cfb509a852ef3b37fe4b3cf9b208cb9b48630",
+    "experiments/q3-models-20260911-04/results/paper_dates_summary.csv": "bb0c6f0e9653da4c1d7fcd839c4aef25a832ca21af45a6cb4eadf76237e3b49e",
+    "experiments/q3-models-20260911-04/results/issue_summary.csv": "a897bf80424f61ae92facf6e9311d5eed52ec7dc4d1c1098d1dc8ca29434498a",
+    "experiments/q3-models-20260911-04/details/rolling_scenario_dispatch.csv.gz": "9fa70c85de265e84768934cb35d1450f3a0ab133740897f97e562186a9bff6b6",
+    "experiments/q3-models-20260911-04/details/rolling_scenario_plan_versions.jsonl.gz": "2061da9bdcb9f81cbf45e5aae8e04404d7123e002312b35f0d09be4af426dfaa"
   }
 }
