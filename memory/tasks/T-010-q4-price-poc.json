@@ -1,7 +1,7 @@
 {
   "id": "T-010-q4-price-poc",
   "title": "问题4实时电价下SAA购电与combined调度",
-  "status": "complete",
+  "status": "done",
   "owner": "current user / Codex",
   "branch": "codex/T-010-q4-price-poc",
   "updated_at": "2026-09-12T22:10:00+08:00",
