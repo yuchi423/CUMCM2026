@@ -1,0 +1,37 @@
+{
+  "selection_period": "development only",
+  "candidate_development_costs": {
+    "load_scenario_selector": 934265.7425252025,
+    "joint_scenario_selector": 934355.8708838234
+  },
+  "raw_best": "load_scenario_selector",
+  "eligible_within_tolerance": [
+    "load_scenario_selector",
+    "joint_scenario_selector"
+  ],
+  "selected": "load_scenario_selector",
+  "later_checks": {
+    "validation": {
+      "selected_cost": 1337763.8674238843,
+      "mean7_cost": 1335282.0834708852,
+      "fixed_cost": 1344430.943123603,
+      "shuffled_cost": 1334722.3000881271,
+      "beats_mean7_threshold": false,
+      "beats_fixed_threshold": true,
+      "joint_beats_shuffled_if_selected": true
+    },
+    "evaluation": {
+      "selected_cost": 1373317.070126047,
+      "mean7_cost": 1373412.7300816406,
+      "fixed_cost": 1372676.9686900019,
+      "shuffled_cost": 1373128.5932950317,
+      "beats_mean7_threshold": false,
+      "beats_fixed_threshold": false,
+      "joint_beats_shuffled_if_selected": true
+    }
+  },
+  "scientific_target_pass": false,
+  "oracle_excluded": true,
+  "shuffled_is_negative_control": true,
+  "fallback_if_fail": "D-015 lag1 operational baseline, then fixed_attachment1"
+}

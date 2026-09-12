@@ -38,7 +38,11 @@
     "planning/q4-decision-forecast-poc-results.md",
     "experiments/q4-decision-forecast-poc-20260912-01/model_report.md",
     "experiments/q4-decision-forecast-poc-20260912-01/audit_summary.json",
-    "planning/q4-joint-scenario-poc-protocol.md"
+    "planning/q4-joint-scenario-poc-protocol.md",
+    "planning/q4-joint-scenario-poc-results.md",
+    "experiments/q4-joint-scenario-poc-20260912-01/model_report.md",
+    "experiments/q4-joint-scenario-poc-20260912-01/audit_summary.json",
+    "planning/q4-saa-poc-protocol.md"
   ],
   "checks": [
     "108864条10分钟执行记录独立复算PASS",
@@ -51,7 +55,9 @@
     "净负荷形状法MAE降至0.050655但费用稳定性目标FAIL",
     "价值控制在真实价格和oracle价格下均比对应贪心增费",
     "决策导向价格PoC复算108864条记录和672项信息检查PASS",
-    "静态收缩退化为14日均值，滚动费用选择跨期稳定性FAIL"
+    "静态收缩退化为14日均值，滚动费用选择跨期稳定性FAIL",
+    "联合情景PoC独立重放43344次评分和96768条执行记录PASS",
+    "匹配联合情景未优于错配负对照，稳定费用目标FAIL"
   ],
   "decisions": [
     "memory/decisions/D-015-q4-target-approved.md",
@@ -59,6 +65,6 @@
     "memory/decisions/D-017-q4-candidate-search-modified.md"
   ],
   "latest_handoff": "memory/handoffs/2026-09-12-T-010-q4-reference-poc.md",
-  "next_action": "运行匹配价格—供需残差情景Cheap PoC，以当天供需预测和28个历史联合残差情景选择低维候选普通购电计划。",
+  "next_action": "运行两阶段样本平均近似Cheap PoC，直接优化所有情景共享的普通购电计划，并保留combined名义可行性约束。",
   "blockers": []
 }
