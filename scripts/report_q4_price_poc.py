@@ -76,24 +76,33 @@ def report(experiment: Path) -> None:
 
     summary_map = {row["method"]: row for row in summaries}
     fixed_cost = float(summary_map["fixed_attachment1"]["inventory_adjusted_cost"])
+    cost_methods = [method for method in methods if method != "lag1_shift6h"]
     adjusted_delta = np.asarray([
-        float(summary_map[m]["inventory_adjusted_cost"]) - fixed_cost for m in methods
+        float(summary_map[m]["inventory_adjusted_cost"]) - fixed_cost for m in cost_methods
     ]) / 10000
     emergency = np.asarray([float(summary_map[m]["emergency_kwh"]) for m in methods]) / 1000
+    x_cost = np.arange(len(cost_methods))
     x = np.arange(len(methods))
     colors = ["#2A9D8F" if value < 0 else "#E76F51" if value > 0 else "#7F8C8D"
               for value in adjusted_delta]
     fig, axes = plt.subplots(1, 2, figsize=(13, 5.2))
-    axes[0].bar(x, adjusted_delta, color=colors)
+    axes[0].bar(x_cost, adjusted_delta, color=colors)
     axes[0].axhline(0, color="#333333", linewidth=0.8)
     axes[0].set_ylabel("相对固定价的费用增量（万元）")
     axes[0].set_title("库存调整费用差值（负值为节省）")
+    negative_delta = (
+        float(summary_map["lag1_shift6h"]["inventory_adjusted_cost"]) - fixed_cost) / 10000
+    axes[0].text(
+        0.02, 0.97, f"错移6小时负对照：+{negative_delta:.2f}万元",
+        transform=axes[0].transAxes, ha="left", va="top", color="#A63D2F",
+    )
+    axes[0].set_xticks(x_cost, [METHOD_LABELS[m] for m in cost_methods], rotation=35, ha="right")
+    axes[0].grid(axis="y", alpha=0.25)
     axes[1].bar(x, emergency, color="#4C78A8")
     axes[1].set_ylabel("紧急购电量（MWh）")
     axes[1].set_title("同一实际轨迹下的紧急购电")
-    for axis in axes:
-        axis.set_xticks(x, [METHOD_LABELS[m] for m in methods], rotation=35, ha="right")
-        axis.grid(axis="y", alpha=0.25)
+    axes[1].set_xticks(x, [METHOD_LABELS[m] for m in methods], rotation=35, ha="right")
+    axes[1].grid(axis="y", alpha=0.25)
     fig.suptitle("图2 价格预测对费用与保供结果的影响")
     fig.tight_layout()
     save(fig, figures / "Fig2_PoCCostComparison")
@@ -200,7 +209,7 @@ def report(experiment: Path) -> None:
 在仓库根目录执行：
 
 ```powershell
-D:\\Users\\python.exe final_run/q4_poc/main.py experiments/q4-price-poc-20260912-01 --io-python C:\\Users\\14592\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe
+D:\\Users\\python.exe final_run/q4_poc/main.py experiments/{experiment.name} --io-python C:\\Users\\14592\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe
 ```
 
 目标目录必须不存在。入口依次运行PoC、独立审计和制图报告；任一步失败都会返回非零状态。
