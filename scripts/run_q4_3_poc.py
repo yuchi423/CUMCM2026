@@ -22,7 +22,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 from prepare_q2_inputs import read_sources
 from q2_core import execute
 from q3_core import choose_candidate, plan_with_audit
-from run_q3_models import fee_checks, hourly_margin, load_forecasts, read_q3_forecasts
+from q3_shared import fee_checks, hourly_margin, load_forecasts, read_q3_forecasts
 from run_q4_price_poc import read_price_matrix
 
 VARIANTS = [
