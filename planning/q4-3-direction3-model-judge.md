@@ -120,8 +120,8 @@ Cheap PoC获批后，沿用问题4既有的六个14日窗口，共84天：开发
 
 Human decision:
 
-- [ ] `APPROVE DUAL TARGET AND FALLBACK`
+- [x] `APPROVE DUAL TARGET AND FALLBACK`（2026-09-13用户批准）
 - [ ] `MODIFY TARGET`
 - [ ] `REJECT TARGET`
 
-在用户明确批准前不执行Cheap PoC。
+用户已于2026-09-13批准双层目标与回退，允许进入Cheap PoC；本文件落盘时PoC尚未执行。
