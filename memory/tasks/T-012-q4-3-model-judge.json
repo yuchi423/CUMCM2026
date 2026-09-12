@@ -1,10 +1,10 @@
 {
   "id": "T-012-q4-3-model-judge",
   "title": "问题4-3方向3规划与Model Judge目标审查",
-  "status": "in_progress",
+  "status": "review",
   "owner": "current user / Codex",
   "branch": "codex/T-012-q4-3-model-judge",
-  "updated_at": "2026-09-13T02:00:00+08:00",
+  "updated_at": "2026-09-13T02:30:00+08:00",
   "depends_on": [
     "T-011-q3-scenario-main",
     "T-010-q4-price-poc"
@@ -19,17 +19,37 @@
   ],
   "artifacts": [
     "planning/q4-3-direction3-model-judge.md",
-    "memory/decisions/D-020-q4-3-direction3-target-gate.md"
+    "memory/decisions/D-020-q4-3-direction3-target-gate.md",
+    "configs/q4_3_poc.json",
+    "scripts/q3_shared.py",
+    "scripts/run_q4_3_poc.py",
+    "scripts/audit_q4_3_poc.py",
+    "scripts/report_q4_3_poc.py",
+    "final_run/q4_3_poc/main.py",
+    "experiments/q4-3-poc-20260913-01/model_report.md",
+    "experiments/q4-3-poc-20260913-01/selection.json",
+    "experiments/q4-3-poc-20260913-01/audit_summary.json",
+    "planning/q4-3-poc-results.md"
   ],
   "checks": [
     "Model Judge Stage A完成：1个Delivery Baseline、2个候选、1个结构性淘汰",
     "Model Judge Stage B完成：双层目标、混杂诊断、证伪和回退规则已预声明",
-    "HUMAN TARGET GATE于2026-09-13获批"
+    "HUMAN TARGET GATE于2026-09-13获批",
+    "六策略各84天运行完成，共72576条10分钟执行记录",
+    "1764个计划版本费用和版本链独立复算PASS",
+    "未来价格后缀扰动和时序打乱边际保持检查PASS",
+    "Candidate A方向3Scientific FAIL",
+    "Candidate B日内价格增强Scientific FAIL",
+    "Fallback rolling_margin_mean14 Cheap PoC PASS",
+    "Minimum Deliverable仍为PARTIAL"
   ],
   "decisions": [
-    "memory/decisions/D-020-q4-3-direction3-target-gate.md"
+    "memory/decisions/D-020-q4-3-direction3-target-gate.md",
+    "memory/decisions/D-021-q4-3-model-gate.md"
   ],
   "latest_handoff": "memory/handoffs/2026-09-13-T-012-q4-3-model-judge.md",
-  "next_action": "按冻结的84天窗口实现并运行Cheap PoC及独立审计。",
-  "blockers": []
+  "next_action": "等待HUMAN MODEL GATE决定：MODIFY为rolling_margin_mean14的334天操作性交付，或REJECT重选路线。",
+  "blockers": [
+    "Model Judge要求用户在HUMAN MODEL GATE决定后才能进入334天正式运行"
+  ]
 }
