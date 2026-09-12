@@ -157,9 +157,9 @@ def report(experiment: Path) -> None:
 D:\\Users\\python.exe final_run/q4_reference_poc/main.py experiments/{experiment.name} --io-python C:\\Users\\14592\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe
 ```
 
-## G. 后续敏感性
+## G. 后续判断
 
-只有当价格感知储能在validation和evaluation均通过预声明阈值，才值得进入334天连续运行。下一步需要检验终端库存系数、更新频率和联合残差情景，但不得用后续阶段重新选择当前结构。
+价格感知储能未在validation和evaluation通过预声明阈值，因此当前实现不进入334天连续运行。若没有参考文稿第5.2节完整结构或其他新的识别信息，不继续调整终端库存系数、更新频率或联合残差情景，避免用结果后调参替代模型证据。
 
 ## H. 评委视角
 

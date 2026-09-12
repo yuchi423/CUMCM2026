@@ -1,10 +1,10 @@
 {
   "id": "T-010-q4-price-poc",
   "title": "问题4-2因果电价预测与combined调度PoC",
-  "status": "in_progress",
+  "status": "review",
   "owner": "current user / Codex",
   "branch": "codex/T-010-q4-price-poc",
-  "updated_at": "2026-09-12T23:00:00+08:00",
+  "updated_at": "2026-09-12T23:55:00+08:00",
   "depends_on": [
     "T-007-q2-improve"
   ],
@@ -24,20 +24,33 @@
     "planning/q4-poc-results.md",
     "experiments/q4-price-poc-20260912-02/model_report.md",
     "experiments/q4-price-poc-20260912-02/audit_summary.json",
-    "experiments/q4-price-poc-20260912-02/results/summary_tables.csv"
+    "experiments/q4-price-poc-20260912-02/results/summary_tables.csv",
+    "planning/q4-reference-poc-protocol.md",
+    "scripts/run_q4_reference_poc.py",
+    "scripts/audit_q4_reference_poc.py",
+    "scripts/report_q4_reference_poc.py",
+    "final_run/q4_reference_poc/main.py",
+    "planning/q4-reference-poc-results.md",
+    "experiments/q4-reference-poc-20260912-02/model_report.md",
+    "experiments/q4-reference-poc-20260912-02/audit_summary.json",
+    "experiments/q4-reference-poc-20260912-02/results/effect_decomposition.csv"
   ],
   "checks": [
     "108864条10分钟执行记录独立复算PASS",
     "756个未来价格扰动信息边界检查PASS",
     "预测从价格快照独立重建最大误差0",
     "同时充放电0次，求解失败0次，费用与物理误差小于1e-6",
-    "三张PNG/PDF图人工查看通过"
+    "三张PNG/PDF图人工查看通过",
+    "参考方法Detailed PoC复算96768条记录PASS",
+    "参考方法1008项0点及日内未来价格扰动检查PASS",
+    "净负荷形状法MAE降至0.050655但费用稳定性目标FAIL",
+    "价值控制在真实价格和oracle价格下均比对应贪心增费"
   ],
   "decisions": [
     "memory/decisions/D-015-q4-target-approved.md",
     "memory/decisions/D-016-q4-reference-detailed-poc-approved.md"
   ],
-  "latest_handoff": "memory/handoffs/2026-09-12-T-010-q4-price-poc.md",
-  "next_action": "运行参考方法Detailed PoC，拆分净负荷价格预测与价格感知储能的费用贡献。",
+  "latest_handoff": "memory/handoffs/2026-09-12-T-010-q4-reference-poc.md",
+  "next_action": "停在Human Model Gate；没有参考文稿第5.2节完整结构等新证据时，维持D-015的lag1操作性回退，不运行失败控制器的334天版本。",
   "blockers": []
 }
