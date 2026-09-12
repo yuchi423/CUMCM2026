@@ -49,5 +49,4 @@ Scientific Target Failure Condition：选中方案未能在validation和evaluati
 
 Algorithm Failure Condition：未来信息扰动改变可执行选择、情景历史包含目标日或未来、情景/选择不能独立重建、能量/费用/SOC/功率误差超过1e-6或求解失败。
 
-完成7方法×84天、28情景回放、独立审计和报告后停止。成功则返回Human Model Gate申请334天正式运行；失败则说明低维候选计划选择仍不能利用历史情景稳定识别当天最优计划，Workflow Recheck转向直接的两阶段随机购电优化，并重新审查其日内非预见性约束。
-
+完成8方法×84天、28情景回放、独立审计和报告后停止。成功则返回Human Model Gate申请334天正式运行；失败则说明低维候选计划选择仍不能利用历史情景稳定识别当天最优计划，Workflow Recheck转向直接的两阶段随机购电优化，并重新审查其日内非预见性约束。
