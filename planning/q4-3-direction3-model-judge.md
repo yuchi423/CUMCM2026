@@ -1,7 +1,7 @@
 # 问题4-3方向3规划与 Model Judge 目标门槛
 
-日期：2026-09-13  
-任务：T-012-q4-3-model-judge  
+日期：2026-09-13
+任务：T-012-q4-3-model-judge
 状态：Stage A / Stage B 已完成；Cheap PoC **NOT EXECUTED**。
 
 本文替代 `planning/task4-task5-decision.md` 中关于 Task 5 采用方向2的旧规划。问题3当前正式候选为方向3 `rolling_scenario`；问题4-2已选择 `saa_load`，其结果支持供需场景，但不支持价格—供需联合机制。
