@@ -16,7 +16,7 @@ def call(python: Path, script: str, *args: str) -> None:
 
 def main() -> None:
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("output",nargs="?",default="experiments/q4-saa-full-20260912-01",type=Path)
+    parser.add_argument("output",nargs="?",default="experiments/q4-saa-strict-full-20260913-01",type=Path)
     parser.add_argument("--io-python",required=True,type=Path)
     parser.add_argument("--model-python",default=r"D:\Users\python.exe",type=Path)
     args=parser.parse_args(); output=args.output if args.output.is_absolute() else ROOT/args.output

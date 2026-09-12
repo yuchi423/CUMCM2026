@@ -57,6 +57,11 @@ def _flow_audit(load, pv, flow, initial, cfg, terminal=None):
     eta, ed = cfg["charge_efficiency"], cfg["discharge_efficiency"]
     cap = cfg["power_kw"] * cfg["step_hours"]
     prev = np.r_[initial, flow["e"][:-1]]
+    pv_gap = np.zeros_like(load, dtype=float)
+    for t in range(len(load)):
+        headroom = max(0.0, (cfg["energy_max"] - prev[t]) / eta)
+        required_pv = min(max(0.0, float(pv[t] - load[t])), cap, headroom)
+        pv_gap[t] = max(0.0, required_pv - float(flow["c"][t]))
     vals = {
         "balance": float(np.max(np.abs(flow["g"] + pv + flow["d"] + flow.get("b", 0.0) - load - flow["c"] - flow["s"]))),
         "state": float(np.max(np.abs(flow["e"] - prev - eta * flow["c"] + flow["d"] / ed))),
@@ -64,6 +69,7 @@ def _flow_audit(load, pv, flow, initial, cfg, terminal=None):
         "power": float(max(0., np.max(flow["c"]) - cap, np.max(flow["d"]) - cap)),
         "negative": float(max(0., -min(np.min(flow[k]) for k in ["g", "c", "d", "s", "b"] if k in flow))),
         "mutual_count": int(np.sum((flow["c"] > 1e-6) & (flow["d"] > 1e-6))),
+        "pv_priority": float(np.max(pv_gap)),
     }
     if terminal is not None:
         vals["terminal"] = abs(float(flow["e"][-1] - terminal))
@@ -97,34 +103,58 @@ def solve_saa(index, energy, base_load, base_pv, nominal_extra, actual_load, act
             raise KeyError(mode)
         scenario.append({"index": h, "date": dates[h], "load": sl, "pv": sp, "price": price})
 
-    # Variable blocks: g, nominal c/d/s/e, then one c/d/b/s/e block per scenario.
-    block = 5 * n; base_total = (1 + ns) * block
-    # One binary per nominal slot removes LP degeneracy in feasibility-only
-    # nominal recourse while leaving the shared first-stage purchase continuous.
-    nz = np.arange(base_total, base_total + n); total = base_total + n
+    # Continuous blocks: g + nominal c/d/s/e, then one c/d/b/s/e block per
+    # historical scenario.  Every block gets a charge/discharge mode binary
+    # and a PV-capacity branch binary.  Together they enforce mutual exclusion
+    # and mandatory absorption of usable PV surplus in every scenario.
+    block = 5 * n
+    block_count = 1 + ns
+    base_total = block_count * block
+    binary_total = block_count * 2 * n
+    total = base_total + binary_total
     g = np.arange(0, n); nc = np.arange(n, 2*n); nd = np.arange(2*n, 3*n)
     nsp = np.arange(3*n, 4*n); ne = np.arange(4*n, 5*n)
     lb = np.zeros(total); ub = np.full(total, np.inf)
     cap = cfg["power_kw"] * cfg["step_hours"]; eta, ed = cfg["charge_efficiency"], cfg["discharge_efficiency"]
     emin, emax = cfg["energy_min"], cfg["energy_max"]
     nominal_load = base_load + nominal_extra
-    ub[g] = nominal_load + cap
-    ub[nc] = cap; ub[nd] = np.minimum(cap, np.maximum(nominal_load - base_pv, 0.)); ub[nsp] = np.maximum(base_pv - nominal_load, 0.)
+    g_upper = nominal_load + cap
+    ub[g] = g_upper
+    ub[nc] = cap
+    ub[nd] = np.minimum(cap, np.maximum(nominal_load - base_pv, 0.))
+    ub[nsp] = g_upper + base_pv
     lb[ne], ub[ne] = emin, emax; lb[ne[-1]] = ub[ne[-1]] = cfg["planned_terminal_energy"]
-    ub[nz] = 1.
+    ub[base_total:] = 1.
     objective = np.zeros(total); expected_price = np.mean([s["price"] for s in scenario], axis=0)
     objective[g] = expected_price
-    # The nominal recourse has no statistical cost; a small deterministic tie-break
-    # removes arbitrary charge/discharge cycles from otherwise equivalent LP optima.
     objective[nc] += cfg["cycle_tiebreak_cost"]; objective[nd] += cfg["cycle_tiebreak_cost"]
     rows: list[int] = []; cols: list[int] = []; values: list[float] = []; lower: list[float] = []; upper: list[float] = []
     def add(items, lo, hi):
         rid = len(lower)
         for col, val in items.items(): rows.append(rid); cols.append(int(col)); values.append(float(val))
         lower.append(float(lo)); upper.append(float(hi))
-    def add_recourse(start, sl, sp, price, terminal=False):
+    def binaries(block_id):
+        start = base_total + block_id * 2 * n
+        return np.arange(start, start+n), np.arange(start+n, start+2*n)
+    def add_physics(c, d, e, load_curve, pv_curve, block_id):
+        mode, pv_full = binaries(block_id)
+        surplus = np.maximum(pv_curve-load_curve, 0.0)
+        absorb = np.minimum(surplus, cap)
+        ub[pv_full[absorb <= 1e-12]] = 0.0
+        for t in range(n):
+            add({int(c[t]): 1.0, int(mode[t]): -cap}, -np.inf, 0.0)
+            add({int(d[t]): 1.0, int(mode[t]): cap}, -np.inf, cap)
+            if absorb[t] > 1e-12:
+                # Either the absorbable PV amount is charged, or the battery
+                # reaches Emax in this interval.  Because total charging can
+                # always be allocated PV-first, this is the exact source
+                # priority condition without forbidding later grid top-up.
+                add({int(c[t]): 1.0, int(pv_full[t]): float(absorb[t])}, float(absorb[t]), np.inf)
+                add({int(e[t]): 1.0, int(pv_full[t]): -(emax-emin)}, emin, np.inf)
+    def add_recourse(start, sl, sp, price, block_id):
         c = np.arange(start, start+n); d = np.arange(start+n, start+2*n); b = np.arange(start+2*n, start+3*n); s = np.arange(start+3*n, start+4*n); e = np.arange(start+4*n, start+5*n)
-        ub[c] = cap; ub[d] = np.minimum(cap, np.maximum(sl - sp, 0.)); ub[s] = np.inf
+        ub[c] = cap; ub[d] = np.minimum(cap, np.maximum(sl - sp, 0.))
+        ub[b] = np.maximum(sl-sp, 0.); ub[s] = g_upper + sp
         lb[e], ub[e] = emin, emax
         objective[b] = cfg["emergency_price_multiple"] * price / ns
         objective[e[-1]] = -cfg["terminal_value_efficiency_multiple"] * float(np.mean(price)) / ns
@@ -134,6 +164,7 @@ def solve_saa(index, energy, base_load, base_pv, nominal_extra, actual_load, act
             state = {e[t]: 1., c[t]: -eta, d[t]: 1./ed}
             if t: state[e[t-1]] = -1.
             add(state, energy if t == 0 else 0., energy if t == 0 else 0.)
+        add_physics(c, d, e, sl, sp, block_id)
         return c, d, b, s, e
     # Nominal scenario has no emergency recourse and fixed terminal target.
     for t in range(n):
@@ -141,15 +172,14 @@ def solve_saa(index, energy, base_load, base_pv, nominal_extra, actual_load, act
         state = {ne[t]: 1., nc[t]: -eta, nd[t]: 1./ed}
         if t: state[ne[t-1]] = -1.
         add(state, energy if t == 0 else 0., energy if t == 0 else 0.)
-        add({nc[t]: 1., nz[t]: -cap}, -np.inf, 0.)
-        add({nd[t]: 1., nz[t]: cap}, -np.inf, cap)
+    add_physics(nc, nd, ne, nominal_load, base_pv, 0)
     scenario_blocks = []
     for s in scenario:
         start = 5*n + len(scenario_blocks)*5*n
-        scenario_blocks.append(add_recourse(start, s["load"], s["pv"], s["price"]))
+        scenario_blocks.append(add_recourse(start, s["load"], s["pv"], s["price"], len(scenario_blocks)+1))
     matrix = coo_matrix((values, (rows, cols)), shape=(len(lower), total)).tocsc()
     begin = time.perf_counter()
-    integrality = np.zeros(total, dtype=int); integrality[nz] = 1
+    integrality = np.zeros(total, dtype=int); integrality[base_total:] = 1
     result = milp(objective, integrality=integrality, bounds=Bounds(lb, ub),
                   constraints=LinearConstraint(matrix, np.asarray(lower), np.asarray(upper)),
                   options={"time_limit": 60, "mip_rel_gap": 1e-9})

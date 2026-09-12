@@ -50,7 +50,7 @@ def report(experiment: Path) -> None:
     for q in quarters:
         p=float(qmap[("saa_load",q)]["inventory_adjusted_cost"]); m7=float(qmap[("mean7",q)]["inventory_adjusted_cost"]); fx=float(qmap[("fixed",q)]["inventory_adjusted_cost"]); qlines.append(f"| {q} | {p:,.2f} | {(m7-p)/m7*100:.3f}% | {(fx-p)/fx*100:.3f}% | {'通过' if selection['quarter_checks'][q]['within_worsening_tolerance'] else '未通过'} |")
     maxerr=max(v for k,v in audit["maximum_errors"].items() if k not in {"dispatch_count","information_count","information_failures"}); verdict="PASS" if selection["model_selection_pass"] else "FAIL"
-    text=f"""# 问题4两阶段SAA 334天正式运行报告
+    text=f"""# 问题4严格光伏优先SAA 334天正式运行报告
 
 # A 运行产物一览（路径）
 
@@ -76,11 +76,11 @@ def report(experiment: Path) -> None:
 
 # D 合理性检查与发现的问题
 
-独立审计结论为 **{'PASS' if audit['pass'] else 'FAIL'}**。复算{completion['dispatch_rows']:,}条实际记录、{completion['saa_records']}个SAA计划及{completion['information_checks']}项未来信息检查；最大数值误差为{maxerr:.3e}。全年库存调整双基线检查为{selection['annual_adjusted_checks']}，现金支出检查为{selection['annual_cash_check']}，风险电量检查为{selection['risk_energy_check']}。
+独立审计结论为 **{'PASS' if audit['pass'] else 'FAIL'}**。复算{completion['dispatch_rows']:,}条实际记录、{completion['saa_records']}个SAA计划及{completion['information_checks']}项未来信息检查；最大数值误差为{maxerr:.3e}。名义层、全部历史场景和实际执行层均检查“光伏先供负荷、余光尽量充电、充不下才弃光”以及充放电互斥。全年库存调整双基线检查为{selection['annual_adjusted_checks']}，现金支出检查为{selection['annual_cash_check']}，风险电量检查为{selection['risk_energy_check']}。
 
 # E 微调记录（迭代清单：改动→原因→指标变化）
 
-本轮没有根据334天结果微调。14日场景、0.8分位余量、储能参数、5倍紧急购电价格、名义层0--1互斥和全部裁决门槛均在运行前冻结。Cheap PoC阶段曾修正名义层LP退化和审计中紧急购电符号错误；两项修正均发生在全年协议冻结之前。
+本轮没有根据修复后334天结果微调。14日场景、0.8分位余量、储能参数、5倍紧急购电价格和全部裁决门槛保持不变。修复前审计发现SAA场景层遗漏光伏优先硬约束；本版在结果生成前为名义层和每个历史场景加入光伏容量分支变量及充放电状态变量，并把该约束加入独立审计。旧运行仅保留为缺陷定位证据，不参与最终选择。
 
 # F 最终版本说明（如何一键运行）
 
@@ -96,7 +96,7 @@ D:\\Users\\python.exe final_run/q4_saa_full/main.py experiments/{experiment.name
 
 # H 评委视角：哪些图表/检验最加分，哪些最容易被扣分
 
-加分点是全年连续推进储能状态、双基线和季度门槛预声明、未来价格扰动检查与独立物理复算。最容易被质疑的是14日场景代表性和场景内补救决策较理想化；论文应明确其为历史样本驱动的日前鲁棒近似，不把 `saa_load` 写成价格—供需联合机制模型。
+加分点是全年连续推进储能状态、光伏优先逐情景硬约束、双基线和季度门槛预声明、未来价格扰动检查与独立物理复算。最容易被质疑的是14日场景代表性和场景内补救决策较理想化；论文应明确其为历史样本驱动的日前鲁棒近似，不把 `saa_load` 写成价格—供需联合机制模型。
 """
     (experiment/"model_report.md").write_text(text,encoding="utf-8")
 
