@@ -98,7 +98,10 @@ def solve_saa(index, energy, base_load, base_pv, nominal_extra, actual_load, act
         scenario.append({"index": h, "date": dates[h], "load": sl, "pv": sp, "price": price})
 
     # Variable blocks: g, nominal c/d/s/e, then one c/d/b/s/e block per scenario.
-    block = 5 * n; total = (1 + ns) * block
+    block = 5 * n; base_total = (1 + ns) * block
+    # One binary per nominal slot removes LP degeneracy in feasibility-only
+    # nominal recourse while leaving the shared first-stage purchase continuous.
+    nz = np.arange(base_total, base_total + n); total = base_total + n
     g = np.arange(0, n); nc = np.arange(n, 2*n); nd = np.arange(2*n, 3*n)
     nsp = np.arange(3*n, 4*n); ne = np.arange(4*n, 5*n)
     lb = np.zeros(total); ub = np.full(total, np.inf)
@@ -108,8 +111,12 @@ def solve_saa(index, energy, base_load, base_pv, nominal_extra, actual_load, act
     ub[g] = nominal_load + cap
     ub[nc] = cap; ub[nd] = np.minimum(cap, np.maximum(nominal_load - base_pv, 0.)); ub[nsp] = np.maximum(base_pv - nominal_load, 0.)
     lb[ne], ub[ne] = emin, emax; lb[ne[-1]] = ub[ne[-1]] = cfg["planned_terminal_energy"]
+    ub[nz] = 1.
     objective = np.zeros(total); expected_price = np.mean([s["price"] for s in scenario], axis=0)
     objective[g] = expected_price
+    # The nominal recourse has no statistical cost; a small deterministic tie-break
+    # removes arbitrary charge/discharge cycles from otherwise equivalent LP optima.
+    objective[nc] += cfg["cycle_tiebreak_cost"]; objective[nd] += cfg["cycle_tiebreak_cost"]
     rows: list[int] = []; cols: list[int] = []; values: list[float] = []; lower: list[float] = []; upper: list[float] = []
     def add(items, lo, hi):
         rid = len(lower)
@@ -134,13 +141,16 @@ def solve_saa(index, energy, base_load, base_pv, nominal_extra, actual_load, act
         state = {ne[t]: 1., nc[t]: -eta, nd[t]: 1./ed}
         if t: state[ne[t-1]] = -1.
         add(state, energy if t == 0 else 0., energy if t == 0 else 0.)
+        add({nc[t]: 1., nz[t]: -cap}, -np.inf, 0.)
+        add({nd[t]: 1., nz[t]: cap}, -np.inf, cap)
     scenario_blocks = []
     for s in scenario:
         start = 5*n + len(scenario_blocks)*5*n
         scenario_blocks.append(add_recourse(start, s["load"], s["pv"], s["price"]))
     matrix = coo_matrix((values, (rows, cols)), shape=(len(lower), total)).tocsc()
     begin = time.perf_counter()
-    result = milp(objective, integrality=np.zeros(total, dtype=int), bounds=Bounds(lb, ub),
+    integrality = np.zeros(total, dtype=int); integrality[nz] = 1
+    result = milp(objective, integrality=integrality, bounds=Bounds(lb, ub),
                   constraints=LinearConstraint(matrix, np.asarray(lower), np.asarray(upper)),
                   options={"time_limit": 60, "mip_rel_gap": 1e-9})
     if result.status != 0:
@@ -154,7 +164,7 @@ def solve_saa(index, energy, base_load, base_pv, nominal_extra, actual_load, act
                           "c": x[c].tolist(), "d": x[d].tolist(), "b": x[b].tolist(), "s": x[sp].tolist(), "e": x[e].tolist()})
     nominal_audit = _flow_audit(nominal_load, base_pv, nominal, energy, cfg, cfg["planned_terminal_energy"])
     scenario_audits = [_flow_audit(np.asarray(s["load"]), np.asarray(s["pv"]), {k: np.asarray(s[k]) for k in ["g","c","d","b","s","e"]}, energy, cfg) for s in scenarios]
-    info = {"formulation": "SAA-LP", "objective": float(result.fun), "status": int(result.status),
+    info = {"formulation": "SAA-MILP", "objective": float(result.fun), "status": int(result.status),
             "seconds": time.perf_counter()-begin, "scenario_count": ns, "scenario_dates": [s["date"] for s in scenario],
             "nominal_audit": nominal_audit, "scenario_audits": scenario_audits,
             "max_scenario_audit": float(max(max(a[k] for k in a if k not in {"pass", "mutual_count"}) for a in scenario_audits)),
