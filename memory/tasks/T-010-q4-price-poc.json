@@ -4,7 +4,7 @@
   "status": "in_progress",
   "owner": "current user / Codex",
   "branch": "codex/T-010-q4-price-poc",
-  "updated_at": "2026-09-12T23:55:00+08:00",
+  "updated_at": "2026-09-12T21:15:00+08:00",
   "depends_on": [
     "T-007-q2-improve"
   ],
@@ -42,7 +42,15 @@
     "planning/q4-joint-scenario-poc-results.md",
     "experiments/q4-joint-scenario-poc-20260912-01/model_report.md",
     "experiments/q4-joint-scenario-poc-20260912-01/audit_summary.json",
-    "planning/q4-saa-poc-protocol.md"
+    "planning/q4-saa-poc-protocol.md",
+    "planning/q4-saa-poc-results.md",
+    "scripts/run_q4_saa_poc.py",
+    "scripts/audit_q4_saa_poc.py",
+    "scripts/report_q4_saa_poc.py",
+    "final_run/q4_saa_poc/main.py",
+    "experiments/q4-saa-poc-20260912-01/model_report.md",
+    "experiments/q4-saa-poc-20260912-01/audit_summary.json",
+    "experiments/q4-saa-poc-20260912-01/results/summary_tables.csv"
   ],
   "checks": [
     "108864条10分钟执行记录独立复算PASS",
@@ -57,14 +65,18 @@
     "决策导向价格PoC复算108864条记录和672项信息检查PASS",
     "静态收缩退化为14日均值，滚动费用选择跨期稳定性FAIL",
     "联合情景PoC独立重放43344次评分和96768条执行记录PASS",
-    "匹配联合情景未优于错配负对照，稳定费用目标FAIL"
+    "匹配联合情景未优于错配负对照，稳定费用目标FAIL",
+    "SAA 84672条实际账本及252个场景记录独立复算PASS",
+    "SAA 504项未来价格扰动信息边界检查PASS",
+    "SAA名义层和历史场景能量平衡、状态、边界误差小于1e-6",
+    "saa_load验证期和评估期均较mean7与fixed至少改善0.1%，科学费用目标PASS"
   ],
   "decisions": [
     "memory/decisions/D-015-q4-target-approved.md",
     "memory/decisions/D-016-q4-reference-detailed-poc-approved.md",
     "memory/decisions/D-017-q4-candidate-search-modified.md"
   ],
-  "latest_handoff": "memory/handoffs/2026-09-12-T-010-q4-reference-poc.md",
-  "next_action": "运行两阶段样本平均近似Cheap PoC，直接优化所有情景共享的普通购电计划，并保留combined名义可行性约束。",
+  "latest_handoff": "memory/handoffs/2026-09-12-T-010-q4-saa-poc.md",
+  "next_action": "等待人工确认14日场景窗口及名义层0--1互斥、历史情景连续补救近似；确认后运行334天正式版本。",
   "blockers": []
 }
