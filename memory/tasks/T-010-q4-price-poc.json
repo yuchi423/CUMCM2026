@@ -1,7 +1,7 @@
 {
   "id": "T-010-q4-price-poc",
   "title": "问题4-2因果电价预测与combined调度PoC",
-  "status": "review",
+  "status": "in_progress",
   "owner": "current user / Codex",
   "branch": "codex/T-010-q4-price-poc",
   "updated_at": "2026-09-12T23:00:00+08:00",
@@ -34,9 +34,10 @@
     "三张PNG/PDF图人工查看通过"
   ],
   "decisions": [
-    "memory/decisions/D-015-q4-target-approved.md"
+    "memory/decisions/D-015-q4-target-approved.md",
+    "memory/decisions/D-016-q4-reference-detailed-poc-approved.md"
   ],
   "latest_handoff": "memory/handoffs/2026-09-12-T-010-q4-price-poc.md",
-  "next_action": "等待Human Model Gate；如选择RUN Detailed PoC，固定lag1回退与固定价控制组运行334天连续SOC并生成result4-2.xlsx。",
+  "next_action": "运行参考方法Detailed PoC，拆分净负荷价格预测与价格感知储能的费用贡献。",
   "blockers": []
 }
