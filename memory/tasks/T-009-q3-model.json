@@ -1,0 +1,49 @@
+{
+  "id": "T-009-q3-model",
+  "title": "第三问三路线比较及方向2主模型整理",
+  "status": "review",
+  "owner": "yuchi423 / current Agent",
+  "branch": "codex/T-009-q3-model",
+  "updated_at": "2026-09-12T13:38:06+08:00",
+  "depends_on": [
+    "T-008-q3-selection"
+  ],
+  "goal": "复用第二问物理执行器，运行第三问确定性滚动、误差余量和连续误差场景三条方向并审计。",
+  "acceptance": [
+    "三条方向和必要控制组完成334天运行",
+    "逐次调整账本、物理状态和信息边界通过独立检查",
+    "Git待提交区只含必要代码、汇总、报告和图表"
+  ],
+  "artifacts": [
+    "planning/q3-experiment-protocol.md",
+    "scripts/q3_core.py",
+    "scripts/run_q3_models.py",
+    "scripts/audit_q3_models.py",
+    "scripts/analyze_q3_evidence.py",
+    "scripts/report_q3_models.py",
+    "final_run/q3/main.py",
+    "final_run/q3/README.md",
+    "experiments/q3-models-20260911-04/model_report.md",
+    "experiments/q3-models-20260911-04/results/summary_tables.csv",
+    "experiments/q3-models-20260911-04/audit_summary.json",
+    "deliverables/q3/README.md",
+    "deliverables/q3/manifest.json",
+    "scripts/package_q3_main.py"
+  ],
+  "checks": [
+    "6组策略各完成334天运行",
+    "315360条执行记录独立物理和费用审计通过",
+    "7650次计划版本调整费用逐项重算通过",
+    "附件3结构、账本手算及未来负载扰动检查通过",
+    "三张PNG/PDF图表人工检查通过",
+    "方向2提取核验：334天合计、四日期576条执行及16个计划版本链和费用一致"
+  ],
+  "decisions": [
+    "memory/decisions/D-011-q3-model-selection.md",
+    "memory/decisions/D-012-q3-model-results.md",
+    "memory/decisions/D-013-q3-main-confirmed.md"
+  ],
+  "latest_handoff": "memory/handoffs/2026-09-12-T-009-q3-main.md",
+  "next_action": "人工检查已暂存的方向2结果包；后续将结果填入result3.xlsx并撰写第三问论文。",
+  "blockers": []
+}

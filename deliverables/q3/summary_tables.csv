@@ -1,0 +1,2 @@
+﻿strategy,ordinary_kwh,emergency_kwh,ordinary_cost,adjustment_cost,emergency_cost,total_cost,paid_grid_spill_kwh,pv_spill_kwh,days,e_start,e_end,updates,changed_updates,emergency_slots,inventory_adjusted_cost
+rolling_margin,21116517.106449556,41158.7452566645,13072986.733192824,583134.556758521,196051.51898144366,13852172.808932787,736573.3469718972,1283611.490234955,334,3910.1342045925076,1595.9336270222252,1002,869,662,13853768.629581567

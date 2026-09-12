@@ -23,3 +23,8 @@ outputs/**/result2.xlsx.inspect.ndjson
 # Do not blanket-ignore data, logs, figures or metrics needed for handoff.
 
 experiments/q2-improve-20260911-01/table_regression/
+
+# Q3 full 10-minute ledgers are locally regenerated from the staged code.
+experiments/q3-models-20260911-*/details/
+experiments/q3-models-20260911-02/
+experiments/q3-models-20260911-03/

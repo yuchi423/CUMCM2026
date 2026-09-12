@@ -1,0 +1,18 @@
+{
+  "numeric_winner_by_inventory_adjusted_cost": "rolling_scenario",
+  "recommended_main": "rolling_margin",
+  "recommendation_reason": "Scenario saves little in Sep-Dec versus margin but is much more complex; retain as innovation extension.",
+  "directions": [
+    "rolling_point",
+    "rolling_margin",
+    "rolling_scenario"
+  ],
+  "controls": [
+    "no_update",
+    "state_only"
+  ],
+  "sensitivity": [
+    "rolling_point_step"
+  ],
+  "status": "computed candidate; not final paper approval"
+}

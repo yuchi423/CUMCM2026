@@ -1,0 +1,35 @@
+{
+  "pass_": true,
+  "counts": {
+    "dispatch_rows": 315360,
+    "updates": 7650
+  },
+  "max_errors": {
+    "state": 9.094947017729282e-13,
+    "energy_bounds": 0.0,
+    "ordinary_cost": 0.0,
+    "emergency_cost": 0.0,
+    "row_total": 9.094947017729282e-13,
+    "physical_balance": 4.547473508864641e-13,
+    "pv_load_priority": 0.0,
+    "grid_load_priority": 0.0,
+    "discharge_rule": 0.0,
+    "emergency_rule": 0.0,
+    "pv_charge_priority": 0.0,
+    "grid_charge_rule": 0.0,
+    "charge_total": 5.684341886080802e-14,
+    "continuity": 0.0,
+    "version_start": 0.0,
+    "version_length": 0.0,
+    "version_fee": 9.094947017729282e-13,
+    "update_version_count": 0.0,
+    "update_fee_total": 0.0,
+    "summary_ordinary": 0.0,
+    "summary_emergency": 0.0,
+    "summary_adjustment": 0.0,
+    "summary_total": 1.862645149230957e-09,
+    "daily_total": 2.9103830456733704e-11,
+    "old_version_length": 0.0
+  },
+  "scope": "Independent physical/state/cost checks and full old/new plan version fee reconstruction"
+}
