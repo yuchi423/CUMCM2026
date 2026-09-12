@@ -15,13 +15,3 @@ python final_run/q3/main.py experiments/<新的运行ID>
 ```text
 python scripts/package_q3_main.py experiments/<运行ID> deliverables/q3
 ```
-
-生成完整Excel前，运行目录必须含 `details/rolling_margin_dispatch.csv.gz` 和 `details/rolling_margin_plan_versions.jsonl.gz`：
-
-```text
-python scripts/build_q3_workbook_data.py . experiments/<运行ID>
-node final_run/q3/workbook.mjs .
-python final_run/q3/check_workbook.py .
-```
-
-Excel保存到 `output/result3.xlsx`，审核记录为 `output/result3_audit.json`。Node作者需要 `@oai/artifact-tool`；可按 `final_run/q2/README.md` 的临时依赖连接方法运行，不修改系统环境。
