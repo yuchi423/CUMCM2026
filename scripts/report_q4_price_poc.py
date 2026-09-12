@@ -75,22 +75,31 @@ def report(experiment: Path) -> None:
     save(fig, figures / "Fig1_PriceForecastMetrics")
 
     summary_map = {row["method"]: row for row in summaries}
-    cash = np.asarray([float(summary_map[m]["total_cost"]) for m in methods]) / 10000
-    adjusted = np.asarray([float(summary_map[m]["inventory_adjusted_cost"]) for m in methods]) / 10000
+    fixed_cost = float(summary_map["fixed_attachment1"]["inventory_adjusted_cost"])
+    adjusted_delta = np.asarray([
+        float(summary_map[m]["inventory_adjusted_cost"]) - fixed_cost for m in methods
+    ]) / 10000
+    emergency = np.asarray([float(summary_map[m]["emergency_kwh"]) for m in methods]) / 1000
     x = np.arange(len(methods))
-    width = 0.38
-    fig, axis = plt.subplots(figsize=(13, 5.2))
-    axis.bar(x - width / 2, cash, width, label="现金费用", color="#4C78A8")
-    axis.bar(x + width / 2, adjusted, width, label="库存调整费用", color="#F28E2B")
-    axis.set_xticks(x, [METHOD_LABELS[m] for m in methods], rotation=35, ha="right")
-    axis.set_ylabel("费用（万元）")
-    axis.set_title("图2 同一84天实际轨迹下的调度费用比较")
-    axis.grid(axis="y", alpha=0.25)
-    axis.legend(frameon=False)
+    colors = ["#2A9D8F" if value < 0 else "#E76F51" if value > 0 else "#7F8C8D"
+              for value in adjusted_delta]
+    fig, axes = plt.subplots(1, 2, figsize=(13, 5.2))
+    axes[0].bar(x, adjusted_delta, color=colors)
+    axes[0].axhline(0, color="#333333", linewidth=0.8)
+    axes[0].set_ylabel("相对固定价的费用增量（万元）")
+    axes[0].set_title("库存调整费用差值（负值为节省）")
+    axes[1].bar(x, emergency, color="#4C78A8")
+    axes[1].set_ylabel("紧急购电量（MWh）")
+    axes[1].set_title("同一实际轨迹下的紧急购电")
+    for axis in axes:
+        axis.set_xticks(x, [METHOD_LABELS[m] for m in methods], rotation=35, ha="right")
+        axis.grid(axis="y", alpha=0.25)
+    fig.suptitle("图2 价格预测对费用与保供结果的影响")
     fig.tight_layout()
     save(fig, figures / "Fig2_PoCCostComparison")
 
     selected = selection["selected"]
+    recommended = selection["recommended_delivery_method"]
     focus = ["fixed_attachment1", selected, "lag1_shift6h", "oracle"]
     period_map = {(row["method"], row["period"]): row for row in periods}
     period_names = ["development", "validation", "evaluation"]
@@ -110,10 +119,7 @@ def report(experiment: Path) -> None:
     save(fig, figures / "Fig3_PeriodCost")
 
     later = selection["later_checks"]
-    stable = all(
-        later[period]["beats_fixed_control"] and later[period]["beats_negative_control"]
-        for period in ["validation", "evaluation"]
-    )
+    stable = bool(selection["scientific_target_pass"])
     selected_summary = summary_map[selected]
     fixed_summary = summary_map["fixed_attachment1"]
     oracle_summary = summary_map["oracle"]
@@ -161,7 +167,7 @@ def report(experiment: Path) -> None:
 
 ## B. 核心结果
 
-开发期按照库存调整费用选择，0.5%近似并列时优先简单模型。原始最优为 `{selection['raw_best']}`，近似并列集合为 `{', '.join(selection['eligible_within_tolerance'])}`，最终选中 **{METHOD_LABELS[selected]}（`{selected}`）**。
+开发期按照库存调整费用选择，0.5%近似并列时优先简单模型。原始最优为 `{selection['raw_best']}`，近似并列集合为 `{', '.join(selection['eligible_within_tolerance'])}`，开发期选中 **{METHOD_LABELS[selected]}（`{selected}`）**。由于它未通过预声明的跨期稳定性条件，回退机制已经触发，当前交付建议为 **{METHOD_LABELS[recommended]}（`{recommended}`）因果基线**，且不主张其一定节省费用。
 
 | 方法 | 价格MAE | 日内排序相关 | 现金费用/元 | 库存调整费用/元 | 紧急购电/kWh | 已付未用电/kWh |
 |---|---:|---:|---:|---:|---:|---:|
@@ -174,7 +180,7 @@ def report(experiment: Path) -> None:
 ## C. 图形解释
 
 - 图1同时比较价格点值误差与日内排序。储能调度依赖高低价位置，因此MAE不是唯一判据，排序相关和高低价时段重合率用于补充判断。
-- 图2并列给出现金费用与库存调整费用。二者接近时说明结论不是靠少留期末电量获得；出现差异时以库存调整费用作选择依据。
+- 图2左侧以固定价控制组为零点显示库存调整费用增量，直接呈现各方法的节省或增支；右侧显示紧急购电量，防止只看费用而忽略保供结果。
 - 图3只展示固定价控制组、开发期选中方法、错位负对照和完美预知上界在三个阶段的表现，用于判断开发期优势是否能够外推。
 
 ## D. 合理性与审计
@@ -201,7 +207,7 @@ D:\\Users\\python.exe final_run/q4_poc/main.py experiments/q4-price-poc-20260912
 
 ## G. 下一步敏感性
 
-如果人工认可本PoC，正式334天运行首先固定 `{selected}`，不得使用验证期或评估期重新选模型。正式报告需补充全年逐月费用、极端高价日表现和相对 `lag1` 回退基线的差值。若评估阶段没有稳定优于两类控制组，按批准口径回退为 `lag1`；若 `lag1` 算法失败，再回退为附件1固定价计划。
+本PoC已经触发科学目标失败条件，因此不建议直接把 `{selected}` 写成最终价格模型。若进入详细运行，应优先比较批准的 `lag1` 回退基线与附件1固定价控制组，补充334天连续SOC、逐月费用和极端高价日表现；不得再用验证期或评估期重新选择窗口长度。若 `lag1` 算法失败，再回退为附件1固定价计划。
 
 ## H. 评委视角结论
 

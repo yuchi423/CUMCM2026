@@ -17,6 +17,8 @@
   "ewma_alpha": 0.35,
   "negative_control_shift_slots": 36,
   "selection_tolerance_fraction": 0.005,
+  "fallback_method": "lag1",
+  "ultimate_fallback_method": "fixed_attachment1",
   "causal_candidates": ["lag1", "mean7", "mean14", "mean28", "weekday35", "ewma14"],
   "methods": [
     "fixed_attachment1",

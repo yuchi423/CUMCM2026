@@ -212,7 +212,7 @@ def audit(experiment: Path) -> dict:
 
     causal = set(config["methods"]) - {"oracle"}
     information_pass = (
-        len(information) == len(config["methods"]) * len(config["windows"])
+        len(information) == len(config["methods"]) * expected_days
         and all(bool(row["pass"]) for row in information)
         and all((row["method"] in causal and float(row["max_change"]) == 0.0)
                 or (row["method"] == "oracle" and float(row["max_change"]) > 0.0)
@@ -221,6 +221,17 @@ def audit(experiment: Path) -> dict:
     plan_audit_max = max(float(row["max_plan_audit"]) for row in daily)
     plan_mutual_count = sum(int(row["plan_mutual_count"]) for row in daily)
     solver_failures = sum(row["solver"] not in {"LP", "MILP"} for row in daily)
+    expected_scientific_pass = all(
+        selection["later_checks"][period]["beats_fixed_control"]
+        and selection["later_checks"][period]["beats_negative_control"]
+        for period in ["validation", "evaluation"]
+    )
+    expected_recommendation = selection["selected"] if expected_scientific_pass else config["fallback_method"]
+    selection_logic_pass = (
+        bool(selection["scientific_target_pass"]) == expected_scientific_pass
+        and selection["recommended_delivery_method"] == expected_recommendation
+        and bool(selection["fallback_triggered"]) == (not expected_scientific_pass)
+    )
     numerical_fields = {key: value for key, value in maximum.items() if key != "mutual_count"}
     passed = (
         all(value <= TOLERANCE for value in numerical_fields.values())
@@ -230,6 +241,7 @@ def audit(experiment: Path) -> dict:
         and plan_mutual_count == 0
         and solver_failures == 0
         and selection["selected"] in config["causal_candidates"]
+        and selection_logic_pass
     )
     result = {
         "pass": passed,
@@ -243,6 +255,7 @@ def audit(experiment: Path) -> dict:
         "plan_mutual_count": plan_mutual_count,
         "solver_failures": solver_failures,
         "selected_is_causal_candidate": selection["selected"] in config["causal_candidates"],
+        "selection_logic_pass": selection_logic_pass,
         "note": "Independent audit reconstructs prices from raw Attachment 4 and recomputes dispatch physics and costs.",
     }
     (experiment / "audit_summary.json").write_text(

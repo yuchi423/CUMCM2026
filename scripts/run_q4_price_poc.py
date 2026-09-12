@@ -345,6 +345,11 @@ def run(output: Path, price_input: Path) -> None:
             "beats_fixed_control": values[selected]["inventory_adjusted_cost"] < values["fixed_attachment1"]["inventory_adjusted_cost"],
             "beats_negative_control": values[selected]["inventory_adjusted_cost"] < values["lag1_shift6h"]["inventory_adjusted_cost"],
         }
+    scientific_target_pass = all(
+        later[period]["beats_fixed_control"] and later[period]["beats_negative_control"]
+        for period in ["validation", "evaluation"]
+    )
+    recommended = selected if scientific_target_pass else cfg["fallback_method"]
     dump(output / "selection.json", {
         "selection_period": "development windows only",
         "raw_best": raw_best,
@@ -353,26 +358,33 @@ def run(output: Path, price_input: Path) -> None:
         "selected": selected,
         "tie_rule": "within 0.5% prefer lag1, mean7, mean14, mean28, weekday35, ewma14",
         "later_checks": later,
+        "scientific_target_pass": scientific_target_pass,
+        "fallback_triggered": not scientific_target_pass,
+        "recommended_delivery_method": recommended,
+        "fallback_note": (None if scientific_target_pass else
+            "Selected method was not stably better than both controls; retain lag1 only as the approved causal baseline, without claiming savings."),
         "oracle_excluded": True,
         "negative_control_excluded": True,
     })
 
     information = []
     for window in cfg["windows"]:
-        i = dates.index(window["start"])
-        changed = actual_prices.copy()
-        changed[i:] = changed[i:] * 1.37 + 0.123
-        for method in cfg["methods"]:
-            original = price_forecast(method, actual_prices, i, fixed, cfg)
-            altered = price_forecast(method, changed, i, fixed, cfg)
-            delta = float(np.max(np.abs(original - altered)))
-            expected = method == "oracle"
-            passed = delta > 0 if expected else delta == 0
-            if not passed:
-                raise AssertionError((window["name"], method, delta))
-            information.append({"window": window["name"], "date": window["start"],
-                                "method": method, "max_change": delta,
-                                "oracle_expected_to_change": expected, "pass": passed})
+        start = dates.index(window["start"])
+        finish = dates.index(window["end"])
+        for i in range(start, finish + 1):
+            changed = actual_prices.copy()
+            changed[i:] = changed[i:] * 1.37 + 0.123
+            for method in cfg["methods"]:
+                original = price_forecast(method, actual_prices, i, fixed, cfg)
+                altered = price_forecast(method, changed, i, fixed, cfg)
+                delta = float(np.max(np.abs(original - altered)))
+                expected = method == "oracle"
+                passed = delta > 0 if expected else delta == 0
+                if not passed:
+                    raise AssertionError((window["name"], method, dates[i], delta))
+                information.append({"window": window["name"], "date": dates[i],
+                                    "method": method, "max_change": delta,
+                                    "oracle_expected_to_change": expected, "pass": passed})
     dump(output / "information_checks.json", information)
     dump(output / "completion.json", {
         "methods": len(cfg["methods"]), "windows": len(cfg["windows"]),
