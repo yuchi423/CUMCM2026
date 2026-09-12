@@ -1,0 +1,26 @@
+{
+  "id": "T-012-q4-3-model-judge",
+  "title": "问题4-3方向3规划与Model Judge目标审查",
+  "status": "in_progress",
+  "owner": "current user / Codex",
+  "branch": "codex/T-012-q4-3-model-judge",
+  "updated_at": "2026-09-13T01:30:00+08:00",
+  "depends_on": [
+    "T-011-q3-scenario-main",
+    "T-010-q4-price-poc"
+  ],
+  "goal": "把问题3方向3推广到问题4-3，完成Model Judge结构筛选和双层目标有效性门槛，在人工批准前不运行Cheap PoC。",
+  "acceptance": [
+    "记录问题4-3的信息边界、滚动决策、费用账本和交付物",
+    "保留一个可完成result4-3.xlsx的简单Delivery Baseline",
+    "对方向3主候选、日内价格更新增强和联合情景路线给出KEEP/RISK/REJECT裁决",
+    "预声明混杂诊断、证伪条件、回退规则和Cheap PoC范围",
+    "在用户明确APPROVE DUAL TARGET AND FALLBACK前不执行PoC"
+  ],
+  "artifacts": [],
+  "checks": [],
+  "decisions": [],
+  "latest_handoff": null,
+  "next_action": "完成Stage A/Stage B文档并提交HUMAN TARGET GATE。",
+  "blockers": []
+}
