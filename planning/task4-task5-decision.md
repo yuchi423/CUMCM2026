@@ -1,3 +1,5 @@
+> 2026-09-13更新：Task 5方向2主线已被问题3方向3的最新选择替代。现行问题4-3规划与Model Judge目标门槛见 [q4-3-direction3-model-judge.md](q4-3-direction3-model-judge.md)。本文Task 5部分仅保留为历史记录。
+
 # Task 4 与 Task 5 建模路线确认
 
 > 2026-09-12更新：本文原先采用“当天完整电价在0:00可知”的假设，已经被用户后续确认的“0:00只能使用此前价格预测当天电价”口径取代。Task 4最新边界与PoC见 [D-015](../memory/decisions/D-015-q4-target-approved.md) 和 [q4-poc-results.md](q4-poc-results.md)；下文保留为历史路线记录。

@@ -1,7 +1,7 @@
 {
   "id": "T-012-q4-3-model-judge",
   "title": "问题4-3方向3规划与Model Judge目标审查",
-  "status": "in_progress",
+  "status": "review",
   "owner": "current user / Codex",
   "branch": "codex/T-012-q4-3-model-judge",
   "updated_at": "2026-09-13T01:30:00+08:00",
@@ -17,10 +17,21 @@
     "预声明混杂诊断、证伪条件、回退规则和Cheap PoC范围",
     "在用户明确APPROVE DUAL TARGET AND FALLBACK前不执行PoC"
   ],
-  "artifacts": [],
-  "checks": [],
-  "decisions": [],
-  "latest_handoff": null,
-  "next_action": "完成Stage A/Stage B文档并提交HUMAN TARGET GATE。",
-  "blockers": []
+  "artifacts": [
+    "planning/q4-3-direction3-model-judge.md",
+    "memory/decisions/D-020-q4-3-direction3-target-gate.md"
+  ],
+  "checks": [
+    "Model Judge Stage A完成：1个Delivery Baseline、2个候选、1个结构性淘汰",
+    "Model Judge Stage B完成：双层目标、混杂诊断、证伪和回退规则已预声明",
+    "Cheap PoC NOT EXECUTED"
+  ],
+  "decisions": [
+    "memory/decisions/D-020-q4-3-direction3-target-gate.md"
+  ],
+  "latest_handoff": "memory/handoffs/2026-09-13-T-012-q4-3-model-judge.md",
+  "next_action": "等待用户明确APPROVE DUAL TARGET AND FALLBACK；获批后实现并运行84天Cheap PoC。",
+  "blockers": [
+    "Model Judge技能要求HUMAN TARGET GATE人工批准后才能运行PoC"
+  ]
 }
