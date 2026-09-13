@@ -87,6 +87,6 @@
     "memory/decisions/D-024-q4-3-direction3-main.md"
   ],
   "latest_handoff": "memory/handoffs/2026-09-13-T-012-q4-3-direction3-full-results.md",
-  "next_action": "人工审核PR中的模型假设、结果和官方工作簿；通过后由团队合并任务分支并在论文中引用本次冻结实验。",
+  "next_action": "人工审核任务分支中的模型假设、结果和官方工作簿；通过后由用户发起合并并在论文中引用本次冻结实验。",
   "blockers": []
 }

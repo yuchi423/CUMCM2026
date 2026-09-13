@@ -36,6 +36,6 @@ python final_run/q4_3_scenario/main.py --help
 python final_run/q4_3_scenario/main.py <new-run-dir>
 ```
 
-下一步是人工审核 PR 中的模型假设与论文表述，然后由团队决定是否合并任务分支；当前不合并 `main`。
+下一步是人工审核任务分支中的模型假设与论文表述，然后由用户发起合并；当前不合并 `main`。
 
 承载本记录的提交：`git log -1 --format=%H -- memory/handoffs/2026-09-13-T-012-q4-3-direction3-full-results.md`。
