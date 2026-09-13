@@ -40,31 +40,13 @@ Codex 支持通过 `AGENTS.md` 加载项目指令；其他工具是否自动加�
 | `scripts/`、`tests/` | 运行入口、共享状态检查和有效性测试 |
 | `templates/` | 任务、交接、决策和实验记录模板 |
 
-## 第二问最新过程与结果
-
-- [优化思路、18方案对比与结论](planning/q2-improvement-results.md)：334天总费用由1597.18万元降至1380.51万元；库存价值近似修正后节省216.36万元。
-- [实验方案与选择规则](planning/q2-improvement-protocol.md)、[全部实验与审计](experiments/q2-improve-20260911-01/)、[最新候选Excel](outputs/T-007-q2-improve-20260911-01/result2.xlsx)。
-- [复现与交接](memory/handoffs/2026-09-11-T-007-q2-improve.md)、[T-007任务](memory/tasks/T-007-q2-improve.json)。
-- [原第二问结果](planning/q2-full-results.md)保留作对照。新结果属于回顾性优化候选；归档不等于已完成新数据盲测或论文最终验收。
-
-题目总览见[任务地图](problem/task-map.md)，当前工作导航见[共享状态](memory/STATUS.md)。
-
-## 换账号 / 换电脑接着做
-
-交出方执行 [协作流程](docs/WORKFLOW.md)，将工作文件、任务状态与交接记录一起提交，并推送任务分支。给接手方：**任务 ID、分支名、推送成功的提交 SHA**。
-
-接手方在干净工作区中执行：
-
-```bash
-git fetch origin
-git switch <交接分支>
-git pull --ff-only
-git log -1 --oneline
-python scripts/check_state.py
-```
-
-首次接收且本地无该分支时用 `git switch --track origin/<交接分支>`。让 Agent 读取规则、项目状态、对应任务及其最新交接记录，核验 SHA 后执行其中的下一步。
 
 **`git pull main` 不会拿到尚未合入 main 的任务进度。** 对方必须推送，接手方必须切到正确分支。Git 不传输运行中的进程、虚拟环境、未提交文件或被忽略的数据；这些都要提供恢复方式。
 
 此方案保存可审计的目标、决策依据与实验状态，不保证重现上一模型内部思维，也不能在账号突然耗尽后补救未保存的工作。因此每个阶段都应落盘并推送，而非等 token 用尽。
+
+
+
+THANKS FOR ALL
+THANKS FOR OUR AMAZING TEAM !
+<img width="628" height="458" alt="image" src="https://github.com/user-attachments/assets/f5cb7191-239c-49b3-82da-20dd35923896" />
