@@ -24,7 +24,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 from prepare_q2_inputs import read_sources
 from q2_core import execute
-from q3_core import choose_candidate, plan_with_audit
+from q3_core import choose_candidate, empirical_cvar, plan_with_audit
 from q3_shared import fee_checks, hourly_margin, load_forecasts, read_q3_forecasts
 from run_q4_price_poc import read_price_matrix
 
@@ -61,12 +61,6 @@ def period(date: str, cfg: dict) -> str:
     return "evaluation"
 
 
-def cvar(values, alpha: float) -> float:
-    ordered = np.sort(np.asarray(values, dtype=float))
-    begin = max(0, int(np.ceil(alpha * len(ordered))) - 1)
-    return float(np.mean(ordered[begin:]))
-
-
 def aggregate(name: str, rows: list[dict], prices: np.ndarray, cfg: dict) -> dict:
     totals = {key: float(math.fsum(float(row[key]) for row in rows)) for key in SUMS}
     mean_price = float(np.mean(prices))
@@ -75,7 +69,8 @@ def aggregate(name: str, rows: list[dict], prices: np.ndarray, cfg: dict) -> dic
     return {"strategy": STRATEGY, "period": name, "days": len(rows), **totals,
             "e_start": float(rows[0]["e_start"]), "e_end": float(rows[-1]["e_end"]),
             "mean_actual_price": mean_price, "inventory_adjusted_cost": float(adjusted),
-            "daily_cvar90": cvar([row["total_cost"] for row in rows], cfg["scenario_alpha"]),
+            "daily_cvar90": empirical_cvar(
+                [row["total_cost"] for row in rows], cfg["scenario_alpha"]),
             "updates": int(sum(int(row["updates"]) for row in rows)),
             "changed_updates": int(sum(int(row["changed_updates"]) for row in rows)),
             "emergency_slots": int(sum(int(row["emergency_slots"]) for row in rows))}

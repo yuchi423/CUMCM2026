@@ -171,6 +171,7 @@ def main(run_arg: str) -> None:
 | 紧急购电费/元 | {s['emergency_cost']:,.2f} | {b['emergency_cost']:,.2f} |
 | 实际总费用/元 | **{s['total_cost']:,.2f}** | {b['total_cost']:,.2f} |
 | 库存修正费用/元 | {s['inventory_adjusted_cost']:,.2f} | {b['inventory_adjusted_cost']:,.2f} |
+| 334天日费用CVaR90/元 | {s['daily_cvar90']:,.2f} | — |
 | 紧急购电量/kWh | {s['emergency_kwh']:,.2f} | {b['emergency_kwh']:,.2f} |
 | 期初/期末储电量/kWh | {s['e_start']:,.2f}/{s['e_end']:,.2f} | {b['e_start']:,.2f}/{b['e_end']:,.2f} |
 
@@ -198,6 +199,7 @@ def main(run_arg: str) -> None:
 - 从1月1日6000 kWh连续热身：闭合题设初始条件；2月1日自然得到{s['e_start']:,.2f} kWh，避免人为指定正式期初库存。
 - 修正季度分组为自然季度：防止2月起始导致季度标签错位；不改变逐日费用。
 - 新增原始输入和计划版本到执行的独立复算：扩大审计范围；所有检查通过。
+- 修正经验CVaR的边界样本权重：334天最差10%按最贵33天加第34天40%计算，CVaR90为{s['daily_cvar90']:,.2f}元；购电计划与实际总费用不变。
 
 ## F 最终版本说明（如何一键运行）
 

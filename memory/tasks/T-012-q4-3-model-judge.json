@@ -1,10 +1,10 @@
 {
   "id": "T-012-q4-3-model-judge",
   "title": "问题4中的4.3方向3规划与Model Judge目标审查",
-  "status": "handoff",
+  "status": "in_progress",
   "owner": "current user / Codex",
   "branch": "codex/T-012-q4-3-model-judge",
-  "updated_at": "2026-09-13T15:40:00+08:00",
+  "updated_at": "2026-09-13T17:10:00+08:00",
   "depends_on": [
     "T-011-q3-scenario-main",
     "T-010-q4-price-poc"
@@ -87,6 +87,6 @@
     "memory/decisions/D-024-q4-3-direction3-main.md"
   ],
   "latest_handoff": "memory/handoffs/2026-09-13-T-012-q4-3-direction3-full-results.md",
-  "next_action": "人工审核任务分支中的模型假设、结果和官方工作簿；通过后由用户发起合并并在论文中引用本次冻结实验。",
+  "next_action": "修正经验CVaR的边界概率质量，重生成问题4-3风险汇总并核对购电计划和总费用保持不变。",
   "blockers": []
 }
