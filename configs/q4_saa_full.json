@@ -1,4 +1,6 @@
 {
+  "model_version": "strict_pv_priority_v2",
+  "scenario_physics": "pv_priority_and_charge_discharge_mutual_exclusion",
   "residual_days": 14,
   "residual_bucket_slots": 6,
   "candidate_quantile": 0.8,

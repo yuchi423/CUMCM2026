@@ -63,7 +63,8 @@ def run(output: Path, price_input: Path) -> None:
         "started_at": datetime.now().astimezone().isoformat(), "config": cfg,
         "python": platform.python_version(), "numpy": np.__version__, "scipy": scipy.__version__,
         "q2_snapshot_sha256": hashlib.sha256(q2_path.read_bytes()).hexdigest(),
-        "attachment4": price_audit, "experiment_type": "frozen 334-day SAA full run"})
+        "attachment4": price_audit,
+        "experiment_type": "frozen 334-day strict-PV-priority SAA full run"})
 
     supply_cache, margin_cache, price_cache = {}, {}, {}
     def supply(index):

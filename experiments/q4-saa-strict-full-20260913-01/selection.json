@@ -1,0 +1,35 @@
+{
+  "frozen_primary": "saa_load",
+  "fallback": "mean7",
+  "annual_adjusted_checks": {
+    "mean7": true,
+    "fixed": true
+  },
+  "annual_cash_check": true,
+  "quarter_checks": {
+    "2025-Q1": {
+      "primary_cost": 2410097.1263491698,
+      "better_baseline_cost": 2421600.985129019,
+      "within_worsening_tolerance": true
+    },
+    "2025-Q2": {
+      "primary_cost": 3423087.130977303,
+      "better_baseline_cost": 3430745.9819562486,
+      "within_worsening_tolerance": true
+    },
+    "2025-Q3": {
+      "primary_cost": 4341898.776942045,
+      "better_baseline_cost": 4325553.355525113,
+      "within_worsening_tolerance": false
+    },
+    "2025-Q4": {
+      "primary_cost": 4348477.91476791,
+      "better_baseline_cost": 4379104.223937305,
+      "within_worsening_tolerance": true
+    }
+  },
+  "risk_energy_check": true,
+  "model_selection_pass": false,
+  "selected_delivery": "mean7",
+  "oracle_excluded": true
+}

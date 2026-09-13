@@ -1,5 +1,7 @@
 # 问题4两阶段SAA 334天正式运行协议
 
+> 2026-09-13复核发现本协议对应的SAA场景层未显式保证光伏优先，旧运行不再作为最终结果；修复与重跑口径见 [q4-saa-strict-repair-protocol.md](q4-saa-strict-repair-protocol.md)。
+
 日期：2026-09-12。用户已通过HUMAN MODEL GATE，批准冻结当前方案并运行334天。本协议在正式结果产生前固定。
 
 ## 冻结模型

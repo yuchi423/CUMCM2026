@@ -4,11 +4,11 @@
   "status": "done",
   "owner": "current user / Codex",
   "branch": "codex/T-010-q4-price-poc",
-  "updated_at": "2026-09-12T22:10:00+08:00",
+  "updated_at": "2026-09-13T12:46:31+08:00",
   "depends_on": [
     "T-007-q2-improve"
   ],
-  "goal": "冻结问题2 combined 的供需预测、余量、储能和执行口径，完成因果电价候选筛选、SAA验证及334天正式运行。",
+  "goal": "修复问题4 SAA场景层的光伏优先约束，使名义层、历史场景和实际执行层口径一致，并重新完成334天正式运行与独立审计。",
   "acceptance": [
     "至少比较前日同刻、滚动同刻均值、同星期均值和指数加权价格预测",
     "计划阶段不读取当天未来真实价格，所有策略在附件4同一实际价格轨迹结算",
@@ -60,7 +60,17 @@
     "experiments/q4-saa-full-20260912-01/model_report.md",
     "experiments/q4-saa-full-20260912-01/audit_summary.json",
     "experiments/q4-saa-full-20260912-01/results/summary_tables.csv",
-    "experiments/q4-saa-full-20260912-01/results/quarterly_summary.csv"
+    "experiments/q4-saa-full-20260912-01/results/quarterly_summary.csv",
+    "planning/q4-saa-strict-repair-protocol.md",
+    "planning/q4-saa-strict-full-results.md",
+    "experiments/q4-saa-strict-full-20260913-01/model_report.md",
+    "experiments/q4-saa-strict-full-20260913-01/audit_summary.json",
+    "experiments/q4-saa-strict-full-20260913-01/selection.json",
+    "scripts/prepare_q4_strict_workbook.py",
+    "scripts/preserve_q4_template.py",
+    "outputs/T-010-q4-strict/result4-2.xlsx",
+    "outputs/T-010-q4-strict/workbook_audit.json",
+    "outputs/T-010-q4-strict/template_time_mapping.csv"
   ],
   "checks": [
     "108864条10分钟执行记录独立复算PASS",
@@ -83,16 +93,22 @@
     "334天五方法连续运行完成，240480条10分钟账本独立复算PASS",
     "334个SAA计划及1336项未来价格扰动检查PASS",
     "全年现金支出和库存调整费用均优于mean7与fixed",
-    "四个季度均优于两条主要基线，冻结模型选择门槛PASS",
-    "三张全年PNG/PDF图完成目视检查"
+    "旧运行场景层漏掉PV优先，原季度PASS和SAA选择结论已撤回",
+    "严格PV优先334天重跑，240480条实际账本、334名义层及4676历史场景独立审计PASS",
+    "实际PV优先及控制器复算最大误差0；全部数值最大误差1.8233e-08",
+    "新SAA第三季度恶化0.37788%超0.1%容许，科学选择门槛FAIL，按冻结协议交付mean7",
+    "模板3张原表原表头原格式保留，逐格核对误差0，334天计划费及实际费用一致",
+    "原模板10分钟错位表头保留，使用外部位置映射；General日期标签使用ISO标识",
+    "三张新研究图及三张原/填后模板预览已查看，图3标签较近为排版局限"
   ],
   "decisions": [
     "memory/decisions/D-015-q4-target-approved.md",
     "memory/decisions/D-016-q4-reference-detailed-poc-approved.md",
     "memory/decisions/D-017-q4-candidate-search-modified.md",
-    "memory/decisions/D-018-q4-saa-full-approved.md"
+    "memory/decisions/D-018-q4-saa-full-approved.md",
+    "memory/decisions/D-019-q4-strict-pv-fallback.md"
   ],
-  "latest_handoff": "memory/handoffs/2026-09-12-T-010-q4-saa-full.md",
-  "next_action": "将saa_load正式结果、季度稳定性和模型假设整理进问题四论文正文。",
+  "latest_handoff": "memory/handoffs/2026-09-13-T-010-q4-cost-sync.md",
+  "next_action": "使用mean7与模板位置映射编写4-2论文；4-3新增求解独立安排。",
   "blockers": []
 }
