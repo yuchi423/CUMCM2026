@@ -1,0 +1,19 @@
+{
+  "pass": true,
+  "solve_count": 14416,
+  "formulation_counts": {
+    "LP": 11263,
+    "MILP": 3153
+  },
+  "max_solver_audit": {
+    "balance": 6.633626981056295e-11,
+    "state": 2.731894710450433e-10,
+    "terminal": 0.0,
+    "bounds": 6.039044819772243e-10,
+    "power": 9.299583325628191e-11,
+    "negative": 6.737877715967613e-10,
+    "pv_priority": 1.2195187082397752e-09,
+    "mutual_count": 0.0,
+    "adjustment_balance": 7.275957614183426e-12
+  }
+}

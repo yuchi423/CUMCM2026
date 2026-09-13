@@ -1,0 +1,13 @@
+{
+  "pass": true,
+  "checked_cells": 111999,
+  "max_numeric_error": 0.0,
+  "headers_equal_official_template": true,
+  "sheet_names_and_order_equal_template": true,
+  "planned_days": 334,
+  "storage_rows": 2004,
+  "emergency_rows": 593,
+  "template_sha256": "c59da470cabd0be23f602c95c8aa9d11ec224a0cdac216b3e1f218e65d006bdc",
+  "output_sha256": "9e400dd675b89cad3f905575b4c05145611feb4f53afde709cd77a7dc5783d8d",
+  "errors": []
+}

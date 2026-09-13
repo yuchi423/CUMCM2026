@@ -1,0 +1,20 @@
+{
+  "pass_": true,
+  "calculated": {
+    "100_to_80": 90.0,
+    "100_to_80_to_90": 105.0,
+    "100_to_120_to_100": 120.0
+  },
+  "expected": {
+    "100_to_80": 90.0,
+    "100_to_80_to_90": 105.0,
+    "100_to_120_to_100": 120.0
+  },
+  "target_day_price_perturbation_max_delta": 0.0,
+  "completed_history_perturbation_min_delta": 0.014285714285714124,
+  "future_price_boundary_pass": true,
+  "future_load_perturbation_max_delta": 0.0,
+  "future_load_boundary_pass": true,
+  "price_information": "Attachment 1 prior on Jan 1; previous up-to-14 completed days thereafter",
+  "target_mapping": "same-day remaining slots"
+}
