@@ -1,21 +1,21 @@
 {
   "id": "T-012-q4-3-model-judge",
   "title": "问题4-3方向3规划与Model Judge目标审查",
-  "status": "review",
+  "status": "in_progress",
   "owner": "current user / Codex",
   "branch": "codex/T-012-q4-3-model-judge",
-  "updated_at": "2026-09-13T02:30:00+08:00",
+  "updated_at": "2026-09-13T10:00:00+08:00",
   "depends_on": [
     "T-011-q3-scenario-main",
     "T-010-q4-price-poc"
   ],
-  "goal": "把问题3方向3推广到问题4-3，完成Model Judge结构筛选和双层目标有效性门槛，在人工批准前不运行Cheap PoC。",
+  "goal": "按用户确认的价格信息口径完成问题4-3：每天0:00已知当天144个时段的附件4实际电价，其余预测、0/6/12/18滚动修正、调整费和紧急购电规则沿用问题3；生成334天推算、官方result4-3.xlsx、独立审计和可复现代码。",
   "acceptance": [
-    "记录问题4-3的信息边界、滚动决策、费用账本和交付物",
-    "保留一个可完成result4-3.xlsx的简单Delivery Baseline",
-    "对方向3主候选、日内价格更新增强和联合情景路线给出KEEP/RISK/REJECT裁决",
-    "预声明混杂诊断、证伪条件、回退规则和Cheap PoC范围",
-    "在用户明确APPROVE DUAL TARGET AND FALLBACK前不执行PoC"
+    "334天均按0:00已知当天完整实际电价曲线求解，且光伏和负荷不存在未来信息泄漏",
+    "0:00形成初始购电计划，6:00、12:00、18:00只调整未执行时段并逐次计收调整费",
+    "生成完整汇总、逐日账本、指定日期计划版本、图表、模型报告和官方result4-3.xlsx",
+    "独立复算物理约束、费用、版本链、价格来源和工作簿映射并全部通过",
+    "提供final_run一键入口，按仓库规则提交并推送任务分支，不合并main"
   ],
   "artifacts": [
     "planning/q4-3-direction3-model-judge.md",
@@ -45,11 +45,10 @@
   ],
   "decisions": [
     "memory/decisions/D-020-q4-3-direction3-target-gate.md",
-    "memory/decisions/D-021-q4-3-model-gate.md"
+    "memory/decisions/D-021-q4-3-model-gate.md",
+    "memory/decisions/D-022-q4-3-known-price-delivery.md"
   ],
   "latest_handoff": "memory/handoffs/2026-09-13-T-012-q4-3-model-judge.md",
-  "next_action": "等待HUMAN MODEL GATE决定：MODIFY为rolling_margin_mean14的334天操作性交付，或REJECT重选路线。",
-  "blockers": [
-    "Model Judge要求用户在HUMAN MODEL GATE决定后才能进入334天正式运行"
-  ]
+  "next_action": "实现并运行rolling_margin_known_price的334天正式模型，审计后生成result4-3.xlsx和GitHub审查材料。",
+  "blockers": []
 }
