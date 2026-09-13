@@ -1,0 +1,15 @@
+{
+  "dates_aligned": true,
+  "days": 334,
+  "slots": 144,
+  "start": "2025-02-01",
+  "end": "2025-12-31",
+  "initial_energy": 10800.0,
+  "methods": [
+    "fixed",
+    "mean7",
+    "mean14",
+    "saa_load",
+    "oracle_actual"
+  ]
+}

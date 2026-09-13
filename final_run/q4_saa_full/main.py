@@ -28,6 +28,9 @@ def main() -> None:
         temporary.unlink(missing_ok=True)
     call(args.model_python,"audit_q4_saa_full.py",str(output))
     call(args.model_python,"report_q4_saa_full.py",str(output))
+    workbook_directory=ROOT/"outputs"/output.name
+    call(args.model_python,"prepare_q4_strict_workbook.py",str(output),str(workbook_directory/"workbook_data.json"))
+    call(args.io_python,"preserve_q4_template.py",str(workbook_directory))
     print(f"Q4 SAA full run complete: {output}")
 
 

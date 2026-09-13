@@ -47,6 +47,7 @@ def flow_checks(load, pv, flow, initial, cfg, terminal=None):
         "power": float(max(0., c.max()-cap, d.max()-cap)),
         "negative": float(max(0., -min(g.min(), c.min(), d.min(), b.min(), s.min()))),
         "mutual_count": int(np.sum((c > 1e-6) & (d > 1e-6))),
+        "pv_priority": float(np.max(np.maximum(np.minimum(np.maximum(pv-load, 0.), np.minimum(cap, np.maximum((cfg["energy_max"]-prev)/eta, 0.)))-c, 0.))),
     }
     if terminal is not None: out["terminal"] = abs(float(e[-1]-terminal))
     out["pass"] = all(v <= TOL for k, v in out.items() if k not in {"pass", "mutual_count"}) and out["mutual_count"] == 0
