@@ -1,0 +1,17 @@
+{
+  "pass": true,
+  "selected_method": "mean7",
+  "days": 334,
+  "slots": 48096,
+  "sheet_count": 3,
+  "headers_unchanged": true,
+  "original_styles_unchanged": true,
+  "maximum_cell_error": 0.0,
+  "plan_kwh": 21599339.138332047,
+  "plan_cost": 14013336.765844619,
+  "emergency_cost": 537358.6992570445,
+  "cash_cost": 14550695.465101663,
+  "storage_rows": 2004,
+  "emergency_rows": 994,
+  "time_mapping": "Original shifted headers preserved; confirmed positional mapping in template_time_mapping.csv."
+}

@@ -79,6 +79,7 @@ def audit(experiment: Path) -> dict:
         maximum["g_actual_plan"] = max(maximum["g_actual_plan"], float(np.max(np.abs(g-saa_g[("saa_load", rec["date"])]))))
         maximum["g_nominal"] = max(maximum["g_nominal"], float(np.max(np.abs(g-nominal["g"]))))
         check = flow_checks(lf+extra, pf, nominal, e0, cfg, cfg["planned_terminal_energy"])
+        maximum["nominal_pv_priority"] = max(maximum["nominal_pv_priority"], check["pv_priority"])
         maximum["nominal"] = max(maximum["nominal"], max(v for k,v in check.items() if k not in {"pass","mutual_count"}))
         if not check["pass"]: errors.append((rec["date"], "nominal"))
         history = list(range(index-cfg["scenario_history_days"], index))
@@ -92,6 +93,7 @@ def audit(experiment: Path) -> dict:
                 float(np.max(np.abs(np.asarray(scenario["price"])-target_price))))
             flow = {k: np.asarray(scenario[k], float) for k in ["g","c","d","b","s","e"]}
             check = flow_checks(sl, sp, flow, e0, cfg)
+            maximum["scenario_pv_priority"] = max(maximum["scenario_pv_priority"], check["pv_priority"])
             maximum["scenario"] = max(maximum["scenario"], max(v for k,v in check.items() if k not in {"pass","mutual_count"}))
             if not check["pass"]: errors.append((rec["date"], scenario["date"], "scenario"))
             if scenario["date"] != dates[old]: errors.append((rec["date"], "scenario date"))
@@ -113,8 +115,45 @@ def audit(experiment: Path) -> dict:
             subset = [row for row in chosen if row["date"].startswith(label)]
             idx = [dates.index(row["date"]) for row in subset]; check_period(monthly[(method,label)], method, label, subset, prices[idx])
 
+    dispatch_count = 0
     with gzip.open(experiment / "dispatch.csv.gz", "rt", encoding="utf-8", newline="") as stream:
-        dispatch_count = sum(1 for _ in csv.DictReader(stream))
+        for raw in csv.DictReader(stream):
+            dispatch_count += 1
+            row = {key: float(value) for key, value in raw.items()
+                   if key not in {"method", "date"}}
+            pv_load = min(row["load_kwh"], row["pv_kwh"])
+            grid_load = min(row["plan_kwh"], row["load_kwh"]-pv_load)
+            shortage = max(0.0, row["load_kwh"]-pv_load-grid_load)
+            if shortage > 0.0:
+                discharge = min(shortage, cfg["power_kw"]*cfg["step_hours"],
+                    max(0.0, row["e_start"]-cfg["energy_min"])*cfg["discharge_efficiency"])
+                emergency = shortage-discharge
+                pv_charge = grid_charge = 0.0
+            else:
+                available = min(cfg["power_kw"]*cfg["step_hours"],
+                    max(0.0, cfg["energy_max"]-row["e_start"])/cfg["charge_efficiency"])
+                pv_charge = min(row["pv_kwh"]-pv_load, available)
+                grid_charge = min(row["plan_kwh"]-grid_load, max(0.0, available-pv_charge))
+                discharge = emergency = 0.0
+            expected = {
+                "pv_load_kwh": pv_load, "grid_load_kwh": grid_load,
+                "pv_charge_kwh": pv_charge, "grid_charge_kwh": grid_charge,
+                "charge_kwh": pv_charge+grid_charge, "discharge_kwh": discharge,
+                "emergency_kwh": emergency,
+                "pv_spill_kwh": max(0.0, row["pv_kwh"]-pv_load-pv_charge),
+                "paid_grid_spill_kwh": max(0.0, row["plan_kwh"]-grid_load-grid_charge),
+                "e_end": row["e_start"]+cfg["charge_efficiency"]*(pv_charge+grid_charge)
+                    - discharge/cfg["discharge_efficiency"],
+            }
+            maximum["actual_controller"] = max(maximum["actual_controller"],
+                max(abs(row[key]-value) for key, value in expected.items()))
+            required_pv = min(max(0.0, row["pv_kwh"]-row["load_kwh"]),
+                cfg["power_kw"]*cfg["step_hours"],
+                max(0.0, cfg["energy_max"]-row["e_start"])/cfg["charge_efficiency"])
+            maximum["actual_pv_priority"] = max(maximum["actual_pv_priority"],
+                max(0.0, required_pv-row["pv_charge_kwh"]))
+            if row["charge_kwh"] > TOL and row["discharge_kwh"] > TOL:
+                maximum["actual_mutual_count"] += 1
     maximum["dispatch_count"] = abs(dispatch_count-len(cfg["methods"])*334*144)
     maximum["information_count"] = abs(len(information)-4*334)
     maximum["information_failures"] = sum(not row["pass"] for row in information)
@@ -130,7 +169,7 @@ def audit(experiment: Path) -> dict:
     passed = not errors and all(v <= TOL for k,v in maximum.items() if k not in {"information_failures","information_count","dispatch_count"}) and maximum["information_failures"]==0 and maximum["information_count"]==0 and maximum["dispatch_count"]==0
     result = {"pass": passed, "errors": errors, "maximum_errors": dict(maximum),
         "expected": {"days":334,"methods":cfg["methods"],"plans":len(cfg["methods"])*334,"saa_records":334,"dispatch_rows":len(cfg["methods"])*334*144,"information_checks":4*334},
-        "price_audit": price_audit, "selection_reconstructed": expected_select,
+        "price_audit": price_audit, "selection_reconstructed": expected_select == selection["model_selection_pass"], "model_selection_pass": expected_select,
         "selected_delivery": selection["selected_delivery"]}
     (experiment / "audit_summary.json").write_text(json.dumps(result, ensure_ascii=False, indent=2)+"\n", encoding="utf-8")
     if not passed: raise AssertionError(result)

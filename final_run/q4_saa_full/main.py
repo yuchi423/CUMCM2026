@@ -16,7 +16,7 @@ def call(python: Path, script: str, *args: str) -> None:
 
 def main() -> None:
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("output",nargs="?",default="experiments/q4-saa-full-20260912-01",type=Path)
+    parser.add_argument("output",nargs="?",default="experiments/q4-saa-strict-full-20260913-01",type=Path)
     parser.add_argument("--io-python",required=True,type=Path)
     parser.add_argument("--model-python",default=r"D:\Users\python.exe",type=Path)
     args=parser.parse_args(); output=args.output if args.output.is_absolute() else ROOT/args.output
@@ -28,6 +28,9 @@ def main() -> None:
         temporary.unlink(missing_ok=True)
     call(args.model_python,"audit_q4_saa_full.py",str(output))
     call(args.model_python,"report_q4_saa_full.py",str(output))
+    workbook_directory=ROOT/"outputs"/output.name
+    call(args.model_python,"prepare_q4_strict_workbook.py",str(output),str(workbook_directory/"workbook_data.json"))
+    call(args.io_python,"preserve_q4_template.py",str(workbook_directory))
     print(f"Q4 SAA full run complete: {output}")
 
 
