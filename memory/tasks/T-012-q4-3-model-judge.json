@@ -4,7 +4,7 @@
   "status": "handoff",
   "owner": "current user / Codex",
   "branch": "codex/T-012-q4-3-model-judge",
-  "updated_at": "2026-09-13T15:40:00+08:00",
+  "updated_at": "2026-09-13T17:45:00+08:00",
   "depends_on": [
     "T-011-q3-scenario-main",
     "T-010-q4-price-poc"
@@ -45,16 +45,19 @@
     "scripts/audit_q4_3_scenario_full.py",
     "memory/decisions/D-024-q4-3-direction3-main.md",
     "planning/q4-3-direction3-full-results.md",
-    "experiments/q4-3-scenario-full-20260913-01/model_report.md",
-    "experiments/q4-3-scenario-full-20260913-01/results/summary_tables.csv",
-    "experiments/q4-3-scenario-full-20260913-01/audit_summary.json",
-    "experiments/q4-3-scenario-full-20260913-01/solver_audit_summary.json",
-    "experiments/q4-3-scenario-full-20260913-01/workbook_audit.json",
+    "scripts/refresh_q4_3_cvar_reports.py",
+    "experiments/q4-3-scenario-full-20260913-02/model_report.md",
+    "experiments/q4-3-scenario-full-20260913-02/results/summary_tables.csv",
+    "experiments/q4-3-scenario-full-20260913-02/audit_summary.json",
+    "experiments/q4-3-scenario-full-20260913-02/solver_audit_summary.json",
+    "experiments/q4-3-scenario-full-20260913-02/workbook_audit.json",
+    "experiments/q4-3-scenario-full-20260913-02/cvar_correction.json",
     "final_run/q4_3_scenario/main.py",
     "output/result4-3.xlsx",
     "deliverables/q4-3/README.md",
     "deliverables/q4-3/manifest.json",
-    "memory/handoffs/2026-09-13-T-012-q4-3-direction3-full-results.md"
+    "memory/handoffs/2026-09-13-T-012-q4-3-direction3-full-results.md",
+    "memory/decisions/D-025-q4-3-review-corrections.md"
   ],
   "checks": [
     "Model Judge Stage A完成：1个Delivery Baseline、2个候选、1个结构性淘汰",
@@ -77,16 +80,22 @@
     "52560条执行记录和1460个计划版本通过物理、费用、版本链、价格因果边界和连续性独立审计",
     "方向3现金总费用14432279.80元，较余量基线减少171182.49元（1.172%）",
     "官方result4-3.xlsx保持四张表顺序与官方表头，111999个填充单元逐格复核，最大差异0",
-    "工作簿SHA256为9e400dd675b89cad3f905575b4c05145611feb4f53afde709cd77a7dc5783d8d"
+    "工作簿SHA256为8178d0dfc39b6c21774fbbf1740cda0f1e51277b8a993ffe278b8c0a04fab8b7",
+    "等权经验CVaR边界质量修正：全年CVaR90由73323.89元改为73458.35元",
+    "修正前后逐日账本、计划版本、SOC和总费用一致；更新评分最大浮点差7.28e-12",
+    "旧84天PoC按精确CVaR重算后Candidate A与B仍为Scientific FAIL",
+    "4-2与4-3费用差不归因为日内预报收益；4-2 mean7选择基于团队季度稳定性门槛",
+    "当前只验证逐次调整费和当日24:00截止优化窗口"
   ],
   "decisions": [
     "memory/decisions/D-020-q4-3-direction3-target-gate.md",
     "memory/decisions/D-021-q4-3-model-gate.md",
     "memory/decisions/D-022-q4-3-known-price-delivery.md",
     "memory/decisions/D-023-q4-3-price-forecast-recheck.md",
-    "memory/decisions/D-024-q4-3-direction3-main.md"
+    "memory/decisions/D-024-q4-3-direction3-main.md",
+    "memory/decisions/D-025-q4-3-review-corrections.md"
   ],
   "latest_handoff": "memory/handoffs/2026-09-13-T-012-q4-3-direction3-full-results.md",
-  "next_action": "人工审核任务分支中的模型假设、结果和官方工作簿；通过后由用户发起合并并在论文中引用本次冻结实验。",
+  "next_action": "人工审核任务分支中的CVaR修正、跨问题比较边界和官方工作簿；通过后由用户发起合并。",
   "blockers": []
 }

@@ -21,6 +21,24 @@ class Choice:
     adjustment_fee: float
 
 
+def empirical_cvar(values, alpha: float) -> float:
+    """CVaR of an equally weighted empirical distribution, including boundary mass."""
+    ordered = np.sort(np.asarray(values, dtype=float))
+    if ordered.size == 0:
+        raise ValueError("CVaR requires at least one observation")
+    if not 0.0 <= alpha < 1.0:
+        raise ValueError("alpha must satisfy 0 <= alpha < 1")
+    tail_mass = (1.0 - alpha) * ordered.size
+    full = int(np.floor(tail_mass))
+    fraction = tail_mass - full
+    if fraction < 1e-12:
+        fraction = 0.0
+    total = float(np.sum(ordered[-full:])) if full else 0.0
+    if fraction:
+        total += fraction * float(ordered[-full - 1])
+    return total / tail_mass
+
+
 def adjustment_fee(price: np.ndarray, new: np.ndarray, old: np.ndarray | None) -> float:
     if old is None:
         return 0.0
@@ -161,8 +179,7 @@ def choose_candidate(price, candidates, scenario_loads, scenario_pvs, initial, c
             values.append(score)
         values = np.sort(np.asarray(values))
         mean = float(np.mean(values))
-        tail = values[max(0, int(np.ceil(alpha * len(values))) - 1):]
-        cvar = float(np.mean(tail))
+        cvar = empirical_cvar(values, alpha)
         score = mean + risk_weight * (cvar - mean)
         scored.append(Choice(plan, source, score, mean, cvar, fee))
     return min(scored, key=lambda x: (x.score, x.adjustment_fee)), scored
