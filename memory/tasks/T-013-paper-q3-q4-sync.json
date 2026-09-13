@@ -1,0 +1,40 @@
+{
+  "id": "T-013-paper-q3-q4-sync",
+  "title": "第三第四问论文与本地冻结模型同步",
+  "status": "review",
+  "owner": "current user / Codex",
+  "branch": "codex/T-013-paper-q3-q4-sync",
+  "updated_at": "2026-09-13T16:30:00+08:00",
+  "depends_on": [
+    "T-011-q3-scenario-main",
+    "T-012-q4-3-model-judge",
+    "T-010-q4-price-poc"
+  ],
+  "goal": "删除初稿中与本地程序不一致的第三、第四问模型和数值，生成与冻结代码、账本和审计结果一致的完整LaTeX修订稿。",
+  "acceptance": [
+    "问题三采用rolling_scenario及13697255.50元结果",
+    "问题4-2采用mean7及14550695.47元结果",
+    "问题4-3采用rolling_scenario_mean14及14432279.80元结果",
+    "不再使用次日真实价格、无实现的场景树或无来源风险压力实验",
+    "附录直接引用仓库实际程序并通过证据检查"
+  ],
+  "artifacts": [
+    "paper/微网电力调控_第三四问本地结果修订稿.tex",
+    "paper/q3_q4_evidence.md",
+    "scripts/check_paper_q3_q4.py"
+  ],
+  "checks": [
+    "主要费用与紧急购电量从三个冻结CSV逐项核对PASS",
+    "旧版三组总费用及无实现模型表述扫描PASS",
+    "附录五个实际代码路径检查PASS",
+    "LaTeX环境、花括号、标签及唯一end document静态检查PASS",
+    "git diff --check PASS",
+    "当前环境无XeLaTeX，PDF排版检查未执行"
+  ],
+  "decisions": [
+    "memory/decisions/D-026-paper-q3-q4-local-results.md"
+  ],
+  "latest_handoff": "memory/handoffs/2026-09-13-T-013-paper-q3-q4-sync.md",
+  "next_action": "人工审阅修订稿；在具备XeLaTeX的环境完成PDF编译和版面检查后合并。",
+  "blockers": []
+}
