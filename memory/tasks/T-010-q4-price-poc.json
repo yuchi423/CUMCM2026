@@ -4,7 +4,7 @@
   "status": "done",
   "owner": "current user / Codex",
   "branch": "codex/T-010-q4-price-poc",
-  "updated_at": "2026-09-13T12:00:00+08:00",
+  "updated_at": "2026-09-13T12:46:31+08:00",
   "depends_on": [
     "T-007-q2-improve"
   ],
@@ -108,7 +108,7 @@
     "memory/decisions/D-018-q4-saa-full-approved.md",
     "memory/decisions/D-019-q4-strict-pv-fallback.md"
   ],
-  "latest_handoff": "memory/handoffs/2026-09-13-T-010-q4-strict-template.md",
+  "latest_handoff": "memory/handoffs/2026-09-13-T-010-q4-cost-sync.md",
   "next_action": "使用mean7与模板位置映射编写4-2论文；4-3新增求解独立安排。",
   "blockers": []
 }
