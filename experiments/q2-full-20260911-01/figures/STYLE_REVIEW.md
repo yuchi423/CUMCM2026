@@ -27,4 +27,4 @@ D:\Users\python.exe scripts/redraw_q2_review_figures.py experiments/q2-full-2026
 
 q2_style_review_audit.json保存全部18个费用绘图值、4×145个储电量值、输入哈希及Fig1未变哈希。6分位数×3期数据来源为periods.csv；原选参阶段的最低点与run.json的selected_quantile一致。四日期各144区间按slot核对，内部储电量逐区间连续且在边界内。图中没有引入估计误差棒或未计算的区间保证。
 
-两幅最终PNG已目视检查，标题/图例不重叠。用户确认前禁止GitHub push；原模型审计沿用，不把单纯重绘声称为重新求解或新增模型验证。
+两幅最终PNG已目视检查，标题/图例不重叠。用户随后以“同步到github上”明确授权推送，本版的人工确认限制已满足。原模型审计沿用，不把单纯重绘声称为重新求解或新增模型验证。
