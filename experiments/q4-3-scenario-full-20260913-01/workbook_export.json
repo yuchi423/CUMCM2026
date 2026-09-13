@@ -1,0 +1,16 @@
+{
+  "template": "data/templates/result4-3.xlsx",
+  "output": "output/result4-3.xlsx",
+  "headers_unchanged": true,
+  "sheets": [
+    "计划购电量",
+    "调整购电量",
+    "充放电量",
+    "紧急购电量"
+  ],
+  "counts": {
+    "days": 334,
+    "storage_rows": 2004,
+    "emergency_rows": 593
+  }
+}

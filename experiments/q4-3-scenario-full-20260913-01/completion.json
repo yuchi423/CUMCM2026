@@ -1,0 +1,11 @@
+{
+  "pass": true,
+  "runtime_seconds": 281.3674304999877,
+  "strategy": "rolling_scenario_mean14",
+  "warmup_days": 31,
+  "evaluation_days": 334,
+  "dispatch_rows": 52560,
+  "plan_versions": 1460,
+  "evaluation_updates": 1002,
+  "full_detail_location": "details/ (locally regenerated audit evidence)"
+}
