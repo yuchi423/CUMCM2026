@@ -21,7 +21,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 from prepare_q2_inputs import read_sources
 from q2_core import execute
-from q3_core import choose_candidate, plan_with_audit
+from q3_core import choose_candidate, empirical_cvar, plan_with_audit
 from q3_shared import fee_checks, hourly_margin, load_forecasts, read_q3_forecasts
 from run_q4_price_poc import read_price_matrix
 
@@ -53,12 +53,6 @@ def table(path: Path, rows: list[dict]) -> None:
 
 def sha(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
-
-
-def cvar(values, alpha: float) -> float:
-    ordered = np.sort(np.asarray(values, dtype=float))
-    start = max(0, int(np.ceil(alpha * len(ordered))) - 1)
-    return float(np.mean(ordered[start:]))
 
 
 def decision_price(prices: np.ndarray, index: int, start: int, cfg: dict,
@@ -95,7 +89,8 @@ def window_summary(strategy: str, window: dict, rows: list[dict], prices: np.nda
             "days": len(rows), **totals, "e_start": float(rows[0]["e_start"]),
             "e_end": float(rows[-1]["e_end"]), "mean_actual_price": mean_price,
             "inventory_adjusted_cost": float(adjusted),
-            "daily_cvar90": cvar([row["total_cost"] for row in rows], cfg["scenario_alpha"]),
+            "daily_cvar90": empirical_cvar(
+                [row["total_cost"] for row in rows], cfg["scenario_alpha"]),
             "updates": int(sum(row["updates"] for row in rows)),
             "changed_updates": int(sum(row["changed_updates"] for row in rows)),
             "emergency_slots": int(sum(row["emergency_slots"] for row in rows))}
@@ -107,7 +102,8 @@ def combined_summary(strategy: str, period: str, window_rows: list[dict], daily:
             "windows": len(window_rows), "days": int(sum(row["days"] for row in window_rows)),
             **totals, "inventory_adjusted_cost": float(math.fsum(
                 float(row["inventory_adjusted_cost"]) for row in window_rows)),
-            "daily_cvar90": cvar([row["total_cost"] for row in daily], cfg["scenario_alpha"]),
+            "daily_cvar90": empirical_cvar(
+                [row["total_cost"] for row in daily], cfg["scenario_alpha"]),
             "total_window_start_energy": float(math.fsum(float(row["e_start"]) for row in window_rows)),
             "total_window_end_energy": float(math.fsum(float(row["e_end"]) for row in window_rows)),
             "updates": int(sum(row["updates"] for row in window_rows)),
