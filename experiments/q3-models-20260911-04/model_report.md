@@ -1,6 +1,6 @@
 # 第三问三路线模型实测报告
 
-> 2026-09-12更新：用户已选择方向2为主模型。下文保留原比较阶段记录；当前选择及结果入口见 `memory/decisions/D-013-q3-main-confirmed.md` 与 `deliverables/q3/README.md`（仓库相对路径）。
+> 2026-09-13更新：用户现已选择连续误差场景模型（rolling_scenario），见`memory/decisions/D-020-q3-scenario-selected-figures.md`。figures已按新选择及青蓝风格覆盖；下文保留原比较阶段分析，方向2推荐是历史意见，deliverables/q3也是历史方向2包，尚未切换。图表最新说明见figures/README.md。
 
 
 ## A 运行产物一览
@@ -32,9 +32,9 @@
 
 ## C 图表解读
 
-- `Fig1_Q3_TotalCost`比较控制组、三条方向和插值敏感性的334天现金费用。
-- `Fig2_Q3_CostBreakdown`显示普通购电、逐次调整和5倍紧急购电三类成本，判断降费是否只是转移账目。
-- `Fig3_Q3_MonthlyCost`检验优势是否只集中在少数月份。
+- `Fig1_Q3_TotalCost`现比较连续误差场景模型与两个控制组的334天现金费用。
+- `Fig2_Q3_CostBreakdown`现显示连续误差场景模型的普通购电、逐次调整和5倍紧急购电成本与占比。
+- `Fig3_Q3_MonthlyCost`现比较连续误差场景模型与两个控制组的月度现金费用。
 
 ## D 合理性检查与发现的问题
 

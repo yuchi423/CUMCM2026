@@ -1,0 +1,78 @@
+{
+  "pass": true,
+  "selected_direction": "rolling_scenario",
+  "benchmark_strategies": [
+    "no_update",
+    "state_only"
+  ],
+  "excluded_strategies": [
+    "rolling_point",
+    "rolling_margin",
+    "rolling_point_step"
+  ],
+  "palette": [
+    "#A1DEE1",
+    "#76CDE7",
+    "#2469A9"
+  ],
+  "source_sha256": {
+    "experiments\\q3-models-20260911-04\\results\\summary_tables.csv": "52d251197498ba0936546deeb12e8e3735c908caf36c9eb8f6065de33d4e2659",
+    "experiments\\q3-models-20260911-04\\results\\daily_summary.csv": "5347f59bfd3c9fbfb0410885cfd2e796dddba6ac50cca5491bcc8f4c9f3365a4"
+  },
+  "days": 334,
+  "monthly_cost_wan": {
+    "no_update": [
+      123.31047799838686,
+      121.27564599873004,
+      105.8274232313191,
+      134.8142315648197,
+      183.30752341518914,
+      248.8961888831241,
+      131.78953106071273,
+      118.59674146349109,
+      119.71966042551261,
+      141.3416810819886,
+      223.99246137542104
+    ],
+    "state_only": [
+      120.82048001537459,
+      113.4234663767134,
+      95.80142626535813,
+      114.87942827516727,
+      154.11674576342764,
+      185.63699426395343,
+      125.86908484248873,
+      117.7988981310819,
+      116.64298033131587,
+      129.263189134567,
+      185.2795662796567
+    ],
+    "rolling_scenario": [
+      121.04233107178742,
+      114.04846180498718,
+      94.47207794951338,
+      96.07049493207076,
+      132.32041878201395,
+      150.93449534740654,
+      129.2672157689283,
+      119.74291100596585,
+      115.31013497556972,
+      127.91232585015278,
+      168.60468210631626
+    ]
+  },
+  "selected_total_cost": 13697255.49594712,
+  "selected_component_costs": {
+    "ordinary_cost": 12959330.76835178,
+    "adjustment_cost": 641629.1891606953,
+    "emergency_cost": 96295.53843464519
+  },
+  "figures": [
+    "Fig1_Q3_TotalCost.png",
+    "Fig1_Q3_TotalCost.pdf",
+    "Fig2_Q3_CostBreakdown.png",
+    "Fig2_Q3_CostBreakdown.pdf",
+    "Fig3_Q3_MonthlyCost.png",
+    "Fig3_Q3_MonthlyCost.pdf"
+  ]
+}

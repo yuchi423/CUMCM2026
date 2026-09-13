@@ -1,0 +1,7 @@
+# D-020 第三问连续误差场景模型选择与绘图
+
+2026-09-13，用户明确表示最终采用此前比较的第三条建模路线，并确认删除另外两条路线。当前选定方法为rolling_scenario（连续误差场景模型），此选择替代D-013的rolling_margin主模型选择。
+
+本次执行范围为原04实验figures图表重绘：用户提供青蓝配色截图，要求覆盖原图；随后要求图内不使用路线编号，统一显示方法名。保留两个控制基准，删除rolling_point、rolling_margin及rolling_point_step，覆盖3张PNG和3张PDF。原始结果、模型参数和年度审计不变，无新求解。
+
+注意：deliverables/q3仍是D-013对应的历史结果包，尚未在本次图表工作中切换为rolling_scenario；不能把它当作当前选定方法的结果包。后续打包需另外完成提取与核对。本次图表的重现入口为scripts/redraw_q3_selected_figures.py，数据检查记录在原实验figures/figure_data_audit.json。
