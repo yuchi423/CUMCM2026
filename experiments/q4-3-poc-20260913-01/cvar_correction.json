@@ -1,0 +1,248 @@
+{
+  "pass": true,
+  "kind": "poc",
+  "alpha": 0.9,
+  "method": "equal-weight empirical CVaR with fractional boundary mass",
+  "changes": {
+    "window_summary.csv:no_update_mean14:dev_march": {
+      "old": 58778.87307792889,
+      "new": 61243.65791839824
+    },
+    "window_summary.csv:no_update_mean14:dev_april": {
+      "old": 53899.52127877648,
+      "new": 55010.19358657051
+    },
+    "window_summary.csv:no_update_mean14:val_june": {
+      "old": 88429.82898764001,
+      "new": 88654.45617616847
+    },
+    "window_summary.csv:no_update_mean14:val_august": {
+      "old": 74125.0933084352,
+      "new": 77511.39109484044
+    },
+    "window_summary.csv:no_update_mean14:eval_september": {
+      "old": 50569.17110979796,
+      "new": 50907.561499273084
+    },
+    "window_summary.csv:no_update_mean14:eval_december": {
+      "old": 119703.71439882809,
+      "new": 120179.93485225209
+    },
+    "window_summary.csv:state_only_mean14:dev_march": {
+      "old": 49987.62541046852,
+      "new": 50359.11359728814
+    },
+    "window_summary.csv:state_only_mean14:dev_april": {
+      "old": 41083.25324618758,
+      "new": 41661.652781992954
+    },
+    "window_summary.csv:state_only_mean14:val_june": {
+      "old": 72139.87803997163,
+      "new": 73669.93633488663
+    },
+    "window_summary.csv:state_only_mean14:val_august": {
+      "old": 63211.66462498224,
+      "new": 64074.032178244415
+    },
+    "window_summary.csv:state_only_mean14:eval_september": {
+      "old": 49915.96578163322,
+      "new": 50183.794667794406
+    },
+    "window_summary.csv:state_only_mean14:eval_december": {
+      "old": 92078.55354179819,
+      "new": 92152.33501633795
+    },
+    "window_summary.csv:rolling_margin_mean14:dev_march": {
+      "old": 49613.551801252135,
+      "new": 49775.7845098363
+    },
+    "window_summary.csv:rolling_margin_mean14:dev_april": {
+      "old": 38447.122362243565,
+      "new": 38937.31654115614
+    },
+    "window_summary.csv:rolling_margin_mean14:val_june": {
+      "old": 59422.75122764286,
+      "new": 59518.57575949775
+    },
+    "window_summary.csv:rolling_margin_mean14:val_august": {
+      "old": 62034.62835762914,
+      "new": 62683.21534231207
+    },
+    "window_summary.csv:rolling_margin_mean14:eval_september": {
+      "old": 50582.83372662183,
+      "new": 50780.19433928425
+    },
+    "window_summary.csv:rolling_margin_mean14:eval_december": {
+      "old": 75566.50599874728,
+      "new": 75765.42508718316
+    },
+    "window_summary.csv:rolling_scenario_mean14:dev_march": {
+      "old": 50222.388435619505,
+      "new": 50727.470931156495
+    },
+    "window_summary.csv:rolling_scenario_mean14:dev_april": {
+      "old": 38774.82879969229,
+      "new": 39281.91529305274
+    },
+    "window_summary.csv:rolling_scenario_mean14:val_june": {
+      "old": 60859.074283303635,
+      "new": 61159.49733201086
+    },
+    "window_summary.csv:rolling_scenario_mean14:val_august": {
+      "old": 62089.89840632005,
+      "new": 62320.50821101576
+    },
+    "window_summary.csv:rolling_scenario_mean14:eval_september": {
+      "old": 50463.07237538483,
+      "new": 50612.917741680256
+    },
+    "window_summary.csv:rolling_scenario_mean14:eval_december": {
+      "old": 77195.57866167967,
+      "new": 77491.12067024778
+    },
+    "window_summary.csv:rolling_scenario_shuffled:dev_march": {
+      "old": 49341.025839505906,
+      "new": 49403.628799328195
+    },
+    "window_summary.csv:rolling_scenario_shuffled:dev_april": {
+      "old": 38284.68551853597,
+      "new": 38746.82242143719
+    },
+    "window_summary.csv:rolling_scenario_shuffled:val_june": {
+      "old": 59292.51008795379,
+      "new": 59616.13617849398
+    },
+    "window_summary.csv:rolling_scenario_shuffled:val_august": {
+      "old": 61153.65473288177,
+      "new": 61718.442867182275
+    },
+    "window_summary.csv:rolling_scenario_shuffled:eval_september": {
+      "old": 50147.07443235116,
+      "new": 50432.347488518164
+    },
+    "window_summary.csv:rolling_scenario_shuffled:eval_december": {
+      "old": 77528.6757883151,
+      "new": 77783.18605916009
+    },
+    "window_summary.csv:rolling_scenario_price_update:dev_march": {
+      "old": 50225.38981002271,
+      "new": 50731.75860887537
+    },
+    "window_summary.csv:rolling_scenario_price_update:dev_april": {
+      "old": 38774.82879969229,
+      "new": 39281.91529305274
+    },
+    "window_summary.csv:rolling_scenario_price_update:val_june": {
+      "old": 60849.94052958382,
+      "new": 61140.92978166969
+    },
+    "window_summary.csv:rolling_scenario_price_update:val_august": {
+      "old": 62089.89840632005,
+      "new": 62320.50821101576
+    },
+    "window_summary.csv:rolling_scenario_price_update:eval_september": {
+      "old": 50463.15907594341,
+      "new": 50612.96728485659
+    },
+    "window_summary.csv:rolling_scenario_price_update:eval_december": {
+      "old": 77188.08938028806,
+      "new": 77480.4216968312
+    },
+    "periods.csv:no_update_mean14:development": {
+      "old": 58016.27871760677,
+      "new": 58372.605165281035
+    },
+    "periods.csv:no_update_mean14:validation": {
+      "old": 88098.82498290495,
+      "new": 88146.11126929567
+    },
+    "periods.csv:no_update_mean14:evaluation": {
+      "old": 116861.69654639969,
+      "new": 117267.6990967466
+    },
+    "periods.csv:state_only_mean14:development": {
+      "old": 49462.99221462445,
+      "new": 49537.93981403075
+    },
+    "periods.csv:state_only_mean14:validation": {
+      "old": 70675.71234396881,
+      "new": 70884.87887196922
+    },
+    "periods.csv:state_only_mean14:evaluation": {
+      "old": 91169.58841064239,
+      "new": 91299.44057223607
+    },
+    "periods.csv:rolling_margin_mean14:development": {
+      "old": 49484.83892964324,
+      "new": 49503.22648273022
+    },
+    "periods.csv:rolling_margin_mean14:validation": {
+      "old": 61498.02893906208,
+      "new": 61574.68599885737
+    },
+    "periods.csv:rolling_margin_mean14:evaluation": {
+      "old": 75359.1073419928,
+      "new": 75388.73572152916
+    },
+    "periods.csv:rolling_scenario_mean14:development": {
+      "old": 49697.71266778439,
+      "new": 49772.6663489037
+    },
+    "periods.csv:rolling_scenario_mean14:validation": {
+      "old": 61913.28606986464,
+      "new": 61939.10587042426
+    },
+    "periods.csv:rolling_scenario_mean14:evaluation": {
+      "old": 76736.75871400376,
+      "new": 76802.3044208146
+    },
+    "periods.csv:rolling_scenario_shuffled:development": {
+      "old": 48701.96534675998,
+      "new": 48793.25970286654
+    },
+    "periods.csv:rolling_scenario_shuffled:validation": {
+      "old": 60784.9823661037,
+      "new": 60852.7799813363
+    },
+    "periods.csv:rolling_scenario_shuffled:evaluation": {
+      "old": 76956.6881091302,
+      "new": 77038.40063472804
+    },
+    "periods.csv:rolling_scenario_price_update:development": {
+      "old": 49699.671881677226,
+      "new": 49774.774442869435
+    },
+    "periods.csv:rolling_scenario_price_update:validation": {
+      "old": 61902.90408791921,
+      "new": 61929.617561976476
+    },
+    "periods.csv:rolling_scenario_price_update:evaluation": {
+      "old": 76734.99062589579,
+      "new": 76799.7190193804
+    },
+    "summary_tables.csv:no_update_mean14:all": {
+      "old": 100231.41522245934,
+      "new": 101068.62623777233
+    },
+    "summary_tables.csv:state_only_mean14:all": {
+      "old": 82979.52581160837,
+      "new": 83498.7766509061
+    },
+    "summary_tables.csv:rolling_margin_mean14:all": {
+      "old": 73959.89348859253,
+      "new": 74128.21520305041
+    },
+    "summary_tables.csv:rolling_scenario_mean14:all": {
+      "old": 75142.06633208599,
+      "new": 75327.2359599767
+    },
+    "summary_tables.csv:rolling_scenario_shuffled:all": {
+      "old": 75011.91027729522,
+      "new": 75204.81470470074
+    },
+    "summary_tables.csv:rolling_scenario_price_update:all": {
+      "old": 75141.14648751293,
+      "new": 75325.85315270258
+    }
+  }
+}

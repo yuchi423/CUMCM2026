@@ -1,0 +1,84 @@
+{
+  "pass": true,
+  "kind": "full",
+  "alpha": 0.9,
+  "method": "equal-weight empirical CVaR with fractional boundary mass",
+  "changes": {
+    "summary_tables.csv:all": {
+      "old": 73458.34849254118,
+      "new": 73458.34849254118
+    },
+    "periods.csv:development": {
+      "old": 62792.08237181111,
+      "new": 62792.08237181111
+    },
+    "periods.csv:validation": {
+      "old": 68768.14616838744,
+      "new": 68768.14616838744
+    },
+    "periods.csv:evaluation": {
+      "old": 77422.26114194863,
+      "new": 77422.26114194863
+    },
+    "monthly_summary.csv:2025-02": {
+      "old": 66538.2745288717,
+      "new": 66538.2745288717
+    },
+    "monthly_summary.csv:2025-03": {
+      "old": 54163.1194827344,
+      "new": 54163.1194827344
+    },
+    "monthly_summary.csv:2025-04": {
+      "old": 43274.00543129676,
+      "new": 43274.00543129676
+    },
+    "monthly_summary.csv:2025-05": {
+      "old": 42711.73510263732,
+      "new": 42711.73510263732
+    },
+    "monthly_summary.csv:2025-06": {
+      "old": 63077.929716085,
+      "new": 63077.929716085
+    },
+    "monthly_summary.csv:2025-07": {
+      "old": 75384.36305599549,
+      "new": 75384.36305599549
+    },
+    "monthly_summary.csv:2025-08": {
+      "old": 61668.64114835139,
+      "new": 61668.64114835139
+    },
+    "monthly_summary.csv:2025-09": {
+      "old": 51083.853123297835,
+      "new": 51083.853123297835
+    },
+    "monthly_summary.csv:2025-10": {
+      "old": 51804.377403591556,
+      "new": 51804.377403591556
+    },
+    "monthly_summary.csv:2025-11": {
+      "old": 62299.44093370202,
+      "new": 62299.44093370202
+    },
+    "monthly_summary.csv:2025-12": {
+      "old": 83047.59070378172,
+      "new": 83047.59070378172
+    },
+    "quarterly_summary.csv:Q1": {
+      "old": 65223.214272479934,
+      "new": 65223.214272479934
+    },
+    "quarterly_summary.csv:Q2": {
+      "old": 60491.39131486777,
+      "new": 60491.39131486777
+    },
+    "quarterly_summary.csv:Q3": {
+      "old": 69746.59681671801,
+      "new": 69746.59681671801
+    },
+    "quarterly_summary.csv:Q4": {
+      "old": 78325.84955145027,
+      "new": 78325.84955145027
+    }
+  }
+}
