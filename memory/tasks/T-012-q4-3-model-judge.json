@@ -4,7 +4,7 @@
   "status": "in_progress",
   "owner": "current user / Codex",
   "branch": "codex/T-012-q4-3-model-judge",
-  "updated_at": "2026-09-13T11:18:00+08:00",
+  "updated_at": "2026-09-13T11:25:00+08:00",
   "depends_on": [
     "T-011-q3-scenario-main",
     "T-010-q4-price-poc"
@@ -38,7 +38,8 @@
     "experiments/q4-3-full-20260913-02/results/summary_tables.csv",
     "experiments/q4-3-full-20260913-02/results/daily_summary.csv",
     "experiments/q4-3-full-20260913-02/audit_summary.json",
-    "memory/handoffs/2026-09-13-T-012-q4-3-full-local-review.md"
+    "memory/handoffs/2026-09-13-T-012-q4-3-full-local-review.md",
+    "planning/q4-3-completed-artifacts.md"
   ],
   "checks": [
     "Model Judge Stage A完成：1个Delivery Baseline、2个候选、1个结构性淘汰",
@@ -53,7 +54,8 @@
     "rolling_margin_mean14完成334天运行，共48096条10分钟执行记录和1336个计划版本",
     "334天物理、费用、价格来源、版本链、连续性和未来价格边界独立审计PASS",
     "可追溯运行q4-3-full-20260913-02指向代码提交d87f35f0860280ab1998008335ed4d8eaa538a21",
-    "图表与官方result4-3.xlsx按用户要求暂缓，Minimum Deliverable仍为PARTIAL"
+    "图表与官方result4-3.xlsx按用户要求暂缓，Minimum Deliverable仍为PARTIAL",
+    "任务索引列出的全部已完成成果均已被Git跟踪，并形成planning/q4-3-completed-artifacts.md总账"
   ],
   "decisions": [
     "memory/decisions/D-020-q4-3-direction3-target-gate.md",

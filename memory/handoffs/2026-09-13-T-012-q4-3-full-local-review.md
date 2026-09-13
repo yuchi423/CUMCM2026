@@ -5,8 +5,9 @@
 - 分支：'codex/T-012-q4-3-model-judge'
 - base_commit：'dbf5a3dabde766af80d29be4bf59de099441cfd9'
 - 代码检查点：'d87f35f0860280ab1998008335ed4d8eaa538a21'
-- 当前状态：GITHUB REVIEW CHECKPOINT，准备推送任务分支，不合并main
+- 当前状态：GITHUB REVIEW CHECKPOINT，已推送任务分支，不合并main
 - 主文档：'planning/q4-3-full-solution-process.md'
+- 完成成果总账：'planning/q4-3-completed-artifacts.md'
 
 ## 已完成
 
@@ -20,7 +21,7 @@
 
 - 未生成供提交的论文图表；
 - 未生成最终官方结果工作簿；
-- 结果与文档提交将在本交接记录所在检查点完成并推送；
+- 结果、文档、代码和完成成果总账已上传任务分支；
 - 未宣称团队已经批准模型假设。
 
 ## 接手人优先确认
