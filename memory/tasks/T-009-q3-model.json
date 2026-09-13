@@ -1,10 +1,10 @@
 {
   "id": "T-009-q3-model",
-  "title": "第三问三路线比较及方向2主模型整理",
+  "title": "第三问连续误差场景模型及论文图表整理",
   "status": "review",
-  "owner": "yuchi423 / current Agent",
-  "branch": "codex/T-009-q3-model",
-  "updated_at": "2026-09-12T13:38:06+08:00",
+  "owner": "current user / Codex",
+  "branch": "codex/T-009-q3-figures",
+  "updated_at": "2026-09-13T13:10:31+08:00",
   "depends_on": [
     "T-008-q3-selection"
   ],
@@ -28,7 +28,10 @@
     "experiments/q3-models-20260911-04/audit_summary.json",
     "deliverables/q3/README.md",
     "deliverables/q3/manifest.json",
-    "scripts/package_q3_main.py"
+    "scripts/package_q3_main.py",
+    "scripts/redraw_q3_selected_figures.py",
+    "experiments/q3-models-20260911-04/figures/README.md",
+    "experiments/q3-models-20260911-04/figures/figure_data_audit.json"
   ],
   "checks": [
     "6组策略各完成334天运行",
@@ -36,14 +39,19 @@
     "7650次计划版本调整费用逐项重算通过",
     "附件3结构、账本手算及未来负载扰动检查通过",
     "三张PNG/PDF图表人工检查通过",
-    "方向2提取核验：334天合计、四日期576条执行及16个计划版本链和费用一致"
+    "方向2历史提取核验：334天合计、四日期576条执行及16个计划版本链和费用一致",
+    "用户现选定rolling_scenario，原图移除另外两路线及阶梯映射，青蓝配色覆盖3 PNG及3 PDF",
+    "3组各334天费用逐项复算误差小于1e-6元，绘图前后原结果CSV哈希相同",
+    "3 PNG目视检查及3 PDF文字扫描PASS，图内无方向编号",
+    "历史deliverables/q3仍为rolling_margin，本次未执行结果包切换"
   ],
   "decisions": [
     "memory/decisions/D-011-q3-model-selection.md",
     "memory/decisions/D-012-q3-model-results.md",
-    "memory/decisions/D-013-q3-main-confirmed.md"
+    "memory/decisions/D-013-q3-main-confirmed.md",
+    "memory/decisions/D-020-q3-scenario-selected-figures.md"
   ],
-  "latest_handoff": "memory/handoffs/2026-09-12-T-009-q3-main.md",
-  "next_action": "人工检查已暂存的方向2结果包；后续将结果填入result3.xlsx并撰写第三问论文。",
+  "latest_handoff": "memory/handoffs/2026-09-13-T-009-q3-figures.md",
+  "next_action": "使用已选连续误差场景模型图表；后续将历史结果包切换为rolling_scenario并核对，不复用旧主模型包冒充新选择。",
   "blockers": []
 }
