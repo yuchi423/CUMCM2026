@@ -1,0 +1,2 @@
+﻿strategy,period,days,ordinary_kwh,emergency_kwh,ordinary_cost,adjustment_cost,emergency_cost,total_cost,paid_grid_spill_kwh,pv_spill_kwh,e_start,e_end,mean_actual_price,inventory_adjusted_cost,updates,changed_updates,emergency_slots
+rolling_margin_mean14,all,334,21078207.86315755,44662.23736198831,13763849.007598255,619471.945025583,220141.34456199245,14603462.297185829,711513.6858263833,1276556.596016982,2119.6221033981474,1595.9336270222252,0.7575275199600799,14603819.334775295,1002,862,754

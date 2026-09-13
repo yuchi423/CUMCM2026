@@ -4,7 +4,7 @@
   "status": "in_progress",
   "owner": "current user / Codex",
   "branch": "codex/T-012-q4-3-model-judge",
-  "updated_at": "2026-09-13T10:30:00+08:00",
+  "updated_at": "2026-09-13T11:18:00+08:00",
   "depends_on": [
     "T-011-q3-scenario-main",
     "T-010-q4-price-poc"
@@ -29,7 +29,16 @@
     "experiments/q4-3-poc-20260913-01/model_report.md",
     "experiments/q4-3-poc-20260913-01/selection.json",
     "experiments/q4-3-poc-20260913-01/audit_summary.json",
-    "planning/q4-3-poc-results.md"
+    "planning/q4-3-poc-results.md",
+    "planning/q4-3-full-solution-process.md",
+    "configs/q4_3_full.json",
+    "scripts/run_q4_3_full.py",
+    "scripts/audit_q4_3_full.py",
+    "experiments/q4-3-full-20260913-02/run.json",
+    "experiments/q4-3-full-20260913-02/results/summary_tables.csv",
+    "experiments/q4-3-full-20260913-02/results/daily_summary.csv",
+    "experiments/q4-3-full-20260913-02/audit_summary.json",
+    "memory/handoffs/2026-09-13-T-012-q4-3-full-local-review.md"
   ],
   "checks": [
     "Model Judge Stage A完成：1个Delivery Baseline、2个候选、1个结构性淘汰",
@@ -41,7 +50,10 @@
     "Candidate A方向3Scientific FAIL",
     "Candidate B日内价格增强Scientific FAIL",
     "Fallback rolling_margin_mean14 Cheap PoC PASS",
-    "Minimum Deliverable仍为PARTIAL"
+    "rolling_margin_mean14完成334天运行，共48096条10分钟执行记录和1336个计划版本",
+    "334天物理、费用、价格来源、版本链、连续性和未来价格边界独立审计PASS",
+    "可追溯运行q4-3-full-20260913-02指向代码提交d87f35f0860280ab1998008335ed4d8eaa538a21",
+    "图表与官方result4-3.xlsx按用户要求暂缓，Minimum Deliverable仍为PARTIAL"
   ],
   "decisions": [
     "memory/decisions/D-020-q4-3-direction3-target-gate.md",
@@ -49,7 +61,7 @@
     "memory/decisions/D-022-q4-3-known-price-delivery.md",
     "memory/decisions/D-023-q4-3-price-forecast-recheck.md"
   ],
-  "latest_handoff": "memory/handoffs/2026-09-13-T-012-q4-3-model-judge.md",
-  "next_action": "实现并运行rolling_margin_mean14的334天正式模型，审计后生成result4-3.xlsx和GitHub审查材料。",
+  "latest_handoff": "memory/handoffs/2026-09-13-T-012-q4-3-full-local-review.md",
+  "next_action": "等待团队复核planning/q4-3-full-solution-process.md中的价格信息边界、初始SOC和调整费口径；确认后再生成官方工作簿和图表。",
   "blockers": []
 }
