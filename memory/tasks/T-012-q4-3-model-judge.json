@@ -1,10 +1,10 @@
 {
   "id": "T-012-q4-3-model-judge",
   "title": "问题4中的4.3方向3规划与Model Judge目标审查",
-  "status": "in_progress",
+  "status": "handoff",
   "owner": "current user / Codex",
   "branch": "codex/T-012-q4-3-model-judge",
-  "updated_at": "2026-09-13T13:20:00+08:00",
+  "updated_at": "2026-09-13T15:40:00+08:00",
   "depends_on": [
     "T-011-q3-scenario-main",
     "T-010-q4-price-poc"
@@ -43,7 +43,18 @@
     "configs/q4_3_scenario_full.json",
     "scripts/run_q4_3_scenario_full.py",
     "scripts/audit_q4_3_scenario_full.py",
-    "memory/decisions/D-024-q4-3-direction3-main.md"
+    "memory/decisions/D-024-q4-3-direction3-main.md",
+    "planning/q4-3-direction3-full-results.md",
+    "experiments/q4-3-scenario-full-20260913-01/model_report.md",
+    "experiments/q4-3-scenario-full-20260913-01/results/summary_tables.csv",
+    "experiments/q4-3-scenario-full-20260913-01/audit_summary.json",
+    "experiments/q4-3-scenario-full-20260913-01/solver_audit_summary.json",
+    "experiments/q4-3-scenario-full-20260913-01/workbook_audit.json",
+    "final_run/q4_3_scenario/main.py",
+    "output/result4-3.xlsx",
+    "deliverables/q4-3/README.md",
+    "deliverables/q4-3/manifest.json",
+    "memory/handoffs/2026-09-13-T-012-q4-3-direction3-full-results.md"
   ],
   "checks": [
     "Model Judge Stage A完成：1个Delivery Baseline、2个候选、1个结构性淘汰",
@@ -60,7 +71,13 @@
     "可追溯运行q4-3-full-20260913-02指向代码提交d87f35f0860280ab1998008335ed4d8eaa538a21",
     "图表与官方result4-3.xlsx按用户要求暂缓，Minimum Deliverable仍为PARTIAL",
     "任务索引列出的全部已完成成果均已被Git跟踪，并形成planning/q4-3-completed-artifacts.md总账",
-    "用户确认问题4-3继续采用问题3方向3；rolling_margin_mean14降为对照"
+    "用户确认问题4-3继续采用问题3方向3；rolling_margin_mean14降为对照",
+    "rolling_scenario_mean14完成2025年1月热身和2月1日至12月31日334天正式回放",
+    "共完成14416次计划求解：LP 11263次、MILP 3153次，求解器审计PASS",
+    "52560条执行记录和1460个计划版本通过物理、费用、版本链、价格因果边界和连续性独立审计",
+    "方向3现金总费用14432279.80元，较余量基线减少171182.49元（1.172%）",
+    "官方result4-3.xlsx保持四张表顺序与官方表头，111999个填充单元逐格复核，最大差异0",
+    "工作簿SHA256为9e400dd675b89cad3f905575b4c05145611feb4f53afde709cd77a7dc5783d8d"
   ],
   "decisions": [
     "memory/decisions/D-020-q4-3-direction3-target-gate.md",
@@ -69,7 +86,7 @@
     "memory/decisions/D-023-q4-3-price-forecast-recheck.md",
     "memory/decisions/D-024-q4-3-direction3-main.md"
   ],
-  "latest_handoff": "memory/handoffs/2026-09-13-T-012-q4-3-full-local-review.md",
-  "next_action": "运行rolling_scenario_mean14全年轨迹，独立审计后生成图表、报告和官方result4-3.xlsx。",
+  "latest_handoff": "memory/handoffs/2026-09-13-T-012-q4-3-direction3-full-results.md",
+  "next_action": "人工审核PR中的模型假设、结果和官方工作簿；通过后由团队合并任务分支并在论文中引用本次冻结实验。",
   "blockers": []
 }
