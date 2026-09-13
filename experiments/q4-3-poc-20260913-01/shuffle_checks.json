@@ -1,0 +1,5 @@
+{
+  "max_per_slot_marginal_error": 0.0,
+  "changed_column_permutations": 30240,
+  "pass": true
+}

@@ -1,0 +1,10 @@
+{
+  "pass": true,
+  "runtime_seconds": 186.84712390002096,
+  "strategies": 6,
+  "windows_each": 6,
+  "days_each": 84,
+  "dispatch_rows": 72576,
+  "selected_for_human_model_gate": "rolling_margin_mean14",
+  "full_detail_location": "details/ (locally regenerated audit evidence)"
+}

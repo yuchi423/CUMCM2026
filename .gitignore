@@ -28,3 +28,7 @@ experiments/q2-improve-20260911-01/table_regression/
 experiments/q3-models-20260911-*/details/
 experiments/q3-models-20260911-02/
 experiments/q3-models-20260911-03/
+
+# Q4-3 Cheap PoC full ledgers are regenerated locally.
+experiments/q4-3-poc-*/details/
+experiments/q4-3-poc-*/input_prices.json
