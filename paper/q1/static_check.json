@@ -1,0 +1,18 @@
+{
+  "checked_at": "2026-09-11T14:11:17+08:00",
+  "status": "PASS",
+  "errors": [],
+  "tex_lines": 579,
+  "labels": 22,
+  "references": 22,
+  "embedded_plot_rows": 145,
+  "numeric_macros_checked": 9,
+  "purchase_table_rows": 6,
+  "storage_table_rows": 6,
+  "recomputed_cost_yuan": 35126.948589289634,
+  "recomputed_final_energy_kwh": 6000.0,
+  "source_hashes_checked": 10,
+  "compiled": false,
+  "page_layout_verified": false,
+  "limit": "Checks source structure, data and references; does not validate TeX package behavior or page layout."
+}
